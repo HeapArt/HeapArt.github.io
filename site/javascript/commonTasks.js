@@ -15,6 +15,17 @@ window.onload = (event) => {
     wSocialLinkDiv[wi].innerHTML += '<a href="https://www.tiktok.com/@heapart" class="class_tiktok class_social_link"><img class="class_tiktok_logo" src="/site/images/logo-tiktok.png" alt="Tik Tok"/></img> </a>'
   }
 
+  window.addEventListener("resize", resizeYTIFrame);
+
+  resizeYTIFrame();
   console.log('page is fully loaded');
 
 }; 
+
+function resizeYTIFrame() {
+  var wYTIFrame = document.getElementsByClassName("class_youtube_iframe");
+  for (var wi = 0; wi < wYTIFrame.length; ++wYTIFrame) {
+    wYTIFrame[wi].style.height = wYTIFrame[wi].offsetWidth * (9/16) + "px";
+  }
+
+}
