@@ -9,12 +9,10 @@ window.onload = (event) => {
   var wSocialLinkDiv = document.getElementsByClassName("class_social_links");
 
   for(var wi = 0; wi < wSocialLinkDiv.length; ++wi){
-  //  wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fa fa-linkedin"></a>'
-    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fa fa-youtube"></a>'
-    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.instagram.com/wlee0515/" class="fa fa-instagram"></a>'
-    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.tiktok.com/@heapart" >TikTok</a>'
-
-
+  //  wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fa fa-linkedin class_social_link"></a>'
+    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fa fa-youtube class_social_link"></a>'
+    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.instagram.com/wlee0515/" class="fa fa-instagram class_social_link"></a>'
+    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.tiktok.com/@heapart" class="class_tiktok class_social_link"><img class="class_tiktok_logo" src="/site/images/logo-tiktok.png" alt="Tik Tok"/></img> </a>'
   }
 
   console.log('page is fully loaded');
