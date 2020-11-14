@@ -12,25 +12,32 @@
 
   <script src="/site/javascript/commonTasks.js"></script>
   <link rel="stylesheet" href="/site/css/theme.css">
+    <style>
+      
+      #id_blockBody
+      {
+        text-align: center;
+        margin: auto;
+      }
 
+    </style>
   <Title>Heap Art</Title>
 </head>
 <body>
   <div class="class_Banner">
     <h1 >Welcome To Heap Art
     </br>
-  <div class="class_social_links"></div>
+      <div class="class_social_links_bar"></div>
     </h1>
   </div>
-  <p>This page is still under work. I'll announce it once it is ready for its grand Openning </p>
-  <p>For the Time Being, Check My Social Media Pages </p>
-  <p>Thanks!</p>
-  <p>Wilson Lee @HeapArt</p>
-  <h2>My Last 10 Origami Tutorial</h2>
-  <iframe class="class_youtube_iframe"
-    src="https://www.youtube.com/embed/videoseries?list=PL3Ct47F8enQEby1s0hKI3QwVMQBSC20_r" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+  <div id="id_blockBody"></div>
+  <script>
+    loadSiteBlock("id_blockBody", "/site/database/blocks/home.json");
+  </script>
+  <div class="class_Footer">
+      <div class="class_social_links_bar"></div>
+  </div>
+
 </body>
 
 </html>
