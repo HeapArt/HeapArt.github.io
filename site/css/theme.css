@@ -1,15 +1,16 @@
 body {
-  padding: 0;
-  margin: auto;
   max-width: vw;
+  padding: 0;
+  margin: 0;
   text-align: center;
+  background-color: black;
 }
 
-.class_Banner {
-  width: vw;
+.class_Banner , .class_Footer{
+  width: 100%;
   height: 150px;
   padding: 50px;
-  margin: 0;
+  margin: auto;
   text-align: center;
   vertical-align: middle;
   background-color: black;
@@ -21,6 +22,12 @@ body {
   background-clip: border-box;  
   background-size: cover;
 
+}
+
+.class_Footer
+{
+  height: 50px;
+  padding: 10px;
 }
 
 .class_Banner h1{
