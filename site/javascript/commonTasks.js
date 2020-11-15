@@ -11,7 +11,6 @@ window.onload = (event) => {
 
 
   var wHead = document.getElementsByTagName("head")[0];
-  wHead.innerHTML += '<script src="https://www.youtube.com/iframe_api"></script>';
   wHead.innerHTML += '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">';
   wHead.innerHTML += '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">';
   wHead.innerHTML += '<link rel="stylesheet" href="/site/css/commonTask.css">';
@@ -20,7 +19,7 @@ window.onload = (event) => {
 
   for (var wi = 0; wi < wSocialLinkDiv.length; ++wi) {
     //  wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fa fa-linkedin class_social_link"></a>'
-    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fab fa-youtube class_social_link"></a>'
+    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart" class="fab fa-youtube class_social_link"></a>'
     wSocialLinkDiv[wi].innerHTML += '<a href="https://www.instagram.com/wlee0515/" class="fab fa-instagram class_social_link"></a>'
     wSocialLinkDiv[wi].innerHTML += '<a href="https://www.tiktok.com/@heapart" class="fab fa-tiktok class_social_link"></a>'
   }
@@ -33,73 +32,12 @@ window.onload = (event) => {
 };
 
 function resizeYTIFrame() {
-  var wYTIFrame = document.getElementsByClassName("class_youtube_iframe");
+  var wYTIFrame = document.getElementsByClassName("class_YouTubePlayer");
   for (var wi = 0; wi < wYTIFrame.length; ++wi) {
     wYTIFrame[wi].style.height = wYTIFrame[wi].offsetWidth * (9 / 16) + "px";
   }
 
 }
-
-var gYTPlayerList = new Array();
-var gIFrameApiReady = false;
-var wPendingYouTubePlayers = new Array();
-
-function createYouTubePlayers() {
-  if (true == gIFrameApiReady)
-  {
-    for(var wi = 0; wi < wPendingYouTubePlayers.length; ++wi)
-    {
-      var wPlayer = new YT.Player(wPendingYouTubePlayers[wi].containerId, {
-        height: '390',
-        width: '640',
-        videoId: wPendingYouTubePlayers[wi].videoId,
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      });
-
-      gYTPlayerList.push(wPlayer);
-    }
-
-    wPendingYouTubePlayers.length = 0;
-  }
-}
-
-function addPlayer(iContainerId, iVideoId) {
-  wPendingYouTubePlayers.push({containerId : iContainerId, videoId : iVideoId});
-  createYouTubePlayers();
-}
-
-function onYouTubeIframeAPIReady() {
-  gIFrameApiReady = true;
-  createYouTubePlayers();
-  player = new YT.Player('player', {
-    height: '390',
-    width: '640',
-    videoId: 'M7lc1UVf-VE',
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
-
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
-
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-function onPlayerStateChange(event) {
-}
-
 
 function loadSiteBlock(iElementId, iFetchJson) {
   var wElement = document.getElementById(iElementId);
@@ -127,14 +65,30 @@ function loadSiteBlock(iElementId, iFetchJson) {
 
             if (null != wBlock.caption) {
               if ("video" == wBlock.caption.type) {
-                addPlayer(wBlock.caption.containerId, wBlock.caption.videoId);
+                if (null != wBlock.caption.videoId)
+                {
+                  var wVideoId = wBlock.caption.videoId
+                  var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/'
+                  wDOMString += wVideoId;
+                  wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                  wTemp += wDOMString;
+                }
+                else if (null != wBlock.caption.playlistId)
+                {
+                  var wPlayListId = wBlock.caption.playlistId
+                  var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/videoseries?list=PL'
+                  wDOMString += wPlayListId;
+                  wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                  wTemp += wDOMString;
+                }
               }
             }
-            
+
             wTemp += "</div>";
             wBlockString += wTemp;
           }
           wElement.innerHTML += wBlockString;
+          setTimeout( resizeYTIFrame,10);
         }
       })
       .catch((err) => {

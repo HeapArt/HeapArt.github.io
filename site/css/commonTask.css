@@ -54,3 +54,9 @@
   background: white;
   background-clip: padding-box;  
 }
+
+.class_YouTubePlayer {
+  width: calc(100% - 10px);
+  max-width: 600px;
+  margin: auto;
+}
