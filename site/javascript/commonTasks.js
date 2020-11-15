@@ -1,8 +1,17 @@
 
 window.onload = (event) => {
 
+
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
   var wHead = document.getElementsByTagName("head")[0];
-  // wHead.innerHTML += '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">';
+  wHead.innerHTML += '<script src="https://www.youtube.com/iframe_api"></script>';
   wHead.innerHTML += '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">';
   wHead.innerHTML += '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">';
   wHead.innerHTML += '<link rel="stylesheet" href="/site/css/commonTask.css">';
@@ -31,6 +40,67 @@ function resizeYTIFrame() {
 
 }
 
+var gYTPlayerList = new Array();
+var gIFrameApiReady = false;
+var wPendingYouTubePlayers = new Array();
+
+function createYouTubePlayers() {
+  if (true == gIFrameApiReady)
+  {
+    for(var wi = 0; wi < wPendingYouTubePlayers.length; ++wi)
+    {
+      var wPlayer = new YT.Player(wPendingYouTubePlayers[wi].containerId, {
+        height: '390',
+        width: '640',
+        videoId: wPendingYouTubePlayers[wi].videoId,
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+
+      gYTPlayerList.push(wPlayer);
+    }
+
+    wPendingYouTubePlayers.length = 0;
+  }
+}
+
+function addPlayer(iContainerId, iVideoId) {
+  wPendingYouTubePlayers.push({containerId : iContainerId, videoId : iVideoId});
+  createYouTubePlayers();
+}
+
+function onYouTubeIframeAPIReady() {
+  gIFrameApiReady = true;
+  createYouTubePlayers();
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: 'M7lc1UVf-VE',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+function onPlayerStateChange(event) {
+}
+
+
 function loadSiteBlock(iElementId, iFetchJson) {
   var wElement = document.getElementById(iElementId);
   if (null != wElement) {
@@ -54,6 +124,13 @@ function loadSiteBlock(iElementId, iFetchJson) {
               }
               wTemp += "</div>";
             }
+
+            if (null != wBlock.caption) {
+              if ("video" == wBlock.caption.type) {
+                addPlayer(wBlock.caption.containerId, wBlock.caption.videoId);
+              }
+            }
+            
             wTemp += "</div>";
             wBlockString += wTemp;
           }
