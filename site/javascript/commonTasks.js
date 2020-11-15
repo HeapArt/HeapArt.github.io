@@ -88,7 +88,7 @@ function loadSiteBlock(iElementId, iFetchJson) {
             wBlockString += wTemp;
           }
           wElement.innerHTML += wBlockString;
-          setTimeout( resizeYTIFrame,10);
+          resizeYTIFrame();
         }
       })
       .catch((err) => {
