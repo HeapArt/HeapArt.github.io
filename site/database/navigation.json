@@ -14,6 +14,11 @@
       "icon": "/site/images/logo/logo-blog.png"
     },
     {
+      "siteName": "Dev Projects",
+      "link": "https://wlee0515.github.io",
+      "icon": "/site/images/logo/logo-wlee0515.png"
+    },
+    {
       "siteName": "Social Media",
       "icon": "/site/images/logo/logo-network-white.png",
       "sub_entries" : [

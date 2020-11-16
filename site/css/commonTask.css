@@ -130,8 +130,7 @@
   visibility: visible;
 }
 
-
-@media (min-width: 1020px) {
+@media (min-width: 800px) {
 
   .class_navbar_MenuIcon {
     visibility: hidden;
@@ -154,7 +153,7 @@
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 800px) {
 
   .class_navbar_entries {
     display: block;
