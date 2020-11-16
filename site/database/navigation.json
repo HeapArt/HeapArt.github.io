@@ -1,0 +1,49 @@
+{
+  "siteName" : "Heap Art",
+  "link" : "https://heapart.github.io/",
+  "icon": "/site/images/logo/logo-HeapArt-small.png",
+  "entries" : [
+    {
+      "siteName": "About Me",
+      "link": "/site/pages/aboutme/index.html",
+      "icon": "/site/images/logo/logo-eyeglasses-white.png"
+    },
+    {
+      "siteName": "News Feed",
+      "link": "/site/pages/newsfeed/index.html",
+      "icon": "/site/images/logo/logo-blog.png"
+    },
+    {
+      "siteName": "Social Media",
+      "icon": "/site/images/logo/logo-network-white.png",
+      "sub_entries" : [
+        {
+          "siteName": "YouTube",
+          "link": "https://www.youtube.com/c/heapart",
+          "icon": "/site/images/logo/logo-youtube.png"
+        },  
+        {
+          "siteName": "Instagram",
+          "link": "https://www.instagram.com/wlee0515/",
+          "icon": "/site/images/logo/logo-instagram.png"
+        },  
+        {
+          "siteName": "Tik Tok",
+          "link": "https://www.tiktok.com/@heapart",
+          "icon": "/site/images/logo/logo-tiktok.png"
+        }  
+      ]
+    },
+    {
+      "siteName": "Merchandise",
+      "link": "https://teespring.com/stores/heapart",
+      "icon": "/site/images/logo/logo-merch-white.png"
+    },
+    {
+      "siteName": "Supplies",
+      "link": "/site/pages/amazonAffiliate/index.html",
+      "icon": "/site/images/logo/logo-amazon.png"
+    }
+
+  ]
+}

@@ -1,47 +1,141 @@
-
-.fab {
-  padding: 5px;
-  font-size: 20px;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  vertical-align: baseline;
-  text-decoration: none;
-  /*border-radius: 50%;*/
-}
-
 .class_social_links_bar {
   margin: auto;
-  height: 50px;
+  height: 30px;
   text-align: center;
   vertical-align: baseline;
 }
 
 .class_social_link {
+  overflow: hidden;
   margin: 5px;
 }
-.class_social_link:hover {
-    opacity: 0.7;
+
+.class_social_link img {
+  height: 100%;
 }
 
-.fa-linkedin {
-  background: #007bb5;
+.class_navbar {
+  background-color: black;
   color: white;
+  vertical-align: bottom;
+  position: fixed;
+  top:0;
+  padding: 2px;
+  font-size: 18px;
+  width: 100vw;
+  height: 60px;
 }
 
-.fa-youtube {
-  background: #ff0000;
-  color: white;
+.class_navbar_gap {
+  width: 100vw;
+  height: 60px;
+  background-color: black;
 }
 
-.fa-instagram {
-  background: #d608bb;
-  color: white;
+.class_navbar a , .class_navbar_subentry a{
+  color:  white;
+}
+.class_navbar_HomePage {
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 30px;
 }
 
-.fa-tiktok {
-  background: #000000;
-  color: white;
+.class_navbar_HomePage .class_navbar_entry {
+  padding: 5px;
+  width: 150px;
+}
+
+.class_navbar_HomePage .class_navbar_icon_container {
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+}
+
+.class_navbar_HomePage .class_navbar_label {
+  padding: 10px;
+  width: 150px;
+}
+
+.class_navbar_entries {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.class_navbar_entry {
+  vertical-align: middle;
+  width: 135px;
+  padding: 2px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .class_navbar_entry {
+    height: 30px;
+    overflow: hidden;
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+.class_navbar_entry {
+  display: inline-block;
+  height: 30px;
+}
+}
+
+.class_navbar_entry:hover{
+  background-color: darkgray;
+}
+
+.class_navbar_subentry {
+  height: 0px;
+  background-color: black;
+  width: 135px;
+  padding: 0px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.class_navbar_entry:hover .class_navbar_subentry{
+  height: 30px;
+  padding: 2px;
+  padding-left: 4px;
+}
+
+
+.class_navbar_subentry:hover{
+  background-color: darkgray;
+}
+
+.class_navbar_icon_img {
+  height: 100%;
+  width: auto;
+}
+
+.class_navbar_icon_container {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.class_navbar_label {
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  text-align: left;
+  padding-left: 3px;
 }
 
 .class_site_block {
