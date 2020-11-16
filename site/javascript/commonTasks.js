@@ -21,7 +21,7 @@ window.onload = (event) => {
 
   // Add Event listener to resize YouTube Iframe
   window.addEventListener('resize', resizeYTIFrame);
-  resizeYTIFrame();
+  setTimeout(resizeYTIFrame, 500);
   console.log('page is fully loaded');
 
 };
@@ -33,6 +33,44 @@ function resizeYTIFrame() {
   }
 }
 
+function generateEntryString(iJson) {
+
+  var wTemp = "";
+
+  if (null != iJson.siteName) {
+
+    if (null != iJson.icon) {
+      wTemp = "<img src='" + iJson.icon + "' class='class_navbar_icon_img'></img>";
+    }
+    wTemp = "<div class='class_navbar_icon_container'>" + wTemp + "</div>";
+    wTemp += "<div class='class_navbar_label'>" + iJson.siteName + "</div>";
+    if (null != iJson.link) {
+      wTemp = "<a href='" + iJson.link + "' class='class_navbar_link'>" + wTemp + "</a>";
+    }
+    else {
+      wTemp = "<div class='class_navbar_label_wrapper'>" + wTemp + "</div>";
+    }
+    
+    if (null != iJson.sub_entries) {
+      for (var wj = 0; wj < iJson.sub_entries.length; ++wj) {
+        wTemp += "<div class='class_navbar_subentry'>" + generateEntryString(iJson.sub_entries[wj]) + "</div>";
+      }   
+    }
+  }
+
+  return wTemp;
+}
+
+function navebarExpand(iMenuButton) {
+  iMenuButton.classList.toggle("navBarExpand");
+  iMenuButton.parentElement.classList.toggle("navBarExpand");
+}
+function navebarSubEntryExpand(iEntry) {
+  iMenuButton.classList.toggle("navBarExpand");
+  iMenuButton.parentElement.classList.toggle("navBarExpand");
+}
+
+
 function createNavigationBar(iFetchJson) {
   fetch(iFetchJson)
     .then((response) => {
@@ -42,60 +80,28 @@ function createNavigationBar(iFetchJson) {
       var wInnerHtml = "";
 
       if (null != data.siteName) {
-
-        var wTemp = "";
-        if (null != data.icon) {
-          wTemp = "<img src='" + data.icon + "' class='class_navbar_icon_img'></img>";
-        }
-        wTemp = "<div class='class_navbar_icon_container'>" + wTemp + "</div>";
-        wTemp += "<div class='class_navbar_label'>" + data.siteName + "</div>";
-        if (null != data.link) {
-          wTemp = "<a href='" + data.link + "' class='class_navbar_link'>" + wTemp + "</a>";
-        }
-        wInnerHtml += "<div class='class_navbar_HomePage'>" + wTemp + "</div>";
+        wInnerHtml += "<div class='class_navbar_HomePage'>" + generateEntryString(data) + "</div>";
       }
       if (null != data.entries) {
         var wEntriesStr = "";
         for (var wi = 0; wi < data.entries.length; ++wi) {
-          var wEntry = data.entries[wi];
-          if (null != wEntry.siteName) {
-
-            var wTemp = "";
-            if (null != wEntry.icon) {
-              wTemp = "<img src='" + wEntry.icon + "' class='class_navbar_icon_img'></img>";
-            }
-            wTemp = "<div class='class_navbar_icon_container'>" + wTemp + "</div>";
-            wTemp += "<div class='class_navbar_label' class='class_navbar_link'>" + wEntry.siteName + "</div>";
-            if (null != wEntry.link) {
-              wTemp = "<a href='" + wEntry.link + "'>" + wTemp + "</a>";
-            }
-            else if (null != wEntry.sub_entries) {
-              for (var wj = 0; wj < wEntry.sub_entries.length; ++wj) {
-                var wSubEntry = wEntry.sub_entries[wj];
-                if (null != wSubEntry.siteName) {
-
-                  var wSubTemp = "";
-                  if (null != wSubEntry.icon) {
-                    wSubTemp = "<img src='" + wSubEntry.icon + "' class='class_navbar_icon_img'></img>";
-                  }
-                  wSubTemp = "<div class='class_navbar_icon_container'>" + wSubTemp + "</div>";
-                  wSubTemp += "<div class='class_navbar_label'>" + wSubEntry.siteName + "</div>";
-                  if (null != wSubEntry.link) {
-                    wSubTemp = "<a href='" + wSubEntry.link + "' class='class_navbar_link'>" + wSubTemp + "</a>";
-                  }
-                  wTemp += "<div class='class_navbar_subentry'>" + wSubTemp + "</div>"
-                }
-              }
-            }
-            wEntriesStr += "<div class='class_navbar_entry'>" + wTemp + "</div>";
-          }
+          wEntriesStr += "<div class='class_navbar_entry'>" + generateEntryString(data.entries[wi]) + "</div>";
         }
+
         if ("" != wEntriesStr) {
-          wInnerHtml += "<div class='class_navbar_entries'>" + wEntriesStr + "</div>";
+
+          var wMenuIcon = '<div class="class_navbar_MenuIcon" onclick="navebarExpand(this)">';
+          wMenuIcon += '<div class="class_navbar_MenuIcon_bar1"></div>';
+          wMenuIcon += '<div class="class_navbar_MenuIcon_bar2"></div>';
+          wMenuIcon += '<div class="class_navbar_MenuIcon_bar3"></div>';
+          wMenuIcon += '</div>';
+
+          wInnerHtml +="<div class='class_navbar_entries'>" +  wMenuIcon + wEntriesStr + "</div>";
         }
       }
 
       if ("" != wInnerHtml) {
+
         var wNavBar = "<div class='class_navbar'>" + wInnerHtml + "</div>";
         document.body.innerHTML = "<div class='class_navbar_gap'>' + '</div>" +  document.body.innerHTML + wNavBar;
       }
@@ -105,7 +111,44 @@ function createNavigationBar(iFetchJson) {
     })
 }
 
-function loadSiteBlock(iElementId, iFetchJson) {
+function genBlockString(iJson) {
+  var wTemp = "";
+  if (null != iJson.title) wTemp += "<h2>" + iJson.title + "</h2>";
+  if (null != iJson.date) wTemp += "<p>" + iJson.date + "</p>";
+  if (null != iJson.body) {
+    wTemp += "<div class='class_site_block_body'>";
+    for (var wj = 0; wj < iJson.body.length; ++wj) {
+      wTemp += iJson.body[wj];
+    }
+    wTemp += "</div>";
+  }
+
+  if (null != iJson.caption) {
+    if ("video" == iJson.caption.type) {
+      if (null != iJson.caption.videoId) {
+        var wVideoId = iJson.caption.videoId
+        var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/'
+        wDOMString += wVideoId;
+        wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        wTemp += wDOMString;
+      }
+      else if (null != iJson.caption.playlistId) {
+        var wPlayListId = iJson.caption.playlistId
+        var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/videoseries?list=PL'
+        wDOMString += wPlayListId;
+        wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        wTemp += wDOMString;
+      }
+    }
+  }
+
+  if ("" != wTemp){
+    return "<div class='class_site_block'>" + wTemp + "</div>";
+  }
+  return "";
+}
+
+function loadSiteBlock(iElementId, iFetchJson, iReverse) {
   var wElement = document.getElementById(iElementId);
   if (null != wElement) {
     fetch(iFetchJson)
@@ -116,43 +159,19 @@ function loadSiteBlock(iElementId, iFetchJson) {
         var wCount = data.length;
         if (0 != wCount) {
           var wBlockString = "";
-          for (var wi = wCount - 1; wi >= 0; --wi) {
-            var wBlock = data[wi];
-            var wTemp = "<div class='class_site_block'>";
-            if (null != wBlock.title) wTemp += "<h2>" + wBlock.title + "</h2>";
-            if (null != wBlock.date) wTemp += "<p>" + wBlock.date + "</p>";
-            if (null != wBlock.body) {
-              wTemp += "<div>";
-              for (var wj = 0; wj < wBlock.body.length; ++wj) {
-                wTemp += wBlock.body[wj];
-              }
-              wTemp += "</div>";
-            }
 
-            if (null != wBlock.caption) {
-              if ("video" == wBlock.caption.type) {
-                if (null != wBlock.caption.videoId) {
-                  var wVideoId = wBlock.caption.videoId
-                  var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/'
-                  wDOMString += wVideoId;
-                  wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                  wTemp += wDOMString;
-                }
-                else if (null != wBlock.caption.playlistId) {
-                  var wPlayListId = wBlock.caption.playlistId
-                  var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/videoseries?list=PL'
-                  wDOMString += wPlayListId;
-                  wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                  wTemp += wDOMString;
-                }
-              }
-            }
-
-            wTemp += "</div>";
-            wBlockString += wTemp;
+          if ((null == iReverse) || (false == iReverse)) {
+            for (var wi = 0; wi < wCount; ++wi) {
+              wBlockString += genBlockString(data[wi]);
+            }  
           }
+          else {
+            for (var wi = wCount - 1; wi >= 0; --wi) {
+              wBlockString += genBlockString(data[wi]);
+            }  
+          }
+
           wElement.innerHTML += wBlockString;
-          resizeYTIFrame();
         }
       })
       .catch((err) => {

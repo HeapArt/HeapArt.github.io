@@ -5,13 +5,13 @@ body {
   text-align: center;
   background-color: black;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .class_Banner , .class_Footer{
   width: 100%;
-  height: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 40px;
   margin: auto;
   text-align: center;
   vertical-align: middle;
@@ -28,14 +28,14 @@ body {
 
 .class_Footer
 {
-  height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .class_Banner h1{
   max-width: 500px;
-  width: 80%;
+  width: 60%;
+  max-width: calc(100% - 120px);
   padding: 20px;
   margin: auto;
   color: black;

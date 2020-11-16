@@ -1,16 +1,13 @@
 [
   {
-    "title" : "Checkout My Latest Origami Tutorials"
+    "title" : "Welcome To Heap Art"
     ,"body" : [
-      "<p>These origami tutorials are from my YouTube Channel <a href='https://www.youtube.com/c/heapart'>Heap Art</a>. Check it out when you have a chance</p>",
-      "<p>To Subscribe click <a href='https://www.youtube.com/c/heapart?sub_confirmation=1'>here</a></p>",
+      "<p>This is the hub of my creations.</p>",
+      "<p>Here you'll find updates from my YouTube Channel and my Software projects.</p>",
+      "<p>If You would like to stay up to date on everything happening here on Heap Art: Remember to Subscribe to my email list. At the moment I don't have anything setup. Simply email me at Heap.Art.Contact@gmail.com.</p>",
       "<p>Thanks!</p>",
       "<p>Wilson Lee @HeapArt</p>"
     ]
-    ,"caption" : {
-      "type" : "video",
-      "videoId" : "WLN3jdOt-yA"
-    }
   },
   {
     "title" : "Checkout My Latest Origami Tutorials"
@@ -24,15 +21,5 @@
       "type" : "video",
       "playlistId" : "3Ct47F8enQEby1s0hKI3QwVMQBSC20_r"
     }
-  },
-  {
-    "title" : "Welcome To Heap Art"
-    ,"date" : "2020-11-13"
-    ,"body" : [
-      "<p>This page is still under work. I'll announce it once it is ready for its grand Openning.</p>",
-      "<p>For the Time Being, Check My Social Media Pages</p>",
-      "<p>Thanks!</p>",
-      "<p>Wilson Lee @HeapArt</p>"
-    ]
   }
 ]
