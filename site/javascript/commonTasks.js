@@ -49,10 +49,10 @@ function generateEntryString(iJson) {
     }
     
     wTemp = "<div class='class_navbar_label_wrapper'>" + wTemp + "</div>";
-    
+
     if (null != iJson.sub_entries) {
       for (var wj = 0; wj < iJson.sub_entries.length; ++wj) {
-        wTemp += "<div class='class_navbar_subentry'>" + generateEntryString(iJson.sub_entries[wj]) + "</div>";
+        wTemp += "<div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' >" + generateEntryString(iJson.sub_entries[wj]) + "</div>";
       }   
     }
   }
@@ -65,8 +65,7 @@ function navebarExpand(iMenuButton) {
   iMenuButton.parentElement.classList.toggle("navBarExpand");
 }
 function navebarSubEntryExpand(iEntry) {
-  iMenuButton.classList.toggle("navBarExpand");
-  iMenuButton.parentElement.classList.toggle("navBarExpand");
+  iEntry.classList.toggle("class_navbar_subentry_expand");
 }
 
 
@@ -84,7 +83,7 @@ function createNavigationBar(iFetchJson) {
       if (null != data.entries) {
         var wEntriesStr = "";
         for (var wi = 0; wi < data.entries.length; ++wi) {
-          wEntriesStr += "<div class='class_navbar_entry'>" + generateEntryString(data.entries[wi]) + "</div>";
+          wEntriesStr += "<div class='class_navbar_entry' onclick='navebarSubEntryExpand(this)'>" + generateEntryString(data.entries[wi]) + "</div>";
         }
 
         if ("" != wEntriesStr) {

@@ -118,10 +118,10 @@
   background-color: lightblue;
 }
 
-.class_navbar_entry:hover .class_navbar_subentry {
+.class_navbar_entry:hover .class_navbar_subentry , .class_navbar_subentry_expand .class_navbar_subentry {
   visibility: visible;
-
 }
+
 
 @media (min-width: 1020px) {
 
@@ -168,7 +168,7 @@
     height: 44px;
   }
   
-  .navBarExpand .class_navbar_entry:hover {
+  .navBarExpand .class_navbar_entry:hover , .navBarExpand .class_navbar_subentry_expand {
     height: auto;
   }
 
