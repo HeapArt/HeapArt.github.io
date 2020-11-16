@@ -44,11 +44,12 @@ function generateEntryString(iJson) {
     }
     wTemp = "<div class='class_navbar_icon_container'>" + wTemp + "</div>";
     wTemp += "<div class='class_navbar_label'>" + iJson.siteName + "</div>";
+    wTemp = "<div class='class_navbar_label_wrapper'>" + wTemp + "</div>";
+    
     if (null != iJson.link) {
       wTemp = "<a href='" + iJson.link + "' class='class_navbar_link'>" + wTemp + "</a>";
     }
     
-    wTemp = "<div class='class_navbar_label_wrapper'>" + wTemp + "</div>";
 
     if (null != iJson.sub_entries) {
       for (var wj = 0; wj < iJson.sub_entries.length; ++wj) {
