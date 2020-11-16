@@ -47,9 +47,8 @@ function generateEntryString(iJson) {
     if (null != iJson.link) {
       wTemp = "<a href='" + iJson.link + "' class='class_navbar_link'>" + wTemp + "</a>";
     }
-    else {
-      wTemp = "<div class='class_navbar_label_wrapper'>" + wTemp + "</div>";
-    }
+    
+    wTemp = "<div class='class_navbar_label_wrapper'>" + wTemp + "</div>";
     
     if (null != iJson.sub_entries) {
       for (var wj = 0; wj < iJson.sub_entries.length; ++wj) {
