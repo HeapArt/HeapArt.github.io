@@ -1,13 +1,38 @@
 // Global variables
-function blockDefinition(iDOMViewPoint, iHTMLString) {
-  return {
-    DOM : iDOMViewPoint,
-    HTMLString : iHTMLString
+const gClass_YouTubePlayer = "class_YouTubePlayer";
+const gClass_RandomYTVideo = "class_randomYTVideo"; 
+const gClass_site_block = "class_site_block";
+
+var gRandomSeed = Math.random();
+function seededRandom(iMax, iMin) {
+
+    gRandomSeed = (gRandomSeed * 9301 + 49297) % 233280;
+    var wRandom = gRandomSeed / 233280;
+ 
+    return iMin + wRandom * (iMax - iMin);
+}
+
+const gVideoListJsonPath = "/site/database/HeapArtVideoData.json";
+var gVideoList =null;
+function loadVideoList(iFunction){
+  if (null == gVideoList) {
+    fetch(gVideoListJsonPath)
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        gVideoList = data;
+        if (null != iFunction) iFunction(data);
+        fillRandomYTVideoPlayers(data);
+      })
+      .catch((err) => {
+        // Do something for an error here
+      })
+  }
+  else {
+    if (null != iFunction) iFunction(gVideoList);
   }
 }
-var gBlockBank = new Array();
-
-const gClass_site_block = "class_site_block";
 
 // Load Function
 window.onload = (event) => {
@@ -49,20 +74,6 @@ window.onload = (event) => {
 // Iteration function
 function iteration() {
 
-  /*
-  if (0 != gBlockBank.length) {
-    for(var wi = 0; wi < gBlockBank.length; ++wi) {
-      var wElementBlock = gBlockBank[wi];
-      if ("" == wElementBlock.DOM.innerHTML){
-        if( true == isInViewport(wElementBlock.DOM)) {
-          wElementBlock.DOM.innerHTML = wElementBlock.HTMLString;
-          break;
-        }
-      }
-    }
-  }
-  */
-
   var wBlockList = document.getElementsByClassName(gClass_site_block);
   if (null != wBlockList) {
     for(var wi = 0; wi < wBlockList.length; ++wi) {
@@ -78,20 +89,76 @@ function iteration() {
   }
 }
 
+// Standard Functions
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return ( rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.left <= (window.innerWidth || document.documentElement.clientWidth));
 }
 
+function getVideoWithTags(iTagList, iVideoList) {
+  var wNewVideoList = new Array();
+
+  for (var wi =0; wi < iVideoList.length; ++wi) {
+    var wTagList = iVideoList[wi]["Video Tags"];
+    if (null != wTagList) {
+      var wMatch = true;
+      for (var wj = 0; wj < iTagList.length; ++wj) {
+        var wFound = false;
+        for (var wk = 0; wk < wTagList.length; ++wk) {
+          if (iTagList[wj] == wTagList[wk]) {
+            wFound = true;
+            break;
+          }
+        }
+        if (false == wFound){
+          wMatch = false;
+          break;
+        }
+      }
+      if (true == wMatch) {
+        wNewVideoList.push(iVideoList[wi]);
+      }
+    }
+  }
+  return wNewVideoList;
+} 
+
+function fillRandomYTVideoPlayers(iVideoList)
+{
+  var wYTIFrame = document.getElementsByClassName(gClass_RandomYTVideo);
+  for (var wi = 0; wi < wYTIFrame.length; ++wi) {
+    var wDom = wYTIFrame[wi];
+    var wList = iVideoList;
+    var wTags = wDom.getAttribute("videoTags");
+    if (null != wTags) {
+      wList = getVideoWithTags(wTags.split(","),iVideoList);
+    }
+    var wSeed = wDom.getAttribute("randomSeed");
+    if (null != wSeed) {
+      if ("date" == wSeed) {
+        gRandomSeed = getDayCount();
+      }
+    }
+    var wRandomVideoIndex = Math.floor(seededRandom(wList.length,0));
+
+    wYTIFrame[wi].src = "https://www.youtube.com/embed/" + wList[wRandomVideoIndex]["Video"];
+  }
+
+}
 
 function resizeYTIFrame() {
-  var wYTIFrame = document.getElementsByClassName("class_YouTubePlayer");
+  var wYTIFrame = document.getElementsByClassName(gClass_YouTubePlayer);
   for (var wi = 0; wi < wYTIFrame.length; ++wi) {
     wYTIFrame[wi].style.height = wYTIFrame[wi].offsetWidth * (9 / 16) + "px";
   }
 }
 
+function getDayCount() {
+  var d = new Date();
+  var n = d.getTime(); //milli seconds
+  return Math.floor(n/(1000*3600*24));
+}
 
 // NavBar Generation
 function generateEntryString(iJson) {
@@ -191,16 +258,29 @@ function genBlockString(iJson) {
     if ("video" == iJson.caption.type) {
       if (null != iJson.caption.videoId) {
         var wVideoId = iJson.caption.videoId
-        var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/'
+        var wDOMString = '<iframe class="' + gClass_YouTubePlayer + '" src="https://www.youtube.com/embed/'
         wDOMString += wVideoId;
         wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         wTemp += wDOMString;
       }
       else if (null != iJson.caption.playlistId) {
         var wPlayListId = iJson.caption.playlistId
-        var wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/videoseries?list=PL'
+        var wDOMString = '<iframe class="' + gClass_YouTubePlayer + '" src="https://www.youtube.com/embed/videoseries?list=PL'
         wDOMString += wPlayListId;
         wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        wTemp += wDOMString;
+      }
+      else if (null != iJson.caption.randomVideoId) {
+
+        var wDOMString = '<iframe class="' + gClass_YouTubePlayer + " " + gClass_RandomYTVideo + '" ';
+        
+        if (null != iJson.caption.randomSeed) {
+          wDOMString += ' randomSeed="'+ iJson.caption.randomSeed +'" ';
+        }
+
+        wDOMString += 'videoTags="' + iJson.caption.randomVideoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        
+        loadVideoList();
         wTemp += wDOMString;
       }
     }
@@ -235,7 +315,6 @@ function loadSiteBlock(iElementId, iFetchJson, iReverse) {
               if (""!= wBlockString) {
                 var wNewDiv = document.createElement("DIV");
                 wNewDiv.classList.add(gClass_site_block);
-                gBlockBank.push(blockDefinition(wNewDiv, wBlockString));
                 wNewDiv.innerHTML = wBlockString;
                 wNewDiv.style.display = "block";
                 wNewDiv.style.visibility = "hidden";
@@ -249,7 +328,6 @@ function loadSiteBlock(iElementId, iFetchJson, iReverse) {
               if (""!= wBlockString) {
                 var wNewDiv = document.createElement("DIV");
                 wNewDiv.classList.add(gClass_site_block);
-                gBlockBank.push(blockDefinition(wNewDiv, wBlockString));
                 wNewDiv.innerHTML = wBlockString;
                 wNewDiv.style.display = "block";
                 wNewDiv.style.visibility = "hidden";

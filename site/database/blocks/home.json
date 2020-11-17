@@ -10,6 +10,12 @@
     ]
   },
   {
+    "title" : "See What's New!"
+    ,"body" : [
+      "<p>Catch the latest news on Heap Art by reading our <a href='/site/pages/newsfeed/index.html'>News Feed</a>!</p>"
+    ]
+  },
+  {
     "title" : "Checkout My Latest Origami Tutorials"
     ,"body" : [
       "<p>These origami tutorials are from my YouTube Channel <a href='https://www.youtube.com/c/heapart'>Heap Art</a>. Check it out when you have a chance</p>",
@@ -20,6 +26,28 @@
     ,"caption" : {
       "type" : "video",
       "playlistId" : "3Ct47F8enQEby1s0hKI3QwVMQBSC20_r"
+    }
+  },
+  {
+    "title" : "Random Origami of the Day"
+    ,"body" : [
+      "<p>Pratice origami by folding whatever is in the video below. It changes Everyday!</p>"
+    ]
+    ,"caption" : {
+      "type" : "video",
+      "randomVideoId" : "origami",
+      "randomSeed" : "date"
+    }
+  },
+  {
+    "title" : "Random Paper Airplane of the Day"
+    ,"body" : [
+      "<p>This is today's Exotic Paper Airplane. It is randomly selected from our library. It's something different everyday. Have you seen this one before?</p>"
+    ]
+    ,"caption" : {
+      "type" : "video",
+      "randomVideoId" : "paperairplane",
+      "randomSeed" : "date"
     }
   }
 ]

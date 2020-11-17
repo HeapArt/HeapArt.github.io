@@ -38,5 +38,24 @@
       "type" : "image",
       "src" : "https://lh3.googleusercontent.com/pw/ACtC-3eZIhPaOUY9sjzBvhKoisx_ZrC4Ji2hNVFbOiulkykDE66GGfGjWlJt_a1vKfaRI7-fmsMwzqyFxHQLeAlwHKmtG3W7gKSdCSyrHKuv0QaOWimBFzVk0CJGgqGBfXPpAaSS1_UpZ7-OaeEGZDS8QnaM=s480-no?authuser=0"
     }
+  },
+  {
+    "title" : "New Site Feature! Random Video of the Day"
+    ,"date" : "2020-11-17"
+    ,"body" : [
+      "<p>",
+      "I added a new section to the home page to display a random Origami Tutorial or one of Our Exotic Paper Airplane Tutorials.",
+      "</p>",
+      "<p>",
+      "Come back every day to find something new. There is over 140 tutorials on my YouTube Channel. It's bound to show You something fresh every day!",
+      "</p>",
+      "<p>Enjoy!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ],
+    "caption" : {
+      "type" : "video",
+      "randomVideoId" : "tutorial",
+      "randomSeed" : "date"
+    }
   }
 ]
