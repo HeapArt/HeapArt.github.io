@@ -227,8 +227,18 @@
   padding: 10px;
 }
 
+.class_site_block_body div iframe{
+ margin: 10px;
+}
+
 .class_YouTubePlayer {
   width: calc(100% - 10px);
   max-width: 600px;
+  margin: auto;
+}
+
+.class_block_image {
+  max-width: calc(100% - 10px);
+  max-height: 400px;
   margin: auto;
 }

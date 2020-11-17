@@ -1,0 +1,45 @@
+[
+  {
+    "title" : "Help Support My Channel",
+    "body" : [
+      "<p> Help me out buy buying the selected Amazon Products below. It does not cost you anymore money and I'll receive a commission for refereing you to the product.</p>",
+      "<p>Thanks!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ]
+  },
+  {
+    "title" : "Origami Paper I use",
+    "body" : [
+      "<div style='text-align:center' >",
+      "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\"",
+      "src=\"//rcm-na.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=heapart0e-20&m=amazon&o=15&p=8&l=as1&IS1=1&asins=B00BDOI95K&linkId=3a363606c7dd1d20a64a4bfeccae9e57&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr\">",
+      "</iframe>",
+      "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\"",
+      "src=\"//rcm-na.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=heapart0e-20&m=amazon&o=15&p=8&l=as1&IS1=1&asins=0804849234&linkId=2ff1d71c4466d0f7c301825c25ec3d36&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr\">",
+      "</iframe>",
+      "</div>"
+    ]
+  },
+  {
+    "title" : "Origami Books I own",
+    "body" : [
+      "<div style='text-align:center' >",
+      "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\"",
+      "src=\"//rcm-na.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=heapart0e-20&m=amazon&o=15&p=8&l=as1&IS1=1&asins=0870402536&linkId=c38691fe2a454dc0543aedc33493bb3b&bc1=ffffff&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr\">",
+      "</iframe>",
+      "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\"",
+      "src=\"//rcm-na.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=heapart0e-20&m=amazon&o=15&p=8&l=as1&IS1=1&asins=0312156189&linkId=89cb8e8fc3efe6346cefb8422ffa683a&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr\">",
+      "</iframe>",
+      "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\"",
+      "src=\"//rcm-na.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=heapart0e-20&m=amazon&o=15&p=8&l=as1&IS1=1&asins=0312882289&linkId=8552094f819a2446df4da02fe56a86a9&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr\">",
+      "</iframe>",
+      "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\"",
+      "src=\"//rcm-na.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=heapart0e-20&m=amazon&o=15&p=8&l=as1&IS1=1&asins=B01K95VLI0&linkId=e335a6a1a4046110741dbfd973645bec&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr\">",
+      "</iframe>",
+      "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\"",
+      "src=\"//rcm-na.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=heapart0e-20&m=amazon&o=15&p=8&l=as1&IS1=1&asins=B01K3JQAZG&linkId=16589719a5222b101fe356b1b1e1a61a&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr\">",
+      "</iframe>",
+      "</div>"
+    ]
+  }
+]

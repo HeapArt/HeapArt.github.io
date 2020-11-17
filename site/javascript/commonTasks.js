@@ -139,6 +139,12 @@ function genBlockString(iJson) {
         wTemp += wDOMString;
       }
     }
+    else if ("image" == iJson.caption.type) {
+      if (null != iJson.caption.src) {
+        var wDOMString = '<img class="class_block_image" src="'+ iJson.caption.src + '"/>';
+        wTemp += wDOMString;
+      }    
+    }
   }
 
   if ("" != wTemp){
