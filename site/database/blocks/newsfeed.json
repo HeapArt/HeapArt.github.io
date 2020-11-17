@@ -16,5 +16,28 @@
       "type" : "image",
       "src" : "/site/images/logo/logo-wlee0515.png"
     }
+  },
+  {
+    "title" : "My Latest YouTube Acheivements"
+    ,"date" : "2020-11-17"
+    ,"body" : [
+      "<p>",
+      "I'am truly blessed with my YouTube channel. I've posted my first video on May 5, 2020. Six months later I posted 150 videos, received 200,000 views and was gifted with 1800 subscribers",
+      "</p>",
+      "<p>",
+      "Thank-you everyone for supporting my channel. You've helped me open a new chapter in my life.",
+      "</p>",
+      "<p>",
+      "If you haven't yet, remember to subscribe to my YouTube Channel <a href='https://www.youtube.com/c/heapart?sub_confirmation=1'>@HeapArt</a>.",
+      "</p>",
+      "<p>Once Again, Thank-you for Everything.</p>",
+      "<p>Sincerely</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ],
+    "caption" : {
+      "type" : "image",
+      "src" : "https://lh3.googleusercontent.com/pw/ACtC-3eZIhPaOUY9sjzBvhKoisx_ZrC4Ji2hNVFbOiulkykDE66GGfGjWlJt_a1vKfaRI7-fmsMwzqyFxHQLeAlwHKmtG3W7gKSdCSyrHKuv0QaOWimBFzVk0CJGgqGBfXPpAaSS1_UpZ7-OaeEGZDS8QnaM=s480-no?authuser=0"
+    }
+
   }
 ]
