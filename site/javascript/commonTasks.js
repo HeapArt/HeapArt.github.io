@@ -1,4 +1,15 @@
+// Global variables
+function blockDefinition(iDOMViewPoint, iHTMLString) {
+  return {
+    DOM : iDOMViewPoint,
+    HTMLString : iHTMLString
+  }
+}
+var gBlockBank = new Array();
 
+const gClass_site_block = "class_site_block";
+
+// Load Function
 window.onload = (event) => {
 
   // External Style Links
@@ -13,18 +24,66 @@ window.onload = (event) => {
   // Fill in Social media Links
   var wSocialLinkDiv = document.getElementsByClassName("class_social_links_bar");
   for (var wi = 0; wi < wSocialLinkDiv.length; ++wi) {
-    //  wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fa fa-linkedin class_social_link"></a>'
-    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart" class="class_social_link"><img src="/site/images/logo/logo-youtube.png"/></a>'
-    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.instagram.com/wlee0515/" class="class_social_link"><img src="/site/images/logo/logo-instagram.png"/></a>'
-    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.tiktok.com/@heapart" class="class_social_link"><img src="/site/images/logo/logo-tiktok.png"/></a>'
+    wSocialLinkDiv[wi].style.visibility = "hidden";
+    //  wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart?sub_confirmation=1" class="fa fa-linkedin class_social_link"></a>';
+    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.youtube.com/c/heapart" class="class_social_link"><img src="/site/images/logo/logo-youtube.png"/></a>';
+    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.instagram.com/wlee0515/" class="class_social_link"><img src="/site/images/logo/logo-instagram.png"/></a>';
+    wSocialLinkDiv[wi].innerHTML += '<a href="https://www.tiktok.com/@heapart" class="class_social_link"><img src="/site/images/logo/logo-tiktok.png"/></a>';
   }
+  
+  setTimeout(function() {
+    var wSocialLinkDiv = document.getElementsByClassName("class_social_links_bar");
+    for (var wi = 0; wi < wSocialLinkDiv.length; ++wi) {
+      wSocialLinkDiv[wi].style.visibility = "visible";
+    }
+  }, 200);
 
   // Add Event listener to resize YouTube Iframe
   window.addEventListener('resize', resizeYTIFrame);
   setTimeout(resizeYTIFrame, 500);
   console.log('page is fully loaded');
 
+  setInterval(iteration, 500);
 };
+
+// Iteration function
+function iteration() {
+
+  /*
+  if (0 != gBlockBank.length) {
+    for(var wi = 0; wi < gBlockBank.length; ++wi) {
+      var wElementBlock = gBlockBank[wi];
+      if ("" == wElementBlock.DOM.innerHTML){
+        if( true == isInViewport(wElementBlock.DOM)) {
+          wElementBlock.DOM.innerHTML = wElementBlock.HTMLString;
+          break;
+        }
+      }
+    }
+  }
+  */
+
+  var wBlockList = document.getElementsByClassName(gClass_site_block);
+  if (null != wBlockList) {
+    for(var wi = 0; wi < wBlockList.length; ++wi) {
+      var wElementBlock = wBlockList[wi];
+      if ("visible" != wElementBlock.style.visibility)
+      {
+        if( true == isInViewport(wElementBlock)) {
+          wElementBlock.style.visibility="visible";
+          break;
+        }  
+      }
+    }
+  }
+}
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return ( rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth));
+}
+
 
 function resizeYTIFrame() {
   var wYTIFrame = document.getElementsByClassName("class_YouTubePlayer");
@@ -33,6 +92,8 @@ function resizeYTIFrame() {
   }
 }
 
+
+// NavBar Generation
 function generateEntryString(iJson) {
 
   var wTemp = "";
@@ -65,6 +126,7 @@ function navebarExpand(iMenuButton) {
   iMenuButton.classList.toggle("navBarExpand");
   iMenuButton.parentElement.classList.toggle("navBarExpand");
 }
+
 function navebarSubEntryExpand(iEntry) {
   iEntry.classList.toggle("class_navbar_subentry_expand");
 }
@@ -110,6 +172,9 @@ function createNavigationBar(iFetchJson) {
     })
 }
 
+
+// Block Generation
+
 function genBlockString(iJson) {
   var wTemp = "";
   if (null != iJson.title) wTemp += "<h2>" + iJson.title + "</h2>";
@@ -148,7 +213,7 @@ function genBlockString(iJson) {
   }
 
   if ("" != wTemp){
-    return "<div class='class_site_block'>" + wTemp + "</div>";
+    return wTemp;
   }
   return "";
 }
@@ -163,20 +228,35 @@ function loadSiteBlock(iElementId, iFetchJson, iReverse) {
       .then((data) => {
         var wCount = data.length;
         if (0 != wCount) {
-          var wBlockString = "";
 
           if ((null == iReverse) || (false == iReverse)) {
             for (var wi = 0; wi < wCount; ++wi) {
-              wBlockString += genBlockString(data[wi]);
+              var wBlockString = genBlockString(data[wi]);
+              if (""!= wBlockString) {
+                var wNewDiv = document.createElement("DIV");
+                wNewDiv.classList.add(gClass_site_block);
+                gBlockBank.push(blockDefinition(wNewDiv, wBlockString));
+                wNewDiv.innerHTML = wBlockString;
+                wNewDiv.style.display = "block";
+                wNewDiv.style.visibility = "hidden";
+                wElement.appendChild(wNewDiv);  
+              }
             }  
           }
           else {
             for (var wi = wCount - 1; wi >= 0; --wi) {
-              wBlockString += genBlockString(data[wi]);
+              var wBlockString = genBlockString(data[wi]);
+              if (""!= wBlockString) {
+                var wNewDiv = document.createElement("DIV");
+                wNewDiv.classList.add(gClass_site_block);
+                gBlockBank.push(blockDefinition(wNewDiv, wBlockString));
+                wNewDiv.innerHTML = wBlockString;
+                wNewDiv.style.display = "block";
+                wNewDiv.style.visibility = "hidden";
+                wElement.appendChild(wNewDiv);  
+              }
             }  
           }
-
-          wElement.innerHTML += wBlockString;
         }
       })
       .catch((err) => {
