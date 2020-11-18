@@ -47,6 +47,10 @@
           "siteName": "Tik Tok",
           "link": "https://www.tiktok.com/@heapart",
           "icon": "/site/images/logo/logo-tiktok.png"
+        },  
+        {
+          "siteName": "Email List",
+          "link": "https://forms.gle/hZbP4jcR9LREVvvV7"
         }  
       ]
     },
