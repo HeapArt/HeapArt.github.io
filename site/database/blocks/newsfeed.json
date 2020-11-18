@@ -70,6 +70,10 @@
       "</p>",
       "<p>Thanks and have a great day!</p>",
       "<p>Wilson Lee @HeapArt</p>"
-    ]
+    ],
+    "caption" : {
+      "type" : "image",
+      "src" : "/site/images/logo/logo-email-black-small.png"
+    }
   }
 ]
