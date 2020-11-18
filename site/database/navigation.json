@@ -11,7 +11,7 @@
     {
       "siteName": "News Feed",
       "link": "/site/pages/newsfeed/index.html",
-      "icon": "/site/images/logo/logo-blog.png"
+      "icon": "/site/images/logo/logo-rss-white-small.png"
     },
     {
       "siteName": "Dev Projects",
@@ -50,19 +50,26 @@
         },  
         {
           "siteName": "Email List",
-          "link": "https://forms.gle/hZbP4jcR9LREVvvV7"
+          "link": "https://forms.gle/hZbP4jcR9LREVvvV7",
+          "icon": "/site/images/logo/logo-email-black-small.png"
         }  
       ]
     },
     {
-      "siteName": "Merchandise",
-      "link": "https://teespring.com/stores/heapart",
-      "icon": "/site/images/logo/logo-merch-white.png"
-    },
-    {
-      "siteName": "Supplies",
-      "link": "/site/pages/supplies/index.html",
-      "icon": "/site/images/logo/logo-amazon.png"
+      "siteName": "Shopping",
+      "icon": "/site/images/logo/logo-shopping-white-small.png",
+      "sub_entries" : [
+        {
+          "siteName": "Merchandise",
+          "link": "https://teespring.com/stores/heapart",
+          "icon": "/site/images/logo/logo-merch-black.png"
+        },
+        {
+          "siteName": "Supplies",
+          "link": "/site/pages/supplies/index.html",
+          "icon": "/site/images/logo/logo-amazon.png"
+        }
+      ]
     }
 
   ]
