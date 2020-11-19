@@ -1,0 +1,38 @@
+{
+  "js_list" : [
+    "/site/javascript/commonTasks.js"
+  ],
+  "css_list" : [
+    "/site/css/theme.css",
+    "/site/css/commonTask.css"
+  ],
+  "tag_map" : [
+    {
+      "tag":"site_title_prefix",
+      "paremeter" : "site_title_prefix"
+    },
+    {
+      "tag":"site_title",
+      "parameter" : "site_title"
+    },
+    {
+      "tag" : "block_file",
+      "parameter" : "block_file",
+      "method" : "parse_block"
+    },
+    {
+      "tag" : "navigation_bar",
+      "parameter" : "navigation_bar_file",
+      "method" : "parse_navbar"
+    },
+    {
+      "tag":"google_Adsense",
+      "file" : "site/database/googleAdsenseTag.txt"
+    },
+    {
+      "tag" : "social_links_bar",
+      "parameter" : "socialmedialinks",
+      "method" : "social_links_bar"
+    }
+  ]
+}

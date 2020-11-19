@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+.class_navbar_gap {
+  width: 100vw;
+  height: 70px;
+}
+
 .class_Banner , .class_Footer{
   width: 100%;
   padding-top: 70px;
@@ -32,7 +37,7 @@ body {
   padding-bottom: 10px;
 }
 
-.class_Banner h1{
+.class_Banner .class_BannerTitle {
   max-width: 500px;
   width: 60%;
   max-width: 700px;

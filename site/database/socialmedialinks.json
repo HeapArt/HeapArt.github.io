@@ -1,0 +1,20 @@
+{
+  "height" : "50px",
+  "links" : [
+    {
+      "name":"YouTube",
+      "link":"https://www.youtube.com/c/heapart",
+      "icon" : "/site/images/logo/logo-youtube.png"
+    },
+    {
+      "name":"Instagram",
+      "link":"https://www.instagram.com/wlee0515/",
+      "icon" : "/site/images/logo/logo-instagram.png"
+    },
+    {
+      "name":"Tik Tok",
+      "link":"https://www.tiktok.com/@heapart",
+      "icon" : "/site/images/logo/logo-tiktok.png"
+    }
+  ]
+}

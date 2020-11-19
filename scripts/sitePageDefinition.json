@@ -1,0 +1,31 @@
+{
+  "siteGenerationFile" : "scripts/siteGenerationDefinition.json",
+  "template" : "scripts/templates/template_1.html",
+  "navigation_bar_file" : "site/database/navigation.json",
+  "socialmedialinks" : "site/database/socialmedialinks.json",
+  "site_title_prefix" : "Heap Art -",
+  "pages" : [
+    {
+      "site_title_prefix" : "",
+      "site_title" : "Heap Art",
+      "block_file" : "site/database/blocks/home.json",
+      "output_path" : "index.html"
+    },
+    {
+      "site_title" : "About Me",
+      "block_file" : "site/database/blocks/aboutme.json",
+      "output_path" : "site/pages/aboutme/index.html"
+    },
+    {
+      "site_title" : "News Letter",
+      "block_file" : "site/database/blocks/newsfeed.json",
+      "block_direction" : "reverse",
+      "output_path" : "site/pages/newsfeed/index.html"
+    },
+    {
+      "site_title" : "Supplies",
+      "block_file" : "site/database/blocks/supplies-amazon_ca.json",
+      "output_path" : "site/pages/supplies/index.html"
+    }
+  ]
+}

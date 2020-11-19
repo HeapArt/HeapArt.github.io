@@ -14,16 +14,9 @@
   height: 100%;
 }
 
-.class_navbar_gap, .class_navbar {
+.class_navbar {
   width: 100vw;
   background-color: black;
-}
-
-.class_navbar_gap {
-  height: 70px;
-}
-
-.class_navbar {
   background-color:black;
   color: white;
   position: fixed;
