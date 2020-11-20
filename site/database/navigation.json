@@ -6,7 +6,7 @@
     {
       "comment" : {
         "siteName": "Origami",
-        "icon": "/site/images/logo/logo-code-white.png",
+        "icon": "/site/images/logo/logo-code-white-small.png",
         "sub_entries" : [
           {
             "siteName": "Awsome Origami",
@@ -16,7 +16,7 @@
           {
             "siteName": "Paper Airplanes",
             "link": "https://github.com/wlee0515",
-            "icon": "/site/images/logo/logo-rocket-black-small.png"
+            "icon": "/site/images/logo/logo-rocket-black-small-small.png"
           }
         ]
       }
@@ -24,17 +24,17 @@
     },
     {
       "siteName": "Programming",
-      "icon": "/site/images/logo/logo-code-white.png",
+      "icon": "/site/images/logo/logo-code-white-small.png",
       "sub_entries" : [
         {
           "siteName": "Project Page",
           "link": "https://wlee0515.github.io",
-          "icon": "/site/images/logo/logo-wlee0515.png"
+          "icon": "/site/images/logo/logo-wlee0515-small.png"
         },
         {
           "siteName": "Github",
           "link": "https://github.com/wlee0515",
-          "icon": "/site/images/logo/logo-github-black.png"
+          "icon": "/site/images/logo/logo-github-black-small.png"
         }
       ]
     },
@@ -45,22 +45,22 @@
     },
     {
       "siteName": "Social Media",
-      "icon": "/site/images/logo/logo-network-white.png",
+      "icon": "/site/images/logo/logo-network-white-small.png",
       "sub_entries" : [
         {
           "siteName": "YouTube",
           "link": "https://www.youtube.com/c/heapart",
-          "icon": "/site/images/logo/logo-youtube.png"
+          "icon": "/site/images/logo/logo-youtube-small.png"
         },  
         {
           "siteName": "Instagram",
           "link": "https://www.instagram.com/wlee0515/",
-          "icon": "/site/images/logo/logo-instagram.png"
+          "icon": "/site/images/logo/logo-instagram-small.png"
         },  
         {
           "siteName": "Tik Tok",
           "link": "https://www.tiktok.com/@heapart",
-          "icon": "/site/images/logo/logo-tiktok.png"
+          "icon": "/site/images/logo/logo-tiktok-small.png"
         },  
         {
           "siteName": "Email List",
@@ -76,19 +76,19 @@
         {
           "siteName": "Merchandise",
           "link": "https://teespring.com/stores/heapart",
-          "icon": "/site/images/logo/logo-merch-black.png"
+          "icon": "/site/images/logo/logo-merch-black-small.png"
         },
         {
           "siteName": "Supplies",
           "link": "/site/pages/supplies/index.html",
-          "icon": "/site/images/logo/logo-amazon.png"
+          "icon": "/site/images/logo/logo-amazon-small.png"
         }
       ]
     },
     {
       "siteName": "About Me",
       "link": "/site/pages/aboutme/index.html",
-      "icon": "/site/images/logo/logo-eyeglasses-white.png"
+      "icon": "/site/images/logo/logo-eyeglasses-white-small.png"
     }
 
   ]

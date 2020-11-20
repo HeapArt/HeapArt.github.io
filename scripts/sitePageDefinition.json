@@ -17,7 +17,7 @@
       "output_path" : "site/pages/aboutme/index.html"
     },
     {
-      "site_title" : "News Letter",
+      "site_title" : "News Feed",
       "block_file" : "site/database/blocks/newsfeed.json",
       "block_direction" : "reverse",
       "output_path" : "site/pages/newsfeed/index.html"

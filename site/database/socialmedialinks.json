@@ -4,17 +4,17 @@
     {
       "name":"YouTube",
       "link":"https://www.youtube.com/c/heapart",
-      "icon" : "/site/images/logo/logo-youtube.png"
+      "icon" : "/site/images/logo/logo-youtube-small.png"
     },
     {
       "name":"Instagram",
       "link":"https://www.instagram.com/wlee0515/",
-      "icon" : "/site/images/logo/logo-instagram.png"
+      "icon" : "/site/images/logo/logo-instagram-small.png"
     },
     {
       "name":"Tik Tok",
       "link":"https://www.tiktok.com/@heapart",
-      "icon" : "/site/images/logo/logo-tiktok.png"
+      "icon" : "/site/images/logo/logo-tiktok-small.png"
     }
   ]
 }
