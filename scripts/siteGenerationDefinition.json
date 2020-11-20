@@ -16,6 +16,10 @@
       "parameter" : "site_title"
     },
     {
+      "tag":"background_image",
+      "parameter" : "background_image"
+    },
+    {
       "tag" : "block_file",
       "parameter" : "block_file",
       "method" : "parse_block"

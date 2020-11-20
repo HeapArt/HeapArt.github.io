@@ -4,22 +4,20 @@
   "icon": "/site/images/logo/logo-HeapArt-small.png",
   "entries" : [
     {
-      "comment" : {
-        "siteName": "Origami",
-        "icon": "/site/images/logo/logo-code-white-small.png",
-        "sub_entries" : [
-          {
-            "siteName": "Awsome Origami",
-            "link": "https://wlee0515.github.io",
-            "icon": "/site/images/logo/logo-wlee0515.png"
-          },
-          {
-            "siteName": "Paper Airplanes",
-            "link": "https://github.com/wlee0515",
-            "icon": "/site/images/logo/logo-rocket-black-small-small.png"
-          }
-        ]
-      }
+      "siteName": "Origami",
+      "icon": "/site/images/logo/logo-origami-swan-white-small.png",
+      "sub_entries" : [
+        {
+          "siteName": "Awsome Origami",
+          "link": "https://wlee0515.github.io",
+          "icon": "/site/images/logo/logo-origami-bird-black-small.png"
+        },
+        {
+          "siteName": "Paper Airplanes",
+          "link": "https://github.com/wlee0515",
+          "icon": "/site/images/logo/logo-rocket-black-small.png"
+        }
+      ]
 
     },
     {

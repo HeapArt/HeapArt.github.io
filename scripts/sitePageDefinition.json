@@ -4,28 +4,34 @@
   "navigation_bar_file" : "site/database/navigation.json",
   "socialmedialinks" : "site/database/socialmedialinks.json",
   "site_title_prefix" : "Heap Art -",
+  "background_image" : "/site/images/background/background_001.jpg",
+  
   "pages" : [
     {
       "site_title_prefix" : "",
       "site_title" : "Heap Art",
       "block_file" : "site/database/blocks/home.json",
-      "output_path" : "index.html"
+      "output_path" : "index.html",
+      "background_image" : "/site/images/background/background_001.jpg"
     },
     {
       "site_title" : "About Me",
       "block_file" : "site/database/blocks/aboutme.json",
-      "output_path" : "site/pages/aboutme/index.html"
+      "output_path" : "site/pages/aboutme/index.html",
+      "background_image" : "/site/images/background/background_013.jpg"
     },
     {
       "site_title" : "News Feed",
       "block_file" : "site/database/blocks/newsfeed.json",
       "block_direction" : "reverse",
-      "output_path" : "site/pages/newsfeed/index.html"
+      "output_path" : "site/pages/newsfeed/index.html",
+      "background_image" : "/site/images/background/background_006.jpg"
     },
     {
       "site_title" : "Supplies",
       "block_file" : "site/database/blocks/supplies-amazon_ca.json",
-      "output_path" : "site/pages/supplies/index.html"
+      "output_path" : "site/pages/supplies/index.html",
+      "background_image" : "/site/images/background/background_004.jpg"
     }
   ]
 }
