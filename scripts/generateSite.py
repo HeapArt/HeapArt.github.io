@@ -99,7 +99,7 @@ def generateNavBarEntryString(iEntry):
             for wSubEntry in iEntry["sub_entries"]:
                 wEntryString = generateNavBarEntryString(wSubEntry)
                 if "" != wEntryString:
-                    wTemp += "<div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)'>{0}</div>".format(wEntryString)
+                    wTemp += "<div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'>{0}</div>".format(wEntryString)
 
     return wTemp
 
@@ -115,10 +115,12 @@ def parse_navbar(iParameter, iPageDefinition):
     if "entries" in wNavBar:
         wEntriesStr = ""
 
+        wEntryCount = len(wNavBar["entries"]);
         for wEntry in wNavBar["entries"]:
             wEntryString = generateNavBarEntryString(wEntry)
             if "" != wEntryString:
-                wEntriesStr += "<div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)'>{0}</div>".format(wEntryString)
+                wEntriesStr += "<div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)' style='z-index:{1};'>{0}</div>".format(wEntryString, 100 + wEntryCount)
+            wEntryCount -= 1
 
         wMenuIcon = ""
         if "" != wEntriesStr:

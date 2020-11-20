@@ -109,6 +109,7 @@
 
 .class_navbar_entry .class_navbar_subentry{
   visibility: hidden;
+  position: relative;
 }
 
 .class_navbar_entry:hover {
@@ -123,7 +124,7 @@
   visibility: visible;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 800px) {
 
   .class_navbar_MenuIcon {
     visibility: hidden;
@@ -146,7 +147,7 @@
   }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 800px) {
 
   .class_navbar_entries {
     display: block;
