@@ -88,6 +88,7 @@
   display: inline-block;
   padding: 3px;
   width: 250px;
+  vertical-align: middle;
 }
 
 .class_navbar_HomePage .class_navbar_label_wrapper .class_navbar_icon_container {
