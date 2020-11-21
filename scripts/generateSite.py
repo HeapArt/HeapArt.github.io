@@ -45,8 +45,10 @@ def generatePage(iPageDefinition, iSiteGenerationFile):
     
     js_scrpts = ""
     if "js_list" in iSiteGenerationFile:
-        js_scrpts = ""
         for wFile in iSiteGenerationFile["js_list"]:
+          js_scrpts += '<script src="{0}"></script>'.format(wFile)
+    if "js_list" in iPageDefinition:
+        for wFile in iPageDefinition["js_list"]:
           js_scrpts += '<script src="{0}"></script>'.format(wFile)
     wFileString = wFileString.replace("[%js_list%]", js_scrpts)
     
@@ -54,6 +56,9 @@ def generatePage(iPageDefinition, iSiteGenerationFile):
     css_links = ""
     if "css_list" in iSiteGenerationFile:
         for wFile in iSiteGenerationFile["css_list"]:
+          css_links += '<link rel="stylesheet" href="{0}">'.format(wFile)
+    if "css_list" in iPageDefinition:
+        for wFile in iPageDefinition["css_list"]:
           css_links += '<link rel="stylesheet" href="{0}">'.format(wFile)
     wFileString = wFileString.replace("[%css_list%]", css_links)
 

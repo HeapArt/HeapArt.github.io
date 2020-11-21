@@ -92,12 +92,15 @@ function fillRandomYTVideoPlayers(iVideoList)
       wList = getVideoWithTags(wTags.split(","),iVideoList);
     }
     var wSeed = wDom.getAttribute("randomSeed");
+    var wRandom = Math.random()*wList.length;
     if (null != wSeed) {
       if ("date" == wSeed) {
         gRandomSeed = getDayCount();
       }
+      wRandom = seededRandom(wList.length,0);
     }
-    var wRandomVideoIndex = Math.floor(seededRandom(wList.length,0));
+    
+    var wRandomVideoIndex = Math.floor(wRandom);
 
     wYTIFrame[wi].src = "https://www.youtube.com/embed/" + wList[wRandomVideoIndex]["Video"];
   }

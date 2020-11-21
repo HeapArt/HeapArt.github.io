@@ -32,6 +32,18 @@
       "block_file" : "site/database/blocks/supplies-amazon_ca.json",
       "output_path" : "site/pages/supplies/index.html",
       "background_image" : "/site/images/background/background_004.jpg"
+    },
+    {
+      "site_title" : "Origami Roulette",
+      "block_file" : "site/database/blocks/origami_roulette.json",
+      "output_path" : "site/pages/origamiroulette/index.html",
+      "background_image" : "/site/images/background/background_005.jpg",
+      "js_list" : [
+        "/site/javascript/origamiRoulette.js"
+      ],
+      "css_list" : [
+        "/site/css/origamiRoulette.css"
+      ]
     }
   ]
 }
