@@ -37,7 +37,7 @@
       "site_title" : "Origami Roulette",
       "block_file" : "site/database/blocks/origami_roulette.json",
       "output_path" : "site/pages/origamiroulette/index.html",
-      "background_image" : "/site/images/background/background_005.jpg",
+      "background_image" : "/site/images/background/background_009.jpg",
       "js_list" : [
         "/site/javascript/origamiRoulette.js"
       ],

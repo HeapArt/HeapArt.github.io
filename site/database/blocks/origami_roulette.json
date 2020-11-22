@@ -3,6 +3,9 @@
     "title" : "Try Out the Origami Roullete",
     "body" : [
       "<p>Try this Origami Roullete, spin it to select a random Origami Tutorial from my channel Heap Art</p>",
+      "<p>The rule of the game is: Spin, Watch and Learn.</p>",
+      "<p>You have to try to fold the model that shows up.</p>",
+      "<p>By the way, the video will loop to help you learn from my \"Quickie Origami\" series.</p>",
       "<p>Enjoy!</p>",
       "<p>Wilson Lee @HeapArt</p>",
       "<div style='text-align:center;' ><button onClick='loadVideoList(fillRandomYTVideoPlayers);'>Spin Roullete</button><div>"

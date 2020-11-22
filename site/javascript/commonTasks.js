@@ -102,7 +102,7 @@ function fillRandomYTVideoPlayers(iVideoList)
     
     var wRandomVideoIndex = Math.floor(wRandom);
 
-    wYTIFrame[wi].src = "https://www.youtube.com/embed/" + wList[wRandomVideoIndex]["Video"];
+    wYTIFrame[wi].src = "https://www.youtube.com/embed/" + wList[wRandomVideoIndex]["Video"] + "?version=3&loop=1&playlist=" + wList[wRandomVideoIndex]["Video"];
   }
 
 }

@@ -172,9 +172,8 @@ def genBlockString(iBlock):
   
         if "video" == wType:
             if "videoId" in iBlock["caption"]:
-                wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/'
-                wDOMString += iBlock["caption"]["videoId"]
-                wDOMString += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                wDOMString = '<iframe class="class_YouTubePlayer" src="https://www.youtube.com/embed/{0}?version=3&loop=1&playlist={0}"'.format(iBlock["caption"]["videoId"])
+                wDOMString += ' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
                 wCaptionString += wDOMString
   
             if "playlistId" in iBlock["caption"]:
