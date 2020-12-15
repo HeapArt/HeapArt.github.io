@@ -37,6 +37,10 @@
       "tag" : "social_links_bar",
       "parameter" : "socialmedialinks",
       "method" : "social_links_bar"
+    },
+    {
+      "tag" : "image_file",
+      "parameter" : "display_image"
     }
   ]
 }

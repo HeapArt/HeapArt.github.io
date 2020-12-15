@@ -8,7 +8,12 @@
       "icon": "/site/images/logo/logo-origami-swan-white-small.png",
       "sub_entries" : [
         {
-          "siteName": "Origami Roulette",
+          "siteName": "My Designs",
+          "link": "/site/pages/myorigamidesigns/index.html",
+          "icon": "/site/images/logo/logo-paperfold-black-small.png"
+        },
+        {
+          "siteName": "Roulette",
           "link": "/site/pages/origamiroulette/index.html",
           "icon": "/site/images/logo/logo-origami-bird-black-small.png"
         },

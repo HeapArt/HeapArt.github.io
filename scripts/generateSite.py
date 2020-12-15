@@ -68,21 +68,24 @@ def generatePage(iPageDefinition, iSiteGenerationFile):
           wParameter = ""
 
           if "parameter" in wTag:
-              wParameter = iPageDefinition[wTag["parameter"]]
+              if wTag["parameter"] in iPageDefinition:
+                  wParameter = iPageDefinition[wTag["parameter"]]
           elif "file" in wTag:
               wParameter = open(wTag["file"], "r").read()
 
           wModifiedParameter = wParameter
-          if "method" in wTag:
-              wMethod = wTag["method"]
-              if "parse_navbar" == wMethod:
-                  wModifiedParameter = parse_navbar(wParameter, iPageDefinition)
-              if "parse_block" == wMethod:
-                  wModifiedParameter = parse_block(wParameter, iPageDefinition)
-              if "social_links_bar" == wMethod:
-                  wModifiedParameter = social_links_bar(wParameter, iPageDefinition)
+
+          if "" != wModifiedParameter:
+            if "method" in wTag:
+                wMethod = wTag["method"]
+                if "parse_navbar" == wMethod:
+                      wModifiedParameter = parse_navbar(wParameter, iPageDefinition)
+                if "parse_block" == wMethod:
+                      wModifiedParameter = parse_block(wParameter, iPageDefinition)
+                if "social_links_bar" == wMethod:
+                      wModifiedParameter = social_links_bar(wParameter, iPageDefinition)
                   
-          wFileString = wFileString.replace("[%{0}%]".format(wReplaceTag), wModifiedParameter)
+            wFileString = wFileString.replace("[%{0}%]".format(wReplaceTag), wModifiedParameter)
 
     save_file(iPageDefinition["output_path"], wFileString)
     print(wFileString)

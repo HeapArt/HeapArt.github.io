@@ -44,6 +44,23 @@
       "css_list" : [
         "/site/css/origamiRoulette.css"
       ]
+    },
+    {
+      "site_title" : "My Origami Designs",
+      "block_file" : "site/database/blocks/myorigamidesigns.json",
+      "output_path" : "site/pages/myorigamidesigns/index.html",
+      "background_image" : "/site/images/background/background_010.jpg",
+      "js_list" : [
+      ],
+      "css_list" : [
+      ]
+    },
+    {
+      "site_title" : "Prism Phone Stand",
+      "template" : "scripts/templates/diagram_template_1.html",
+      "output_path" : "site/pages/diagrams/prismphonestand.html",
+      "display_image" : "/site/images/origami_diagrams/Prism_Phone_Stand.jpg"
     }
+
   ]
 }
