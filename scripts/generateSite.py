@@ -39,6 +39,7 @@ def save_file(iPath, iText):
 
 def generatePage(iPageDefinition, iSiteGenerationFile):
 
+    print()
     print(iPageDefinition)
     wTemplateFile = open(iPageDefinition["template"], "r")
     wFileString = wTemplateFile.read()
@@ -85,10 +86,10 @@ def generatePage(iPageDefinition, iSiteGenerationFile):
                 if "social_links_bar" == wMethod:
                       wModifiedParameter = social_links_bar(wParameter, iPageDefinition)
                   
-            wFileString = wFileString.replace("[%{0}%]".format(wReplaceTag), wModifiedParameter)
+          wFileString = wFileString.replace("[%{0}%]".format(wReplaceTag), wModifiedParameter)
 
     save_file(iPageDefinition["output_path"], wFileString)
-    print(wFileString)
+    #print(wFileString)
 
 def generateNavBarEntryString(iEntry):
     wTemp = ""

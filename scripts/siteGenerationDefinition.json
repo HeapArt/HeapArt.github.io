@@ -9,7 +9,7 @@
   "tag_map" : [
     {
       "tag":"site_title_prefix",
-      "paremeter" : "site_title_prefix"
+      "parameter" : "site_title_prefix"
     },
     {
       "tag":"site_title",

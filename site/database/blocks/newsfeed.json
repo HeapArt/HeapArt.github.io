@@ -75,5 +75,23 @@
       "type" : "image",
       "src" : "/site/images/logo/logo-email-black-small.png"
     }
+  },
+  {
+    "title" : "First Diagram"
+    ,"date" : "2020-12-15"
+    ,"body" : [
+      "<p>",
+      "I've finally finished my first Origami Diagram. It is for my latest design, the Prism Phone Stand. You could find it in our new website section \"My Designs\" under the \"Origami\" tab." ,
+      "</p>",
+      "<p>",
+      "Our visit the diagram directly by clicking <a href='/site/pages/diagrams/prismphonestand.html'>here</a>!",
+      "</p>",
+      "<p>Thanks for reading and have a great day!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ],
+    "caption" : {
+      "type" : "image",
+      "src" : "/site/images/logo/logo-paperfold-black-small.png"
+    }
   }
 ]

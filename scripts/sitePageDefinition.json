@@ -3,7 +3,7 @@
   "template" : "scripts/templates/template_1.html",
   "navigation_bar_file" : "site/database/navigation.json",
   "socialmedialinks" : "site/database/socialmedialinks.json",
-  "site_title_prefix" : "Heap Art -",
+  "site_title_prefix" : "Heap Art - ",
   "background_image" : "/site/images/background/background_001.jpg",
   
   "pages" : [
