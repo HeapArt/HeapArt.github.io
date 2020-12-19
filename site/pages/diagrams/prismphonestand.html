@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <script data-ad-client="ca-pub-8218122073733389" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -7,25 +8,132 @@
   <link rel="stylesheet" href="/site/css/theme.css"><link rel="stylesheet" href="/site/css/commonTask.css">
   <Title>Heap Art - Prism Phone Stand</Title>
   <style>
-    .class_Banner , .class_Footer{
+    .class_Banner,
+    .class_Footer {
       background-image: url("/site/images/background/background_001.jpg");
     }
+
+    .class_site_block img {
+      width: 100%;
+      text-align: center;
+    }
+
+    .class_zoom {
+      display: none;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      position: "fixed";
+      top: 0px;
+      left: 0px;
+      border: 1.5px solid black;
+    }
   </style>
+  <script>
+    var gZoomMode = false;
+    var gMoveEvent = null;
+    var gZoomTarget = null;
+
+    function processZoom() {
+
+      if ((null == gMoveEvent) || (null == gZoomTarget)) {
+        gZoomMode = false;
+        return;
+      }
+
+      var wZoomList = gZoomTarget.parentNode.getElementsByClassName("class_zoom");
+
+      if (0 != wZoomList.length) {
+        var wZoom = wZoomList[0];
+        var wZoomImageList = wZoom.getElementsByTagName("img");
+
+        if (0 != wZoomImageList.length) {
+          var wZoomImage = wZoomImageList[0];
+
+          var wTop = gMoveEvent.clientY + 20;
+          var wLeft = gMoveEvent.clientX + 20;
+
+          if (wTop + wZoom.clientHeight > window.innerHeight) {
+            wTop = gMoveEvent.clientY - 20 - wZoom.clientHeight;
+          }
+
+          if (wLeft + wZoom.clientWidth > window.innerWidth) {
+            wLeft = gMoveEvent.clientX - 20 - wZoom.clientWidth;
+          }
+
+          wZoom.style.position = "fixed";
+          wZoom.style.top = wTop + "px";
+          wZoom.style.left = wLeft + "px";
+
+          var wMagnification = 2.5;
+          wZoomImage.style.position = "absolute";
+          wZoomImage.style.top = (- ((gMoveEvent.pageY - gZoomTarget.offsetTop) * wMagnification - wZoom.clientHeight / 2)) + "px";
+          wZoomImage.style.left = (- ((gMoveEvent.pageX - gZoomTarget.offsetLeft) * wMagnification - wZoom.clientWidth / 2)) + "px";
+
+          wZoomImage.style.height = gZoomTarget.height * wMagnification + "px";
+          wZoomImage.style.width = gZoomTarget.width * wMagnification + "px";
+
+        }
+      }
+
+      if (true == gZoomMode) {
+        window.requestAnimationFrame(processZoom);
+      }
+    }
+
+    function zoomIn(iEvent, iImg) {
+
+      var wZoomList = iImg.parentNode.getElementsByClassName("class_zoom")
+
+      if (0 != wZoomList.length) {
+        var wZoom = wZoomList[0];
+        wZoom.style.display = "block";
+        gMoveEvent = iEvent;
+        gZoomTarget = iImg;
+
+        if (false == gZoomMode) {
+          gZoomMode = true;
+          window.requestAnimationFrame(processZoom);
+        }
+      }
+    }
+    
+    function zoomDone(iEvent, iImg) {
+
+      var wZoomList = iImg.parentNode.getElementsByClassName("class_zoom")
+
+      if (0 != wZoomList.length) {
+        var wZoom = wZoomList[0];
+        wZoom.style.display = "none";
+        gZoomMode = false;
+        gMoveEvent = null;
+        gZoomTarget = null;
+      }
+    }
+
+  </script>
 </head>
+
 <body>
   <div class='class_navbar'><div class='class_navbar_HomePage'><a href='/' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-HeapArt-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Heap Art</div></div></a></div><div class='class_navbar_entries'><div class="class_navbar_MenuIcon" onclick="navebarExpand(this)"><div class="class_navbar_MenuIcon_bar1"></div><div class="class_navbar_MenuIcon_bar2"></div><div class="class_navbar_MenuIcon_bar3"></div></div><div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)' style='z-index:106;'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-origami-swan-white-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Origami</div></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='/site/pages/myorigamidesigns/index.html' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-paperfold-black-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>My Designs</div></div></a></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='/site/pages/origamiroulette/index.html' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-origami-bird-black-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Roulette</div></div></a></div></div><div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)' style='z-index:105;'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-code-white-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Programming</div></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='https://wlee0515.github.io' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-wlee0515-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Project Page</div></div></a></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='https://github.com/wlee0515' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-github-black-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Github</div></div></a></div></div><div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)' style='z-index:104;'><a href='/site/pages/newsfeed/index.html' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-rss-white-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>News Feed</div></div></a></div><div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)' style='z-index:103;'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-network-white-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Social Media</div></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='https://www.youtube.com/c/heapart' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-youtube-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>YouTube</div></div></a></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='https://www.instagram.com/wlee0515/' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-instagram-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Instagram</div></div></a></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='https://www.tiktok.com/@heapart' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-tiktok-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Tik Tok</div></div></a></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='https://forms.gle/hZbP4jcR9LREVvvV7' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-email-black-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Email List</div></div></a></div></div><div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)' style='z-index:102;'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-shopping-white-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Support</div></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='https://teespring.com/stores/heapart' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-merch-black-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Merchandise</div></div></a></div><div class='class_navbar_subentry' onclick='navebarSubEntryExpand(this)' style='z-index:200;'><a href='/site/pages/supplies/index.html' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-amazon-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>Supplies</div></div></a></div></div><div class='class_navbar_entry'  onclick='navebarSubEntryExpand(this)' style='z-index:101;'><a href='/site/pages/aboutme/index.html' class='class_navbar_link'><div class='class_navbar_label_wrapper'><div class='class_navbar_icon_container'><img src='/site/images/logo/logo-eyeglasses-white-small.png' class='class_navbar_icon_img'></img></div><div class='class_navbar_label'>About Me</div></div></a></div></div></div><script>function navebarExpand(iMenuButton) { iMenuButton.classList.toggle("navBarExpand");iMenuButton.parentElement.classList.toggle("navBarExpand");}function navebarSubEntryExpand(iEntry) {iEntry.classList.toggle("class_navbar_subentry_expand");}</script>
   <div class="class_Banner">
     <div class='class_navbar_gap'></div>
-    <div class="class_BannerTitle"> 
-      <h1 >Prism Phone Stand</h1>
+    <div class="class_BannerTitle">
+      <h1>Prism Phone Stand</h1>
       <div class="class_social_links_bar"><a href="https://www.youtube.com/c/heapart" class="class_social_link"><img src="/site/images/logo/logo-youtube-small.png" alt="YouTube"/></a><a href="https://www.instagram.com/wlee0515/" class="class_social_link"><img src="/site/images/logo/logo-instagram-small.png" alt="Instagram"/></a><a href="https://www.tiktok.com/@heapart" class="class_social_link"><img src="/site/images/logo/logo-tiktok-small.png" alt="Tik Tok"/></a></div>
     </div>
   </div>
   <div id="id_blockBody">
-      <img class='class_site_block' src="/site/images/origami_diagrams/Prism_Phone_Stand.jpg"></img>
+    <div class='class_site_block'>
+      <img src="/site/images/origami_diagrams/Prism_Phone_Stand.jpg" onmousemove="zoomIn(event, this)" onmouseout="zoomDone(event, this)"></img>
+      <div class="class_zoom">
+        <img src="/site/images/origami_diagrams/Prism_Phone_Stand.jpg"></img>
+      </div>
+      <a href="/site/images/origami_diagrams/Prism_Phone_Stand.jpg">View Image Only</a>
+    </div>
   </div>
   <div class="class_Footer">
-      <div class="class_social_links_bar"><a href="https://www.youtube.com/c/heapart" class="class_social_link"><img src="/site/images/logo/logo-youtube-small.png" alt="YouTube"/></a><a href="https://www.instagram.com/wlee0515/" class="class_social_link"><img src="/site/images/logo/logo-instagram-small.png" alt="Instagram"/></a><a href="https://www.tiktok.com/@heapart" class="class_social_link"><img src="/site/images/logo/logo-tiktok-small.png" alt="Tik Tok"/></a></div>
+    <div class="class_social_links_bar"><a href="https://www.youtube.com/c/heapart" class="class_social_link"><img src="/site/images/logo/logo-youtube-small.png" alt="YouTube"/></a><a href="https://www.instagram.com/wlee0515/" class="class_social_link"><img src="/site/images/logo/logo-instagram-small.png" alt="Instagram"/></a><a href="https://www.tiktok.com/@heapart" class="class_social_link"><img src="/site/images/logo/logo-tiktok-small.png" alt="Tik Tok"/></a></div>
   </div>
 </body>
 

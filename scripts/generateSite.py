@@ -2,7 +2,7 @@ import os
 import json
 
 gWorkingDirectory = "../"
-gInputFile = "scripts/sitePageDefinition.json"
+gInputFile = ["scripts/sitePageDefinition.json", "scripts/sitePageDefinition_Images.json"]
 
 def loadJson(iFilePath):
     with open(iFilePath) as f:
@@ -242,14 +242,15 @@ def main():
 
     print(os.getcwd())
 
-    wSitePageDef = loadJson(gInputFile)
-    print("Using Site Page Definition : {0}".format(gInputFile))
+    for wInputDefinition in gInputFile:
+        wSitePageDef = loadJson(wInputDefinition)
+        print("Using Site Page Definition : {0}".format(wInputDefinition))
 
-    wGenFile = wSitePageDef["siteGenerationFile"]
-    wSiteGenDef =  loadJson(wGenFile)
-    print("Using Site Generation File : {0}".format(wGenFile))
+        wGenFile = wSitePageDef["siteGenerationFile"]
+        wSiteGenDef =  loadJson(wGenFile)
+        print("Using Site Generation File : {0}".format(wGenFile))
 
-    generateSite(wSitePageDef, wSiteGenDef)
+        generateSite(wSitePageDef, wSiteGenDef)
     
 
 

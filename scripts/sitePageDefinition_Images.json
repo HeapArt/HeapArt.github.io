@@ -1,0 +1,16 @@
+{
+  "siteGenerationFile" : "scripts/siteGenerationDefinition.json",
+  "template" : "scripts/templates/single_Image_template_1.html",
+  "navigation_bar_file" : "site/database/navigation.json",
+  "socialmedialinks" : "site/database/socialmedialinks.json",
+  "site_title_prefix" : "Heap Art - ",
+  "background_image" : "/site/images/background/background_001.jpg",
+  
+  "pages" : [
+    {
+      "site_title" : "Prism Phone Stand",
+      "output_path" : "site/pages/diagrams/prismphonestand.html",
+      "display_image" : "/site/images/origami_diagrams/Prism_Phone_Stand.jpg"
+    }
+  ]
+}

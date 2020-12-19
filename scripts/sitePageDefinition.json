@@ -54,13 +54,6 @@
       ],
       "css_list" : [
       ]
-    },
-    {
-      "site_title" : "Prism Phone Stand",
-      "template" : "scripts/templates/diagram_template_1.html",
-      "output_path" : "site/pages/diagrams/prismphonestand.html",
-      "display_image" : "/site/images/origami_diagrams/Prism_Phone_Stand.jpg"
     }
-
   ]
 }
