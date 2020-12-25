@@ -13,24 +13,24 @@ function seededRandom(iMax, iMin) {
 }
 
 const gVideoListJsonPath = "/site/database/HeapArtVideoData.json";
-var gVideoList =null;
+var gVideoData =null;
 function loadVideoList(iFunction){
-  if (null == gVideoList) {
+  if (null == gVideoData) {
     fetch(gVideoListJsonPath)
       .then((response) => {
         return response.json()
       })
       .then((data) => {
-        gVideoList = data;
+        gVideoData = data;
         if (null != iFunction) iFunction(data);
-        fillRandomYTVideoPlayers(data);
+        fillRandomYTVideoPlayers(data["Video List"]);
       })
       .catch((err) => {
         // Do something for an error here
       })
   }
   else {
-    if (null != iFunction) iFunction(gVideoList);
+    if (null != iFunction) iFunction(gVideoData);
   }
 }
 
