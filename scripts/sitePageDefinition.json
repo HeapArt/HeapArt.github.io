@@ -55,5 +55,13 @@
       "css_list" : [
       ]
     }
+  ],
+
+  
+  "catalogue_Directory" : [
+    {
+      "path": "site/database/CatalogPageDefinition",
+      "output_path" : "site/pages/catalogue"
+    }
   ]
 }

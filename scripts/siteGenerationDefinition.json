@@ -20,9 +20,14 @@
       "parameter" : "background_image"
     },
     {
+      "tag" : "block_list",
+      "parameter" : "block_list",
+      "method" : "parse_blocklist"
+    },
+    {
       "tag" : "block_file",
       "parameter" : "block_file",
-      "method" : "parse_block"
+      "method" : "parse_blockfile"
     },
     {
       "tag" : "navigation_bar",
@@ -41,6 +46,17 @@
     {
       "tag" : "image_file",
       "parameter" : "display_image"
+    }
+  ]
+  
+  ,"text_link_map" : [
+    {
+      "text" : "@HeapArt",
+      "link" : "https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA"
+    },
+    {
+      "text" : "@Heap Art",
+      "link" : "https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA"
     }
   ]
 }

@@ -5,26 +5,9 @@ gWorkingDirectory = "../"
 gInputFile = ["scripts/sitePageDefinition.json", "scripts/sitePageDefinition_Images.json"]
 
 def loadJson(iFilePath):
-    with open(iFilePath) as f:
+    with open(iFilePath, encoding="utf-8") as f:
         return json.load(f)
-    return NULL
-
-def generateSite(iSitePageDefinitionJSON, iSiteGenerationFile):
-    #print(iSitePageDefinitionJSON);
-    #print(iSiteGenerationFile);
-
-    for wPage in iSitePageDefinitionJSON["pages"]:
-        wTemp = {};
-        for wItem in iSitePageDefinitionJSON.items():
-          if wItem[0] != "pages":
-              if wItem[0] != "siteGenerationFile":
-                  wTemp[wItem[0]] = wItem[1]
-        
-        for wItem in wPage.items():
-            wTemp[wItem[0]] = wItem[1]
-        
-        generatePage(wTemp, iSiteGenerationFile)
-  
+    return None
 
 def save_file(iPath, iText):
     wBasedir = os.path.dirname(iPath)
@@ -33,23 +16,51 @@ def save_file(iPath, iText):
         if not os.path.exists(wBasedir):
             os.makedirs(wBasedir)
 
-    with  open(iPath, 'w') as wFile:
+    with  open(iPath, 'w', encoding="utf-8")  as wFile:
         wFile.write(iText)
         wFile.close()
 
-def generatePage(iPageDefinition, iSiteGenerationFile):
+def generateSite(iSitePageDefinitionJSON, iSiteGenerationFile):
+    #print(iSitePageDefinitionJSON);
+    #print(iSiteGenerationFile);
+
+    if "pages" in iSitePageDefinitionJSON:
+        for wPage in iSitePageDefinitionJSON["pages"]:
+            generatePage(wPage, iSitePageDefinitionJSON, iSiteGenerationFile)
+
+    if "catalogue_Directory" in iSitePageDefinitionJSON:
+        for wCatalogueDir in iSitePageDefinitionJSON["catalogue_Directory"]:
+            for (wDirpath, wDirnames, wFilenames) in os.walk(wCatalogueDir["path"]):
+                for wFile in wFilenames:                    
+                    wFullFileName = os.path.join(wDirpath, wFile)
+                    wPageObject = loadJson(wFullFileName)
+                    if None != wPageObject:                    
+                        wPageObject["output_path"] = wFullFileName.replace(wCatalogueDir["path"], wCatalogueDir["output_path"]).replace(".json",".html")
+                        generatePage(wPageObject, iSitePageDefinitionJSON, iSiteGenerationFile)
+
+
+def generatePage(iPageDefinition, iSitePageDefinitionJSON, iSiteGenerationFile):
+
+    wPageDefinition = {};
+    for wItem in iSitePageDefinitionJSON.items():
+        if wItem[0] != "pages":
+            if wItem[0] != "siteGenerationFile":
+                wPageDefinition[wItem[0]] = wItem[1]
+        
+    for wItem in iPageDefinition.items():
+        wPageDefinition[wItem[0]] = wItem[1]
 
     print()
-    print(iPageDefinition)
-    wTemplateFile = open(iPageDefinition["template"], "r")
+    print(wPageDefinition)
+    wTemplateFile = open(wPageDefinition["template"], "r")
     wFileString = wTemplateFile.read()
     
     js_scrpts = ""
     if "js_list" in iSiteGenerationFile:
         for wFile in iSiteGenerationFile["js_list"]:
           js_scrpts += '<script src="{0}"></script>'.format(wFile)
-    if "js_list" in iPageDefinition:
-        for wFile in iPageDefinition["js_list"]:
+    if "js_list" in wPageDefinition:
+        for wFile in wPageDefinition["js_list"]:
           js_scrpts += '<script src="{0}"></script>'.format(wFile)
     wFileString = wFileString.replace("[%js_list%]", js_scrpts)
     
@@ -58,8 +69,8 @@ def generatePage(iPageDefinition, iSiteGenerationFile):
     if "css_list" in iSiteGenerationFile:
         for wFile in iSiteGenerationFile["css_list"]:
           css_links += '<link rel="stylesheet" href="{0}">'.format(wFile)
-    if "css_list" in iPageDefinition:
-        for wFile in iPageDefinition["css_list"]:
+    if "css_list" in wPageDefinition:
+        for wFile in wPageDefinition["css_list"]:
           css_links += '<link rel="stylesheet" href="{0}">'.format(wFile)
     wFileString = wFileString.replace("[%css_list%]", css_links)
 
@@ -69,8 +80,8 @@ def generatePage(iPageDefinition, iSiteGenerationFile):
           wParameter = ""
 
           if "parameter" in wTag:
-              if wTag["parameter"] in iPageDefinition:
-                  wParameter = iPageDefinition[wTag["parameter"]]
+              if wTag["parameter"] in wPageDefinition:
+                  wParameter = wPageDefinition[wTag["parameter"]]
           elif "file" in wTag:
               wParameter = open(wTag["file"], "r").read()
 
@@ -80,16 +91,26 @@ def generatePage(iPageDefinition, iSiteGenerationFile):
             if "method" in wTag:
                 wMethod = wTag["method"]
                 if "parse_navbar" == wMethod:
-                      wModifiedParameter = parse_navbar(wParameter, iPageDefinition)
-                if "parse_block" == wMethod:
-                      wModifiedParameter = parse_block(wParameter, iPageDefinition)
+                      wModifiedParameter = parse_navbar(wParameter, wPageDefinition)
+                if "parse_blockfile" == wMethod:
+                      wModifiedParameter = parse_blockfile(wParameter, wPageDefinition)
+                if "parse_blocklist" == wMethod:
+                      wModifiedParameter = parse_blocklist(wParameter, wPageDefinition)
                 if "social_links_bar" == wMethod:
-                      wModifiedParameter = social_links_bar(wParameter, iPageDefinition)
+                      wModifiedParameter = social_links_bar(wParameter, wPageDefinition)
                   
           wFileString = wFileString.replace("[%{0}%]".format(wReplaceTag), wModifiedParameter)
 
-    save_file(iPageDefinition["output_path"], wFileString)
+    if "text_link_map" in iSiteGenerationFile:
+        for wTextLink in iSiteGenerationFile["text_link_map"]:
+            if "text" in wTextLink:
+                if "link" in wTextLink:
+                    wTextReplacement = "<a href=\"{0}\" target=\"_blank\" rel=\"noopener noreferrer\">{1}</a>".format(wTextLink["link"], wTextLink["text"])
+                    wFileString = wFileString.replace( " " + "{0}".format(wTextLink["text"]), " " + wTextReplacement)
+
+    save_file(wPageDefinition["output_path"], wFileString)
     #print(wFileString)
+
 
 def generateNavBarEntryString(iEntry):
     wTemp = ""
@@ -211,22 +232,25 @@ def genBlockString(iBlock):
 
 
 
-def parse_block(iParameter, iPageDefinition):
+def parse_blockfile(iParameter, iPageDefinition):
+    wBlockList = loadJson(iParameter)
+    return parse_blocklist(wBlockList,iPageDefinition)
+
+def parse_blocklist(iBlockList, iPageDefinition):
     wBlockReverse = False
     if "block_direction" in iPageDefinition:
         if "reverse" == iPageDefinition["block_direction"]:
             wBlockReverse = True
 
-    wBlockList = loadJson(iParameter)
-
     if wBlockReverse:
-        wBlockList.reverse()
+        iBlockList.reverse()
 
     wBlockString = ""
-    for wBock in wBlockList:
+    for wBock in iBlockList:
         wBlockString += genBlockString(wBock)
 
     return '<div class="class_block_list">{0}</div>'.format(wBlockString)
+
 
 def social_links_bar(iParameter, iPageDefinition):
     wSocialLinks = loadJson(iParameter)
@@ -252,10 +276,6 @@ def main():
 
         generateSite(wSitePageDef, wSiteGenDef)
     
-
-
-
-
 
 if __name__ == '__main__':
     main()

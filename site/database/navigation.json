@@ -18,7 +18,12 @@
           "icon": "/site/images/logo/logo-origami-bird-black-small.png"
         },
         {
-          "siteName_1": "Paper Airplanes",
+          "siteName": "Paper Airplanes",
+          "link": "/site/pages/catalogue/paperairplanes/index.html",
+          "icon": "/site/images/logo/logo-rocket-black-small.png"
+        },
+        {
+          "siteName_1": "Tutorials By Designers",
           "link": "https://github.com/wlee0515",
           "icon": "/site/images/logo/logo-rocket-black-small.png"
         }
