@@ -93,5 +93,23 @@
       "type" : "image",
       "src" : "/site/images/logo/logo-paperfold-black-small.png"
     }
+  },
+  {
+    "title" : "100 Exotic Paper Airplane Challenge Website"
+    ,"date" : "2020-12-26"
+    ,"body" : [
+      "<p>",
+      "I've added a page for my \"100 Exotic Paper Airplane Challenge\". The challenge page is found in the new section \"Paper Airplanes\" under the \"Origami\" tab." ,
+      "</p>",
+      "<p>",
+      "Our visit the challenge page directly by clicking <a href='/site/pages/catalogue/paperairplanes/index.html'>here</a>!",
+      "</p>",
+      "<p>Thanks for reading and have a great day!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ],
+    "caption" : {
+      "type" : "image",
+      "src" : "/site/images/logo/logo-rocket-black-large.png"
+    }
   }
 ]

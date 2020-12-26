@@ -13,14 +13,14 @@
           "icon": "/site/images/logo/logo-paperfold-black-small.png"
         },
         {
-          "siteName": "Origami Roulette",
-          "link": "/site/pages/origamiroulette/index.html",
-          "icon": "/site/images/logo/logo-origami-bird-black-small.png"
-        },
-        {
           "siteName": "Paper Airplanes",
           "link": "/site/pages/catalogue/paperairplanes/index.html",
           "icon": "/site/images/logo/logo-rocket-black-small.png"
+        },
+        {
+          "siteName": "Origami Roulette",
+          "link": "/site/pages/origamiroulette/index.html",
+          "icon": "/site/images/logo/logo-origami-bird-black-small.png"
         },
         {
           "siteName_1": "Tutorials By Designers",
