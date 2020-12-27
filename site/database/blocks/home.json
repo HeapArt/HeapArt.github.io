@@ -43,7 +43,8 @@
   {
     "title" : "Random Paper Airplane of the Day"
     ,"body" : [
-      "<p>This is today's Exotic Paper Airplane. It is randomly selected from our library. It's something different everyday. Have you seen this one before?</p>"
+      "<p>This is today's Exotic Paper Airplane. It is randomly selected from our library. It's something different everyday. Have you seen this one before?</p>",
+      "<p>You could watch the up to date collection <a href='/site/pages/catalogue/paperairplanes/index.html'>here</a> on out official \"100 Exotic Paper Airplanes Challenge\" page.</p>"
     ]
     ,"caption" : {
       "type" : "video",
