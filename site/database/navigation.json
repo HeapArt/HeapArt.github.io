@@ -10,7 +10,7 @@
         {
           "siteName": "My Designs",
           "link": "/site/pages/myorigamidesigns/index.html",
-          "icon": "/site/images/logo/logo-paperfold-black-small.png"
+          "icon": "/site/images/logo/logo-paperfold-black.svg"
         },
         {
           "siteName": "Paper Airplanes",
@@ -18,14 +18,24 @@
           "icon": "/site/images/logo/logo-rocket-black-small.png"
         },
         {
+          "siteName_1": "Browse By Designer",
+          "link": "https://github.com/wlee0515",
+          "icon": "/site/images/logo/logo-rocket-black-small.png"
+        },
+        {
+          "siteName_1": "Browse By Category",
+          "link": "https://github.com/wlee0515",
+          "icon": "/site/images/logo/logo-rocket-black-small.png"
+        },
+        {
+          "siteName": "Tutorials from A to Z",
+          "link": "/site/pages/catalogue/azlist/index.html",
+          "icon": "/site/images/logo/logo-az-black.svg"
+        },
+        {
           "siteName": "Origami Roulette",
           "link": "/site/pages/origamiroulette/index.html",
           "icon": "/site/images/logo/logo-origami-bird-black-small.png"
-        },
-        {
-          "siteName_1": "Tutorials By Designers",
-          "link": "https://github.com/wlee0515",
-          "icon": "/site/images/logo/logo-rocket-black-small.png"
         }
       ]
 

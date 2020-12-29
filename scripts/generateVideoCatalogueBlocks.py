@@ -1,7 +1,6 @@
 import os
 import json
 
-
 gWorkingDirectory = "../"
 gInputVideoDataFiles = ["site/database/HeapArtVideoData.json"]
 gCatalogueOutputDirectory = "site/database/CatalogPageDefinition"
@@ -25,11 +24,13 @@ def save_file(iPath, iText):
         wFile.write(iText)
         wFile.close()
 
+
 def createPageDefinition(iTitle, iBlockList):
     wNewPage = {}
     wNewPage["site_title"] = iTitle
     wNewPage["block_list"] = iBlockList
     return wNewPage
+
 
 def createBlockDefinition(iTitle, iDate,  iBody, iCaption):
     wNewBlock = {}
@@ -50,36 +51,62 @@ def generatePageDefinitions(iVideoDataFile):
     QuickieOrigamiList = []
     ModeratoOrigamiList = []
 
+    TutorialByDesignerList = {}
+    FullTutorialList = []
+
     for wVideoEntry in iVideoDataFile["Video List"]:
+        isTutorial = False
+        wTitle = wVideoEntry["Video title"].replace("  ", " ")
+
         if "(100 Exotic Paper Airplanes" in wVideoEntry["Video title"]:
             wStrList = wVideoEntry["Video title"].split(" ");
+            wTitle = wTitle.replace("Paper Plane " + wStrList[2] + " : ", "")
+            wTitle = wTitle.replace(" (100 Exotic Paper Airplanes Challenge)", "")
+            wTitle = wTitle.replace(" (100 Exotic Paper Airplanes)", "")
+            wVideoEntry["Clean Title"] = wTitle
+
             PaperPlaneList[wStrList[2]] = wVideoEntry
+            isTutorial = True
             
         if "Quickie Origami - " in wVideoEntry["Video title"]:
-            QuickieOrigamiList.extend(wVideoEntry)
+            wTitle = wTitle.replace("Quickie Origami - ", "")
+            wVideoEntry["Clean Title"] = wTitle
+
+            QuickieOrigamiList.append(wVideoEntry)
+            isTutorial = True
         
         if "Moderato Origami - " in wVideoEntry["Video title"]:
-            ModeratoOrigamiList.extend(wVideoEntry)
-    
-    print (PaperPlaneList)
-    print (QuickieOrigamiList)
-    print (ModeratoOrigamiList)
+            wTitle = wTitle.replace("Moderato Origami - ", "")
+            wVideoEntry["Clean Title"] = wTitle
+            ModeratoOrigamiList.append(wVideoEntry)
+            isTutorial = True
 
+        if True == isTutorial:
+            wSearchTitle = wTitle.lower()
+            wSearchTitle = wSearchTitle.replace("the ", "")
+            wSearchTitle = wSearchTitle.replace("a ", "")
+            wVideoEntry["Search Title"] = wSearchTitle
+            FullTutorialList.append(wVideoEntry)
+
+        if "Designer" in wVideoEntry:
+            if wVideoEntry["Designer"] not in TutorialByDesignerList:
+                TutorialByDesignerList[wVideoEntry["Designer"]] = []
+            
+            TutorialByDesignerList[wVideoEntry["Designer"]].append(wVideoEntry)
+    
+    
+#    print (PaperPlaneList)
+#    print (QuickieOrigamiList)
+#    print (ModeratoOrigamiList)
+#    print (TutorialByDesignerList)
+
+    # Paper Airplane Catalog
 
     paperPlaneLinkList = "<ol>"
     for wKey in sorted(PaperPlaneList.keys()):
         wVideoEntry = PaperPlaneList[wKey]
-        wTitle = wVideoEntry["Video title"].replace("  ", " ")
-        wTitle = wTitle.replace("Paper Plane " + wKey + " : ", "")
-        wTitle = wTitle.replace("Paper Plane " + wKey + " : ", "")
-        wTitle = wTitle.replace(" (100 Exotic Paper Airplanes Challenge)", "")
-        wTitle = wTitle.replace(" (100 Exotic Paper Airplanes)", "")
-
-        wVideoEntry["Clean Title"] = wTitle
-        print(wTitle)
-
         wlink = "<li>"
-        wlink += "<a href=\"./" + wKey + ".html\">" + wTitle + "</a>"
+        wlink += "<a href=\"./" + wKey + ".html\">" + wVideoEntry["Clean Title"] + "</a>"
         wlink += "</li>"
         paperPlaneLinkList += wlink    
     paperPlaneLinkList += "</ol>"
@@ -111,7 +138,53 @@ def generatePageDefinitions(iVideoDataFile):
         wPaperPlanePage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock, wPaperAirplaneContentBlock])
         save_file("paperairplanes/{0}.json".format(wKey), json.dumps(wPaperPlanePage, indent=2))
 
+    # Tutorial catalog by A-Z
+    wSortedTutorialList = sorted(FullTutorialList, key=lambda x: x["Search Title"])
 
+
+    #Create Link List
+    wAZlinkList = {}
+    for wVideoEntry in wSortedTutorialList:
+        wLetter = wVideoEntry["Search Title"][0]
+        if wLetter.isdigit():
+            wLetter = "#"
+        else:
+            wLetter = wLetter.upper()
+
+        if wLetter not in wAZlinkList:
+            wAZlinkList[wLetter] = "<ul>"
+        wlink = "<li>"
+        wlink += "<a href=\"./" + wVideoEntry["Video"] + ".html\">" + wVideoEntry["Clean Title"] + "</a>"
+        wlink += "</li>"
+        wAZlinkList[wLetter] += wlink
+
+    for wLetterLinks in wAZlinkList:
+        wLetterLinks += "</ul>"
+
+    #Create Block List
+    wAZBlockList = []
+    for wLinkListKey in sorted(wAZlinkList.keys()):
+        wVideoBlock = createBlockDefinition(wLinkListKey, None, wAZlinkList[wLinkListKey], None )
+        wAZBlockList.append(wVideoBlock)
+
+    wAZList = createPageDefinition("Origami Tutorials from A to Z", wAZBlockList)
+    save_file("azlist/index.json", json.dumps(wAZList, indent=2))
+
+    for wVideoEntry in wSortedTutorialList:
+
+        wCaptionDef = {}
+        wCaptionDef["type"] = "video"
+        wCaptionDef["videoId"] = wVideoEntry["Video"]
+        
+        wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], None, wCaptionDef )
+        wAZVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock] + wAZBlockList)
+        save_file("azlist/{0}.json".format(wVideoEntry["Video"]), json.dumps(wAZVideoPage, indent=2))
+
+
+    print(wAZlinkList)
+
+    # Tutorial catalog by A-Z
+    
     pass
 
 

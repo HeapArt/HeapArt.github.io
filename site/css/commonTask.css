@@ -125,7 +125,7 @@
   visibility: visible;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .class_navbar_MenuIcon {
     visibility: hidden;
@@ -142,18 +142,18 @@
   
   .class_navbar_entries  .class_navbar_entry {
     display: inline-block;
-    width: 175px;
+    width: 200px;
     height: 45px;
     vertical-align: top;
   }
   
   .class_navbar_subentry {
-    width: 175px;
+    width: 200px;
   }
   
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
 
   .class_navbar_entries {
     display: block;
