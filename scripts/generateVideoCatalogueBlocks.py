@@ -1,5 +1,6 @@
 import os
 import json
+import re
 
 gWorkingDirectory = "../"
 gInputVideoDataFiles = ["site/database/HeapArtVideoData.json"]
@@ -63,28 +64,35 @@ def generatePageDefinitions(iVideoDataFile):
             wTitle = wTitle.replace("Paper Plane " + wStrList[2] + " : ", "")
             wTitle = wTitle.replace(" (100 Exotic Paper Airplanes Challenge)", "")
             wTitle = wTitle.replace(" (100 Exotic Paper Airplanes)", "")
-            wVideoEntry["Clean Title"] = wTitle
 
             PaperPlaneList[wStrList[2]] = wVideoEntry
             isTutorial = True
             
         if "Quickie Origami - " in wVideoEntry["Video title"]:
             wTitle = wTitle.replace("Quickie Origami - ", "")
-            wVideoEntry["Clean Title"] = wTitle
-
+            wTitle = wTitle.replace("Origami ", "")
             QuickieOrigamiList.append(wVideoEntry)
             isTutorial = True
         
         if "Moderato Origami - " in wVideoEntry["Video title"]:
             wTitle = wTitle.replace("Moderato Origami - ", "")
-            wVideoEntry["Clean Title"] = wTitle
+            wTitle = wTitle.replace("Origami ", "")
             ModeratoOrigamiList.append(wVideoEntry)
             isTutorial = True
 
         if True == isTutorial:
+          
+            wTitle = re.sub("^a ", "", wTitle)
+            wTitle = re.sub("^A ", "", wTitle)
+            wTitle = re.sub("^the ", "", wTitle)
+            wTitle = re.sub("^The ", "", wTitle)
+            wTitle = re.sub("^an ", "", wTitle)
+            wTitle = re.sub("^An ", "", wTitle)
+            wTitle = wTitle.replace(" (No Glue, No Scissors)", "")
+            wTitle = wTitle.replace("@HeapArt", "")
+            wVideoEntry["Clean Title"] = wTitle
+
             wSearchTitle = wTitle.lower()
-            wSearchTitle = wSearchTitle.replace("the ", "")
-            wSearchTitle = wSearchTitle.replace("a ", "")
             wVideoEntry["Search Title"] = wSearchTitle
             FullTutorialList.append(wVideoEntry)
 
