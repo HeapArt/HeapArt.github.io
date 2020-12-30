@@ -6,8 +6,8 @@ viewBox="0 0 100 100">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str1 {stroke:#1F1A17;stroke-width:1.4111}
-    .str0 {stroke:#1F1A17;stroke-width:1.4111;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:#1F1A17;stroke-width:2.8222}
+    .str0 {stroke:#1F1A17;stroke-width:2.8222;stroke-linecap:round;stroke-linejoin:round}
     .fil0 {fill:none}
     .fil1 {fill:#1F1A17}
    ]]>
@@ -15,13 +15,13 @@ viewBox="0 0 100 100">
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_238642664">
-   <polyline id="_238642640" class="fil0 str0" points="27.413,30.3689 10.531,51.3291 15.6812,91.7016 48.0733,47.0142 6.725,13.3115 44.743,6.6665 52.7343,35.3952 49.1201,37.9589 "/>
-   <polyline id="_238643696" class="fil0 str0" points="25.7952,28.8555 14.6494,39.7576 16.4527,43.977 "/>
-   <polyline id="_238643912" class="fil0 str0" points="15.6812,91.7016 16.5855,93.3336 18.012,93.3246 45.5634,54.7182 50.1219,47.9744 49.1201,37.9589 "/>
-   <polyline id="_238802008" class="fil0 str0" points="49.4457,40.2693 52.4465,39.8535 79.652,64.1704 93.2748,75.9177 "/>
-   <polyline id="_237629752" class="fil0 str0" points="50.5747,47.4798 71.0592,62.6569 93.2748,75.9177 52.4246,76.8565 36.3971,67.5837 "/>
-   <polygon id="_237925168" class="fil1 str1" points="51.3102,36.4053 47.488,25.8675 49.1201,37.9589 "/>
+  <g id="_237833592">
+   <polyline id="_238642640" class="fil0 str0" points="27.4131,30.2747 10.5311,51.2349 15.6813,91.6074 48.0734,46.92 6.7251,13.2173 44.7431,6.5723 53.4448,35.1826 49.8512,37.4112 "/>
+   <polyline id="_238643696" class="fil0 str0" points="25.0082,28.1197 13.4381,39.125 15.7125,44.2193 "/>
+   <polyline id="_238643912" class="fil0 str0" points="15.6813,91.6074 16.5856,93.2394 19.2952,93.4278 51.5198,48.0856 49.6136,35.8906 "/>
+   <polyline id="_238802008" class="fil0 str0" points="50.2655,40.0615 52.4466,39.7593 79.6521,64.0762 93.2749,75.8235 "/>
+   <polyline id="_237629752" class="fil0 str0" points="51.5196,48.0857 71.0593,62.5627 93.2749,75.8235 52.4247,76.7623 37.3413,68.0357 "/>
+   <polygon id="_237925168" class="fil1 str1" points="51.3103,36.3111 48.2373,29.2228 49.8422,37.3527 "/>
   </g>
  </g>
 </svg>
