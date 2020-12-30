@@ -5,7 +5,7 @@
   "entries" : [
     {
       "siteName": "Origami",
-      "icon": "/site/images/logo/logo-origami-swan-white-small.png",
+      "icon": "/site/images/logo/logo-simplebird-white.svg",
       "sub_entries" : [
         {
           "siteName": "My Designs",
@@ -35,7 +35,7 @@
         {
           "siteName": "Origami Roulette",
           "link": "/site/pages/origamiroulette/index.html",
-          "icon": "/site/images/logo/logo-origami-bird-black-small.png"
+          "icon": "/site/images/logo/logo-ciccada-black.svg"
         }
       ]
 
