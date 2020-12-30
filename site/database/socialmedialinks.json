@@ -2,8 +2,13 @@
   "height" : "50px",
   "links" : [
     {
+      "name":"HomePage",
+      "link":"https://heapart.github.io/",
+      "icon" : "/site/images/logo/logo-HeapArt-small.png"
+    },
+    {
       "name":"YouTube",
-      "link":"https://www.youtube.com/c/heapart",
+      "link":"https://www.youtube.com/heapart",
       "icon" : "/site/images/logo/logo-youtube-small.png"
     },
     {
@@ -15,6 +20,11 @@
       "name":"Tik Tok",
       "link":"https://www.tiktok.com/@heapart",
       "icon" : "/site/images/logo/logo-tiktok-small.png"
-    }
+    },
+    {
+      "name": "小红书",
+      "link": "https://www.xiaohongshu.com/user/profile/5fa33be1000000000100a09d?xhsshare=CopyLink&appuid=5fa33be1000000000100a09d&apptime=1609349237",
+      "icon": "/site/images/logo/logo-XiaoHongShu-small.png"
+    }  
   ]
 }
