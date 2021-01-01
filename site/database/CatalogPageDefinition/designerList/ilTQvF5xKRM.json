@@ -1,0 +1,17 @@
+{
+  "site_title": "Flying Bat by Max Hulme",
+  "block_list": [
+    {
+      "title": "Video Tutorial",
+      "date": "Oct 27, 2020",
+      "caption": {
+        "type": "video",
+        "videoId": "ilTQvF5xKRM"
+      }
+    },
+    {
+      "title": "More Designs from Max Hulme",
+      "body": "<ul><li><a href=\"./ilTQvF5xKRM.html\">Flying Bat by Max Hulme</a></li></ul>"
+    }
+  ]
+}

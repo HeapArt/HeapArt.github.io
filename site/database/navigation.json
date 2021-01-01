@@ -28,6 +28,11 @@
           "icon": "/site/images/logo/logo-rocket-black-small.png"
         },
         {
+          "siteName": "Tutorials by Designer",
+          "link": "/site/pages/catalogue/designerList/index.html",
+          "icon": "/site/images/logo/logo-peaceDove-black.svg"
+        },
+        {
           "siteName": "Tutorials from A to Z",
           "link": "/site/pages/catalogue/azlist/index.html",
           "icon": "/site/images/logo/logo-az-black.svg"

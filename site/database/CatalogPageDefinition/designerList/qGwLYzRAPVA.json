@@ -1,0 +1,17 @@
+{
+  "site_title": "Leap Frog by Jamie and Micah",
+  "block_list": [
+    {
+      "title": "Video Tutorial",
+      "date": "Nov 6, 2020",
+      "caption": {
+        "type": "video",
+        "videoId": "qGwLYzRAPVA"
+      }
+    },
+    {
+      "title": "More Designs from Jamie and Micah",
+      "body": "<ul><li><a href=\"./qGwLYzRAPVA.html\">Leap Frog by Jamie and Micah</a></li></ul>"
+    }
+  ]
+}

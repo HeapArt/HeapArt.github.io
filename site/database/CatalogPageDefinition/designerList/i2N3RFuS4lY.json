@@ -1,0 +1,17 @@
+{
+  "site_title": "Hot Air Balloon by Jeff Cole",
+  "block_list": [
+    {
+      "title": "Video Tutorial",
+      "date": "Sep 20, 2020",
+      "caption": {
+        "type": "video",
+        "videoId": "i2N3RFuS4lY"
+      }
+    },
+    {
+      "title": "More Designs from Jeff Cole",
+      "body": "<ul><li><a href=\"./i2N3RFuS4lY.html\">Hot Air Balloon by Jeff Cole</a></li></ul>"
+    }
+  ]
+}

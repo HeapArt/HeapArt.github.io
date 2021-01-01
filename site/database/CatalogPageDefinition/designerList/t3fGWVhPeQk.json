@@ -1,0 +1,17 @@
+{
+  "site_title": "Simple Dart by John Smith",
+  "block_list": [
+    {
+      "title": "Video Tutorial",
+      "date": "Sep 29, 2020",
+      "caption": {
+        "type": "video",
+        "videoId": "t3fGWVhPeQk"
+      }
+    },
+    {
+      "title": "More Designs from John Smith",
+      "body": "<ul><li><a href=\"./t3fGWVhPeQk.html\">Simple Dart by John Smith</a></li></ul>"
+    }
+  ]
+}

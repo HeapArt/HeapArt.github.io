@@ -1,0 +1,17 @@
+{
+  "site_title": "Pumpkin by Ryan Dong",
+  "block_list": [
+    {
+      "title": "Video Tutorial",
+      "date": "Oct 18, 2020",
+      "caption": {
+        "type": "video",
+        "videoId": "wR3ed4iwHPw"
+      }
+    },
+    {
+      "title": "More Designs from Ryan Dong",
+      "body": "<ul><li><a href=\"./wR3ed4iwHPw.html\">Pumpkin by Ryan Dong</a></li></ul>"
+    }
+  ]
+}

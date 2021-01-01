@@ -91,7 +91,7 @@ def generatePageDefinitions(iVideoDataFile):
             wTitle = re.sub("^an ", "", wTitle)
             wTitle = re.sub("^An ", "", wTitle)
             wTitle = wTitle.replace(" (No Glue, No Scissors)", "")
-            wTitle = wTitle.replace(" , Thank-you for 100 subscribers", "")
+            wTitle = wTitle.replace(", Thank-you for 100 subscribers", "")
             wTitle = wTitle.replace("@Heap Art", "")
             wVideoEntry["Clean Title"] = wTitle
 
@@ -99,11 +99,11 @@ def generatePageDefinitions(iVideoDataFile):
             wVideoEntry["Search Title"] = wSearchTitle
             FullTutorialList.append(wVideoEntry)
 
-        if "Designer" in wVideoEntry:
-            if wVideoEntry["Designer"] not in TutorialByDesignerList:
-                TutorialByDesignerList[wVideoEntry["Designer"]] = []
+            if "Designer" in wVideoEntry:
+                if wVideoEntry["Designer"] not in TutorialByDesignerList:
+                    TutorialByDesignerList[wVideoEntry["Designer"]] = []
             
-            TutorialByDesignerList[wVideoEntry["Designer"]].append(wVideoEntry)
+                TutorialByDesignerList[wVideoEntry["Designer"]].append(wVideoEntry)
     
     
 #    print (PaperPlaneList)
@@ -121,8 +121,6 @@ def generatePageDefinitions(iVideoDataFile):
         wlink += "</li>"
         paperPlaneLinkList += wlink    
     paperPlaneLinkList += "</ol>"
-
-    print(paperPlaneLinkList)
 
     wPaperAirplaneContentBlock = createBlockDefinition("Paper Airplane List", None,  [paperPlaneLinkList], None )
 
@@ -192,10 +190,41 @@ def generatePageDefinitions(iVideoDataFile):
         save_file("azlist/{0}.json".format(wVideoEntry["Video"]), json.dumps(wAZVideoPage, indent=2))
 
 
-    print(wAZlinkList)
+    # Tutorial catalog by Designer
+    wDesignerBlockList = []
+    for wDesignerName in sorted(TutorialByDesignerList.keys()):
+        wDesignerVideoList = TutorialByDesignerList[wDesignerName]
+        wSortedDesignerVideoList = sorted(wDesignerVideoList, key=lambda x: x["Search Title"])
+        
+        wDesignerVideoLink = "<ul>"
+        for wVideoEntry in wSortedDesignerVideoList:
+            print(wVideoEntry)
+            wlink = "<li>"
+            wlink += "<a href=\"./" + wVideoEntry["Video"] + ".html\">" + wVideoEntry["Clean Title"] + "</a>"
+            wlink += "</li>"
+            wDesignerVideoLink+= wlink
+        wDesignerVideoLink += "</ul>"
 
-    # Tutorial catalog by A-Z
-    
+        wDesignerBlock = createBlockDefinition(wDesignerName, None, wDesignerVideoLink, None )
+        wDesignerBlockList.append(wDesignerBlock)
+        
+        wMoreFromDesignerBlock = createBlockDefinition("More Designs from {0}".format(wDesignerName), None, wDesignerVideoLink, None )
+
+        for wVideoEntry in wSortedDesignerVideoList:
+            
+            wCaptionDef = {}
+            wCaptionDef["type"] = "video"
+            wCaptionDef["videoId"] = wVideoEntry["Video"]
+        
+            wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], None, wCaptionDef )
+            wDesignerVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock,  wMoreFromDesignerBlock])
+            save_file("designerList/{0}.json".format(wVideoEntry["Video"]), json.dumps(wDesignerVideoPage, indent=2))
+
+
+        
+    wDesignerList = createPageDefinition("Origami Tutorials by Designer", wDesignerBlockList)
+    save_file("designerList/index.json", json.dumps(wDesignerList, indent=2))
+
     pass
 
 
