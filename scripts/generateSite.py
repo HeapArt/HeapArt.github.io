@@ -50,8 +50,8 @@ def generatePage(iPageDefinition, iSitePageDefinitionJSON, iSiteGenerationFile):
     for wItem in iPageDefinition.items():
         wPageDefinition[wItem[0]] = wItem[1]
 
-    print()
-    print(wPageDefinition)
+    #print()
+    #print(wPageDefinition)
     wTemplateFile = open(wPageDefinition["template"], "r")
     wFileString = wTemplateFile.read()
     
@@ -109,7 +109,7 @@ def generatePage(iPageDefinition, iSitePageDefinitionJSON, iSiteGenerationFile):
                     wFileString = wFileString.replace( " " + "{0}".format(wTextLink["text"]), " " + wTextReplacement)
 
     save_file(wPageDefinition["output_path"], wFileString)
-    #print(wFileString)
+    print("Generated File [{0}]".format(wPageDefinition["output_path"]))
 
 
 def generateNavBarEntryString(iEntry):

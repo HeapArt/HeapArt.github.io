@@ -91,7 +91,7 @@
     ],
     "caption" : {
       "type" : "image",
-      "src" : "/site/images/logo/logo-paperfold-black-small.png"
+      "src" : "/site/images/logo/logo-paperfold-black.svg"
     }
   },
   {
@@ -109,7 +109,7 @@
     ],
     "caption" : {
       "type" : "image",
-      "src" : "/site/images/logo/logo-rocket-black-large.png"
+      "src" : "/site/images/logo/logo-paperplane-black.svg"
     }
   }
 ]
