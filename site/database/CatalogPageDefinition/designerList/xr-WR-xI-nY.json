@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 21, 2020",
+      "date": "2020-10-20",
+      "body": "<p>Learn how to fold an Origami Cat designed by Toshie Takahama. This origami model is simple yet detailed at the same time. Perfect for Halloween. I haven't made one of these full screen origami tutorials for while now. Leave a comment and let me know if you prefer this format or my origami shorts. Liking both is a valid answer. Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "xr-WR-xI-nY"
+        "videoId": "xr-WR-xI-nY",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Toshie Takahama",
       "body": "<ul><li><a href=\"./xr-WR-xI-nY.html\">Cat by Toshie Takahama</a></li><li><a href=\"./uB5-I4IfVeo.html\">Yacht by Toshie Takahama</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/xr-WR-xI-nY/sddefault.jpg"
 }

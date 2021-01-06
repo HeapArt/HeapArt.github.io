@@ -3,10 +3,12 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Aug 11, 2020",
+      "date": "2020-08-10",
+      "body": "<p>This is Paper plane 14 of our 100 Exotic Paper Airplane Challenge. It's a paper airplane with a really lonely name, the Space Wing by Stephen Weiss. This is an origami plane folded from a square sheet. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 013 : Sky Cruiser by Michael LaFosse\", you could watch it at  <a href=\"https://youtu.be/9XLr-suSMlY\">https://youtu.be/9XLr-suSMlY</a> \n \nHere at Heap Art, we are trying to inspire people to connect using origami. If you like origami and if you like paper airplanes, please remember to subscribe. I will be delivering something new to you every week. Use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA?sub_confirmation=1\">https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \nSunday : Bonus Video, either a Vlog or a more Involved Origami Model. \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "VhqDaGH9XhE"
+        "videoId": "VhqDaGH9XhE",
+        "beforeBody": true
       }
     },
     {
@@ -19,7 +21,7 @@
     },
     {
       "title": "B",
-      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
+      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./3i6np8JLj-M.html\">Bull by John Montroll</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
     },
     {
       "title": "C",
@@ -31,7 +33,7 @@
     },
     {
       "title": "E",
-      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li>"
+      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li><li><a href=\"./UV7qz0qyMQ0.html\">Elephant Plane by Ashley Wood</a></li>"
     },
     {
       "title": "F",
@@ -101,5 +103,6 @@
       "title": "Y",
       "body": "<ul><li><a href=\"./uB5-I4IfVeo.html\">Yacht by Toshie Takahama</a></li><li><a href=\"./AGooU03CWkI.html\">Yoshizawa\u2019s Butterfly by Akira Yoshizawa</a></li><li><a href=\"./UxlC9LS9jEo.html\">YouTube Play Button and Happy Face by Jeremy Shafer</a></li><li><a href=\"./O2Y5c8qphZw.html\">YouTube Play Button by Jo Nakashima</a></li>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/VhqDaGH9XhE/sddefault.jpg"
 }

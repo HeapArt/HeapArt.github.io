@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 12, 2020",
+      "date": "2020-11-12",
+      "body": "<p>Learn how to fold this Easy Origami Dog. It's a Scottie, aka Scottish Terrier dog. This Origami Scottie is designed by Robert E. Neale. Really simple and really easy to fold. Try it out yourself. Learn it in less than a minute! Enjoy!!! \n \nThanks For Watching! \nWilson Lee  @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "jv7OOGQGo44"
+        "videoId": "jv7OOGQGo44",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Robert E. Neale",
       "body": "<ul><li><a href=\"./JXc14aCtXJA.html\">Modular Spinning Toy by Robert E. Neale</a></li><li><a href=\"./pv5h09qqyuM.html\">Penultimate Dodecahedron by Robert Neale</a></li><li><a href=\"./jv7OOGQGo44.html\">Scottie Dog by Robert E. Neale</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/jv7OOGQGo44/sddefault.jpg"
 }

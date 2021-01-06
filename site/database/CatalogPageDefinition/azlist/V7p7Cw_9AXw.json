@@ -3,10 +3,12 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "May 24, 2020",
+      "date": "2020-05-22",
+      "body": "<p>In this video, learn how to fold an origami Ninja Moon Star also known as the Senban Shuriken or the Square Shape Ninja Star. I will be making one for left hand throwing and one for right hand throwing. The difference is in the spin of the ninja star when you throw it. In the video, the orange paper is for right hand throwing and the yellow paper is for left hand throwing. \n \nI learned how to fold this ninja star when I was 8 or 9 years old. My parents owned a store in a shopping mall and the store in front of ours had a son whom was around 5 years older than me. One day he asked me if I knew how to fold a ninja star and I said yes. Then I folded a ninja star with 4 spikes, the one we all know and love. Afterward he said he would show me how to fold a different one and taught me how to fold this one, a square shape ninja star. \n \nThis is a special ninja star that throws really well and really simple to fold. However, I don't see anyone posting instructions on how to fold this ninja star on the internet. \n \nIf you have seen this origami ninja star before, Please leave a note in the comments on where you've seen it before.  \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "V7p7Cw_9AXw"
+        "videoId": "V7p7Cw_9AXw",
+        "beforeBody": true
       }
     },
     {
@@ -19,7 +21,7 @@
     },
     {
       "title": "B",
-      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
+      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./3i6np8JLj-M.html\">Bull by John Montroll</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
     },
     {
       "title": "C",
@@ -31,7 +33,7 @@
     },
     {
       "title": "E",
-      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li>"
+      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li><li><a href=\"./UV7qz0qyMQ0.html\">Elephant Plane by Ashley Wood</a></li>"
     },
     {
       "title": "F",
@@ -101,5 +103,6 @@
       "title": "Y",
       "body": "<ul><li><a href=\"./uB5-I4IfVeo.html\">Yacht by Toshie Takahama</a></li><li><a href=\"./AGooU03CWkI.html\">Yoshizawa\u2019s Butterfly by Akira Yoshizawa</a></li><li><a href=\"./UxlC9LS9jEo.html\">YouTube Play Button and Happy Face by Jeremy Shafer</a></li><li><a href=\"./O2Y5c8qphZw.html\">YouTube Play Button by Jo Nakashima</a></li>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/V7p7Cw_9AXw/sddefault.jpg"
 }

@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 15, 2020",
+      "date": "2020-11-15",
+      "body": "<p>Learn how to fold the Randlett's Flapping Bird designed by Samuel L. Randlett. This simple origami bird is easy to fold and fun to play with. A must learn for everyone. Learn it in less than a minute! Enjoy!!! \n \nThanks For Watching! \nWilson Lee  @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "vZlwR8sYUTo"
+        "videoId": "vZlwR8sYUTo",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Samuel L. Randlett",
       "body": "<ul><li><a href=\"./vZlwR8sYUTo.html\">Flapping Bird by Samuel L. Randlett</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/vZlwR8sYUTo/sddefault.jpg"
 }

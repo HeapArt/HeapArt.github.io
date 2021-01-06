@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 22, 2020",
+      "date": "2020-12-22",
+      "body": "<p>This is Paper Plane 33 of our 100 Exotic Paper Airplane Challenge. It is the \"Flying Fish\" designed by Stephen Weiss. This origami airplane leans more towards the difficult side but it is worth it. This origami plane flies really well for it's form and size. I would say this origami plane is more like a dart than a glider. It is folded from a single square sheet. Enjoy!!! \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 32 : Windblown by Didier Boursin\", you could watch it at  <a href=\"https://youtu.be/eXFBMOt-c3s\">https://youtu.be/eXFBMOt-c3s</a> \n \nFlying Fish by Stephen Weiss Tutorial Timeline: \n0:00 Demonstration \n0:10 Flight Test \n0:42 Pre-crease the Paper \n1:24 Folding the Leading Edge \n2:17 Folding the Aircraft's Fuselage \n3:33 Folding the Aircraft's Nose \n4:13 Folding the Aircraft's Tail \n5:14 Folding the Vertical Stabilizer \n5:56 Folding the Wings \n6:15 Open the Aircraft \n6:29 Paper Airplane Grip \n \nThanks For Watching! \nWilson Lee  @Heap Art   \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "7piPdosiC5Q"
+        "videoId": "7piPdosiC5Q",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Stephen Weiss",
       "body": "<ul><li><a href=\"./A45Bd6ruHVE.html\">Astro Tube by Stephen Weiss</a></li><li><a href=\"./_67Ye9vuq40.html\">Dollar Bill Glider 1 by Stephen Weiss</a></li><li><a href=\"./wSDaGgTmqwY.html\">Dollar Bill Glider 2 by Stephen Weiss</a></li><li><a href=\"./jDw3TqJ2gqg.html\">Dollar Bill Glider 3 by Stephen Weiss</a></li><li><a href=\"./7piPdosiC5Q.html\">Flying Fish by Stephen Weiss</a></li><li><a href=\"./VhqDaGH9XhE.html\">Space Wing by Stephen Weiss</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/7piPdosiC5Q/sddefault.jpg"
 }

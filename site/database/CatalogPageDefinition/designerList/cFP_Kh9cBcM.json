@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 27, 2020",
+      "date": "2020-12-26",
+      "body": "<p>This Beautiful Octagonal Box is designed by Tokomo Fuse. This model is a modular origami piece. It is compose of 8 sheets of square paper: 4 sheets of paper for the lid and 4 sheets for the base. Slightly Complex in the assembly but a really durable design. Perfect as a jewelry or gift box. give it try! This tutorial includes the lid and the base of the modular origami box. Enjoy! \n \nThanks for watching! \nWilson Lee @Heap Art  \n \nOrigami Octagonal Box Tutorial timeline: \n0:00 Demonstration \n0:15 Paper Size Information \n0:55 Octagonal Box Lid \n1:05 Quick Overview of Folding the Octagonal Box Lid Module \n1:42 Realtime Instructions for Folding the Octagonal Box Lid Module \n4:06 Time-lapse for the Octagonal Box Lid Module \n4:55 Octagonal Box Lid Assembly \n6:53 Octagonal Box Base \n6:58 Quick Overview of Folding the Octagonal Box Base Module \n8:08 Time-lapse for the Octagonal Box Base Module \n9:10 Realtime Instructions for Folding the Octagonal Box Base Module \n14:44 Octagonal Box Base Assembly \n16:29 Combining the Octagonal Box Lid and Base \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "cFP_Kh9cBcM"
+        "videoId": "cFP_Kh9cBcM",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Tomoko Fuse",
       "body": "<ul><li><a href=\"./cFP_Kh9cBcM.html\">Octagonal Box (Lid and Base) by Tomoko Fuse</a></li><li><a href=\"./0GRsuIdRKr8.html\">Pinwheel Cube by Tomoko Fuse</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/cFP_Kh9cBcM/sddefault.jpg"
 }

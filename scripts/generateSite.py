@@ -41,7 +41,7 @@ def generateSite(iSitePageDefinitionJSON, iSiteGenerationFile):
 
 def generatePage(iPageDefinition, iSitePageDefinitionJSON, iSiteGenerationFile):
 
-    wPageDefinition = {};
+    wPageDefinition = {}
     for wItem in iSitePageDefinitionJSON.items():
         if wItem[0] != "pages":
             if wItem[0] != "siteGenerationFile":
@@ -183,16 +183,16 @@ def genBlockString(iBlock):
     if "date" in iBlock:
         wTemp += "<p>{0}</p>".format(iBlock["date"])
   
+    wBodyString = ""
     if "body" in iBlock:
-        wTemp += "<div class='class_site_block_body'>"
-        for wLine in  iBlock["body"]: 
-            wTemp += wLine
-        wTemp += "</div>"
+        wBodyString += "<div class='class_site_block_body'>"
+        for wLine in  iBlock["body"]:
+            wBodyString += wLine.replace("\n","</br>")
+        wBodyString += "</div>"
   
-  
+    wCaptionString = ""
     if "caption" in iBlock:
-        wCaptionString = ""
-  
+    
         wType = iBlock["caption"]["type"]
   
         if "video" == wType:
@@ -223,8 +223,21 @@ def genBlockString(iBlock):
                 wCaptionString += '<img class="class_block_image" src="{0}"/>'.format(iBlock["caption"]["src"])
   
         if "" != wCaptionString:
-            wTemp += "<div class='class_site_block_caption'>{0}</div>".format(wCaptionString)
+            wCaptionString = "<div class='class_site_block_caption'>{0}</div>".format(wCaptionString)
   
+    if "" != wCaptionString:
+        if "beforeBody" in iBlock["caption"]:
+            if True == iBlock["caption"]["beforeBody"]:
+                wTemp+=wCaptionString+wBodyString
+            else:
+                wTemp+=wBodyString+wCaptionString    
+        else:
+            wTemp+=wBodyString
+
+    else:
+        wTemp+=wBodyString
+
+
     if "" != wTemp:
         return "<div class='class_site_block'>{0}</div>".format(wTemp)
   

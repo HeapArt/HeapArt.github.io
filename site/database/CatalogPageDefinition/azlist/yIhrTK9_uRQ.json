@@ -3,10 +3,12 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 8, 2020",
+      "date": "2020-12-08",
+      "body": "<p>This is Paper Plane 31 of our 100 Exotic Paper Airplane Challenge. It is the \u201cShuttle Dart\" designed by Michael G. LaFosse. The fuselage of this origami plane is tied together with a lock giving this aircraft great stability. This is an origami plane folded from a square sheet. Enjoy!!! \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 30 : Ready To Land by Didier Boursin\", you could watch it at  <a href=\"https://youtu.be/8J-5kVEFqbY\">https://youtu.be/8J-5kVEFqbY</a> \n \nThanks For Watching! \nWilson Lee  @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "yIhrTK9_uRQ"
+        "videoId": "yIhrTK9_uRQ",
+        "beforeBody": true
       }
     },
     {
@@ -19,7 +21,7 @@
     },
     {
       "title": "B",
-      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
+      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./3i6np8JLj-M.html\">Bull by John Montroll</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
     },
     {
       "title": "C",
@@ -31,7 +33,7 @@
     },
     {
       "title": "E",
-      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li>"
+      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li><li><a href=\"./UV7qz0qyMQ0.html\">Elephant Plane by Ashley Wood</a></li>"
     },
     {
       "title": "F",
@@ -101,5 +103,6 @@
       "title": "Y",
       "body": "<ul><li><a href=\"./uB5-I4IfVeo.html\">Yacht by Toshie Takahama</a></li><li><a href=\"./AGooU03CWkI.html\">Yoshizawa\u2019s Butterfly by Akira Yoshizawa</a></li><li><a href=\"./UxlC9LS9jEo.html\">YouTube Play Button and Happy Face by Jeremy Shafer</a></li><li><a href=\"./O2Y5c8qphZw.html\">YouTube Play Button by Jo Nakashima</a></li>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/yIhrTK9_uRQ/sddefault.jpg"
 }

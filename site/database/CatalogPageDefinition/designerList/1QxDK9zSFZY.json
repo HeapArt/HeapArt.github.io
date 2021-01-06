@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 18, 2020",
+      "date": "2020-11-18",
+      "body": "<p>Try out this amazing origami Flapping Butterfly by Deg Farelly. The full name of this model is actually \"Intermediate Flapping Butterfly\", Deg Farelly has a simpler version. However, this one just seems a lot cooler . Learn it in less than a minute! Enjoy!!! \n \nThanks For Watching! \nWilson Lee @Heap Art  \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "1QxDK9zSFZY"
+        "videoId": "1QxDK9zSFZY",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Deg Farelly",
       "body": "<ul><li><a href=\"./1QxDK9zSFZY.html\">Flapping Butterfly by Deg Farelly</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/1QxDK9zSFZY/sddefault.jpg"
 }

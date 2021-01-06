@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Jun 2, 2020",
+      "date": "2020-05-31",
+      "body": "<p>Welcome back to our 100 Exotic Paper Airplane Challenge. Today we are making the paper plane 004, the Tumble Wing by K\u014dsho Uchiyama. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 003 : Traditional Paper Airplane ( Dart )\", please find it at  <a href=\"https://youtu.be/3t9kZO8Fdv4\">https://youtu.be/3t9kZO8Fdv4</a> \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "EbXrPRykn88"
+        "videoId": "EbXrPRykn88",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from K\u014dsho Uchiyama",
       "body": "<ul><li><a href=\"./EbXrPRykn88.html\">Tumble Wing by K\u014dsho Uchiyama</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/EbXrPRykn88/sddefault.jpg"
 }

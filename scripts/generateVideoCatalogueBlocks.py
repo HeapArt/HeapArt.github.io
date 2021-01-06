@@ -26,10 +26,12 @@ def save_file(iPath, iText):
         wFile.close()
 
 
-def createPageDefinition(iTitle, iBlockList):
+def createPageDefinition(iTitle, iBlockList, iBackGroundImagelink):
     wNewPage = {}
     wNewPage["site_title"] = iTitle
     wNewPage["block_list"] = iBlockList
+    if None != iBackGroundImagelink:
+        wNewPage["background_image"] = iBackGroundImagelink
     return wNewPage
 
 
@@ -60,7 +62,7 @@ def generatePageDefinitions(iVideoDataFile):
         wTitle = wVideoEntry["Video title"].replace("  ", " ")
 
         if "(100 Exotic Paper Airplanes" in wVideoEntry["Video title"]:
-            wStrList = wVideoEntry["Video title"].split(" ");
+            wStrList = wVideoEntry["Video title"].split(" ")
             wTitle = wTitle.replace("Paper Plane " + wStrList[2] + " : ", "")
             wTitle = wTitle.replace(" (100 Exotic Paper Airplanes Challenge)", "")
             wTitle = wTitle.replace(" (100 Exotic Paper Airplanes)", "")
@@ -104,7 +106,24 @@ def generatePageDefinitions(iVideoDataFile):
                     TutorialByDesignerList[wVideoEntry["Designer"]] = []
             
                 TutorialByDesignerList[wVideoEntry["Designer"]].append(wVideoEntry)
-    
+
+        if "Description" in wVideoEntry:
+            wDescriptionMod = wVideoEntry["Description"]
+            wDescriptionMod = wDescriptionMod.replace("\n", " \n")
+            wParts = wDescriptionMod.split("http")
+
+            wDescriptionNew = wParts[0]
+            for i in range(1,len(wParts)):
+                wPartSplit = wParts[i].split(" ")
+                wLink = "http" + wPartSplit[0]
+                wDescriptionNew += " <a href=\"{0}\">{0}</a>".format(wLink)
+            
+                for k in range(1,len(wPartSplit)):
+                    wDescriptionNew += " " + wPartSplit[k]
+
+
+            wVideoEntry["Description"] = wDescriptionNew
+            
     
 #    print (PaperPlaneList)
 #    print (QuickieOrigamiList)
@@ -119,7 +138,8 @@ def generatePageDefinitions(iVideoDataFile):
         wlink = "<li>"
         wlink += "<a href=\"./" + wKey + ".html\">" + wVideoEntry["Clean Title"] + "</a>"
         wlink += "</li>"
-        paperPlaneLinkList += wlink    
+        paperPlaneLinkList += wlink
+
     paperPlaneLinkList += "</ol>"
 
     wPaperAirplaneContentBlock = createBlockDefinition("Paper Airplane List", None,  [paperPlaneLinkList], None )
@@ -133,7 +153,7 @@ def generatePageDefinitions(iVideoDataFile):
       "<p>Wilson Lee @HeapArt</p>"      
     ], None )
 
-    w100ExoticPaperAirplanesChallengePageDefintion = createPageDefinition("100 Exotic Paper Airplane Challenge", [wChallengeDefinition, wPaperAirplaneContentBlock])
+    w100ExoticPaperAirplanesChallengePageDefintion = createPageDefinition("100 Exotic Paper Airplane Challenge", [wChallengeDefinition, wPaperAirplaneContentBlock], None)
     save_file("paperairplanes/index.json", json.dumps(w100ExoticPaperAirplanesChallengePageDefintion, indent=2))
 
     for wKey in sorted(PaperPlaneList.keys()):
@@ -142,9 +162,14 @@ def generatePageDefinitions(iVideoDataFile):
         wCaptionDef = {}
         wCaptionDef["type"] = "video"
         wCaptionDef["videoId"] = wVideoEntry["Video"]
+        wCaptionDef["beforeBody"] = True
         
-        wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], None, wCaptionDef )
-        wPaperPlanePage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock, wPaperAirplaneContentBlock])
+        wDescription = None
+        if "Description" in wVideoEntry:
+            wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
+
+        wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
+        wPaperPlanePage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock, wPaperAirplaneContentBlock], wVideoEntry["YTThumbnail"]["xlarge"])
         save_file("paperairplanes/{0}.json".format(wKey), json.dumps(wPaperPlanePage, indent=2))
 
     # Tutorial catalog by A-Z
@@ -176,7 +201,7 @@ def generatePageDefinitions(iVideoDataFile):
         wVideoBlock = createBlockDefinition(wLinkListKey, None, wAZlinkList[wLinkListKey], None )
         wAZBlockList.append(wVideoBlock)
 
-    wAZList = createPageDefinition("Origami Tutorials from A to Z", wAZBlockList)
+    wAZList = createPageDefinition("Origami Tutorials from A to Z", wAZBlockList, None)
     save_file("azlist/index.json", json.dumps(wAZList, indent=2))
 
     for wVideoEntry in wSortedTutorialList:
@@ -184,9 +209,14 @@ def generatePageDefinitions(iVideoDataFile):
         wCaptionDef = {}
         wCaptionDef["type"] = "video"
         wCaptionDef["videoId"] = wVideoEntry["Video"]
+        wCaptionDef["beforeBody"] = True
         
-        wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], None, wCaptionDef )
-        wAZVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock] + wAZBlockList)
+        wDescription = None
+        if "Description" in wVideoEntry:
+            wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
+
+        wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
+        wAZVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock] + wAZBlockList, wVideoEntry["YTThumbnail"]["xlarge"])
         save_file("azlist/{0}.json".format(wVideoEntry["Video"]), json.dumps(wAZVideoPage, indent=2))
 
 
@@ -215,14 +245,19 @@ def generatePageDefinitions(iVideoDataFile):
             wCaptionDef = {}
             wCaptionDef["type"] = "video"
             wCaptionDef["videoId"] = wVideoEntry["Video"]
+            wCaptionDef["beforeBody"] = True
         
-            wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], None, wCaptionDef )
-            wDesignerVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock,  wMoreFromDesignerBlock])
+            wDescription = None
+            if "Description" in wVideoEntry:
+                wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
+
+            wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
+            wDesignerVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock,  wMoreFromDesignerBlock], wVideoEntry["YTThumbnail"]["xlarge"])
             save_file("designerList/{0}.json".format(wVideoEntry["Video"]), json.dumps(wDesignerVideoPage, indent=2))
 
 
         
-    wDesignerList = createPageDefinition("Origami Tutorials by Designer", wDesignerBlockList)
+    wDesignerList = createPageDefinition("Origami Tutorials by Designer", wDesignerBlockList,None)
     save_file("designerList/index.json", json.dumps(wDesignerList, indent=2))
 
     pass

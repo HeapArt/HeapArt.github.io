@@ -3,10 +3,12 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "May 29, 2020",
+      "date": "2020-05-23",
+      "body": "<p>In this video we will learn how to fold the traditional star box. The star box is a really beautiful and simple piece that is practical as well. You could put some paper clips or erasers in it and have on your desk as a decoration. \n \nI learned how to fold the traditional star box from my sister. Back when we were in elementary school there was a myth among students where your wish will come true if you make a hundred paper stars. Usually these were romantic wishes. The traditional star box was the perfect container for these 100 paper stars. \n \nPlease leave a not in the comments if you've heard of this myth before. Did your dream come true? \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "3aYligwK0BI"
+        "videoId": "3aYligwK0BI",
+        "beforeBody": true
       }
     },
     {
@@ -19,7 +21,7 @@
     },
     {
       "title": "B",
-      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
+      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./3i6np8JLj-M.html\">Bull by John Montroll</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
     },
     {
       "title": "C",
@@ -31,7 +33,7 @@
     },
     {
       "title": "E",
-      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li>"
+      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li><li><a href=\"./UV7qz0qyMQ0.html\">Elephant Plane by Ashley Wood</a></li>"
     },
     {
       "title": "F",
@@ -101,5 +103,6 @@
       "title": "Y",
       "body": "<ul><li><a href=\"./uB5-I4IfVeo.html\">Yacht by Toshie Takahama</a></li><li><a href=\"./AGooU03CWkI.html\">Yoshizawa\u2019s Butterfly by Akira Yoshizawa</a></li><li><a href=\"./UxlC9LS9jEo.html\">YouTube Play Button and Happy Face by Jeremy Shafer</a></li><li><a href=\"./O2Y5c8qphZw.html\">YouTube Play Button by Jo Nakashima</a></li>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/3aYligwK0BI/sddefault.jpg"
 }

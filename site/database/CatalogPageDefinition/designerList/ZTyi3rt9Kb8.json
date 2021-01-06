@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 30, 2020",
+      "date": "2020-10-30",
+      "body": "<p>The last bird was a crow, this one is a raven. How do you tell the difference between a crow and a raven? Learn How to fold this Origami Raven designed by Tavin and Paper Crafts 1101. Learn it in less than a minute! Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "ZTyi3rt9Kb8"
+        "videoId": "ZTyi3rt9Kb8",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Tavin & Paper Crafts 1101",
       "body": "<ul><li><a href=\"./ZTyi3rt9Kb8.html\">Raven by Tavin & Paper Crafts 1101</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/ZTyi3rt9Kb8/sddefault.jpg"
 }

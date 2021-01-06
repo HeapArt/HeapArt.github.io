@@ -3,10 +3,12 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 24, 2020",
+      "date": "2020-10-24",
+      "body": "<p>Learn how to fold this easy Origami Cat designed by Steve Biddle. It is the perfect familiar cat companion for your origami witch or wizard. It is also the perfect origami decoration for Halloween. Mini Cats Everywhere!!! Try it out, I hope you like it. Learn it in less than a minute! Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "HJXGWXFq9Qk"
+        "videoId": "HJXGWXFq9Qk",
+        "beforeBody": true
       }
     },
     {
@@ -19,7 +21,7 @@
     },
     {
       "title": "B",
-      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
+      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./3i6np8JLj-M.html\">Bull by John Montroll</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
     },
     {
       "title": "C",
@@ -31,7 +33,7 @@
     },
     {
       "title": "E",
-      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li>"
+      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li><li><a href=\"./UV7qz0qyMQ0.html\">Elephant Plane by Ashley Wood</a></li>"
     },
     {
       "title": "F",
@@ -101,5 +103,6 @@
       "title": "Y",
       "body": "<ul><li><a href=\"./uB5-I4IfVeo.html\">Yacht by Toshie Takahama</a></li><li><a href=\"./AGooU03CWkI.html\">Yoshizawa\u2019s Butterfly by Akira Yoshizawa</a></li><li><a href=\"./UxlC9LS9jEo.html\">YouTube Play Button and Happy Face by Jeremy Shafer</a></li><li><a href=\"./O2Y5c8qphZw.html\">YouTube Play Button by Jo Nakashima</a></li>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/HJXGWXFq9Qk/sddefault.jpg"
 }

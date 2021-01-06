@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 21, 2020",
+      "date": "2020-11-21",
+      "body": "<p>This Origami Foldable Knife by Robert J. Lang is truly one of a kind. It  really looks like a jack knife and has a retractable blade. Give it a try and see if you like it. Learn it in less than a minute! Enjoy!!! \n \nThanks For Watching! \nWilson Lee @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "ONz7y8lu_0A"
+        "videoId": "ONz7y8lu_0A",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Robert J. Lang",
       "body": "<ul><li><a href=\"./ONz7y8lu_0A.html\">Foldable Knife by Robert J. Lang</a></li><li><a href=\"./XAzkIS6hP-Y.html\">Swan by Robert J. Lang</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/ONz7y8lu_0A/sddefault.jpg"
 }

@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 21, 2020",
+      "date": "2020-12-21",
+      "body": "<p>Santa is not delayed by the pandemic! Christmas is the best time of the year. Here is the Origami Santa Claus, or if you would prefer Father Christmas. This origami model of Saint Nicolas is designed by Steve and Megumi Biddle. It's perfect as a Christmas tree ornament or decoration. The model is more of the difficult side. I still hope you will give it a try. Enjoy! \n \nOrigami Santa Clause timeline: \n0:00 Demonstration \n0:22 Pre-creasing the paper \n3:23 Diamond Base \n4:12 Sink fold \n5:49 Folding the basic body shape \n9:10 Folding the basic head \n9:33 Folding the basic arms \n10:37 Folding the legs \n12:42 Folding the pants \n13:55 Folding the details of the left arm \n14:29 Folding the details of the right arm \n15:10 Folding Santa's hat and face \n16:47 Completed Origami Santa Clause \n \nThanks For Watching! \nWilson Lee @Heap Art  \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "0P5byFXTHWA"
+        "videoId": "0P5byFXTHWA",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Steve Biddle",
       "body": "<ul><li><a href=\"./HJXGWXFq9Qk.html\">Cat by Steve Biddle</a></li><li><a href=\"./0P5byFXTHWA.html\">Santa Claus by Steve And Megumi Biddle</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/0P5byFXTHWA/sddefault.jpg"
 }

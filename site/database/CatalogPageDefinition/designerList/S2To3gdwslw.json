@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 2, 2020",
+      "date": "2020-10-01",
+      "body": "<p>Learn how to fold an Origami Crane\u2019s Egg designed by Richard L. Alexander. It's a simple Modular origami model. Less than a minute origami. Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "S2To3gdwslw"
+        "videoId": "S2To3gdwslw",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Richard L. Alexander",
       "body": "<ul><li><a href=\"./S2To3gdwslw.html\">Crane\u2019s Egg by Richard L. Alexander</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/S2To3gdwslw/sddefault.jpg"
 }

@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 18, 2020",
+      "date": "2020-12-18",
+      "body": "<p>This 8-Pointed Origami Star by Dr. James M. Sakoda is folded out of only 1 piece of square paper. The pattern on this Eight Point Star is simply magnificent. It's perfect as a Christmas decoration. Enjoy! \n \nEight-Point Origami Star timeline: \n0:00 Demonstration \n0:27 Diamond Base \n1:46 Bird Base \n3:45 Sink fold \n5:15 Locking the Base \n6:13 Folding the Points of the Star \n7:45 Opening the Star \n7:53 Forming the Shape of the Star \n9:02 Reinforce the Star Shape \n9:13 Open the Star to Complete \n \nThanks For Watching! \nWilson Lee  @Heap Art    \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "ooFBORI4YLw"
+        "videoId": "ooFBORI4YLw",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Dr. James M. Sakoda",
       "body": "<ul><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li><li><a href=\"./Sc3sw4WK3B0.html\">SST Origami Plane by James M. Sakoda</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/ooFBORI4YLw/sddefault.jpg"
 }

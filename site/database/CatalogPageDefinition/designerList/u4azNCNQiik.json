@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 31, 2020",
+      "date": "2020-10-31",
+      "body": "<p>This Origami Rosette by Paul Jackson is a really wonderful model. It is the perfect decoration arond the house. This origami rosette is 100% pure origami, no glue and no tape. The design of this model uses a fan lock. When you open it up, it just snaps into this wonderful rosette shape. I hope you enjoy it!!!  \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "u4azNCNQiik"
+        "videoId": "u4azNCNQiik",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Paul Jackson",
       "body": "<ul><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./755xrgSpzRw.html\">Hawk by Paul Jackson</a></li><li><a href=\"./u4azNCNQiik.html\">Rosette by Paul Jackson</a></li><li><a href=\"./kD0rkZSGG78.html\">Space Dart by Paul Jackson</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/u4azNCNQiik/sddefault.jpg"
 }

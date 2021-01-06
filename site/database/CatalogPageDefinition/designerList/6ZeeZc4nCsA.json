@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Jul 21, 2020",
+      "date": "2020-07-20",
+      "body": "<p>My 100 Exotic Paper Airplane Challenge is where I try to find 100 different type of paper airplanes, ideally not so well known and show you how to fold them. I will be publishing a new video with a new paper plane every week. Without delays, and If I am able to maintain this commitment, this project will last until April 2022. Please subscribe and join me as I make this database of 100 exotic paper airplanes and share it with you.  Here at Heap Art we are a Origami Channel. By subscribing, you will be receiving origami tutorials as well. \n \nThis is Paper plane 11 of our 100 Exotic Paper Airplane Challenge. It's Concorde By Kunihiko Kasahara. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 010 : Little Nicky by Nick Robinson\", you could watch it at  <a href=\"https://youtu.be/Gg6B-1MrH4A\">https://youtu.be/Gg6B-1MrH4A</a> \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "6ZeeZc4nCsA"
+        "videoId": "6ZeeZc4nCsA",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Kunihiko Kasahara",
       "body": "<ul><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./6ZeeZc4nCsA.html\">Concorde By Kunihiko Kasahara</a></li><li><a href=\"./sRW7lelU3EQ.html\">Flying Witch by Kunihiko Kasahara</a></li><li><a href=\"./KBk0ohOqNko.html\">Hunter by Kunihiko Kasahara</a></li><li><a href=\"./4kPN0WOz-OA.html\">Peacock By Kunihiko Kasahara</a></li><li><a href=\"./u9ao8IgOg-8.html\">Rabbit by Kunihiko Kasahara</a></li><li><a href=\"./RNa-dUg0_po.html\">Skull by Kunihiko Kasahara</a></li><li><a href=\"./gYDWYAR_gHU.html\">Snail by Kunihiko Kasahara</a></li><li><a href=\"./0uZDXBr2DbE.html\">Space Taxi by Kunihiko Kasahara</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/6ZeeZc4nCsA/sddefault.jpg"
 }

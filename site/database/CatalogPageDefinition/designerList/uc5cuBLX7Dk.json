@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 7, 2020",
+      "date": "2020-11-07",
+      "body": "<p>Learn how to Fold this Un-unfoldable box designed by Ed Sullivan. Once it is complete, you cannot easily open the model and check the crease pattern. \n \nThanks For Watching! \nWilson Lee  @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "uc5cuBLX7Dk"
+        "videoId": "uc5cuBLX7Dk",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Ed Sullivan",
       "body": "<ul><li><a href=\"./3fAijOsgwOs.html\">Penta-Flinger by Ed Sullivan</a></li><li><a href=\"./uc5cuBLX7Dk.html\">Un-unfoldable Box by Ed Sullivan</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/uc5cuBLX7Dk/sddefault.jpg"
 }

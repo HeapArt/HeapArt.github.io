@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Aug 4, 2020",
+      "date": "2020-08-03",
+      "body": "<p>My 100 Exotic Paper Airplane Challenge is where I try to find 100 different type of paper airplanes, ideally not so well known and show you how to fold them. I will be publishing a new video with a new paper plane every week. Here at Heap Art we are a Origami Channel. By subscribing, you will be receiving origami tutorials as well. Every Tuesday and Sunday I will show you how to fold something new and never seen on this channel. \n \nThis is Paper plane 13 of our 100 Exotic Paper Airplane Challenge. It's the Sky Cruiser by Michael LaFosse. This is simply a really cool looking plane and it flies really fast. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 012 : Backwards Plane by Carlos Gonzalez Garcia\", you could watch it at  <a href=\"https://youtu.be/qnEFdbOXGXs\">https://youtu.be/qnEFdbOXGXs</a> \n \nHere at Heap Art, we are trying to inspire people to connect using origami. If you like origami and if you like paper airplanes, please remember to subscribe. I will be delivering something new to you every week. Use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA?sub_confirmation=1\">https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA?sub_confirmation=1</a> \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "9XLr-suSMlY"
+        "videoId": "9XLr-suSMlY",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Michael G. LaFosse",
       "body": "<ul><li><a href=\"./_5ioFyaVjY4.html\">Chuck Finn by Michael G. LaFosse</a></li><li><a href=\"./yIhrTK9_uRQ.html\">Shuttle Dart by Michael G. LaFosse</a></li><li><a href=\"./qaaBMV0rFG0.html\">Shuttlecock by Michael G. LaFosse</a></li><li><a href=\"./9XLr-suSMlY.html\">Sky Cruiser by Michael LaFosse</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/9XLr-suSMlY/sddefault.jpg"
 }

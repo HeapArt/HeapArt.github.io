@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 8, 2020",
+      "date": "2020-11-08",
+      "body": "<p>Learn how the Origami Cube designed by Shuzo Fujimoto. This origami cube is relatively difficulted to fold. This video is not my best work. However I do hope you will enjoy it. Enjoy!!! \n \nThanks For Watching! \nWilson Lee  @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "AxYv9Z9wPno"
+        "videoId": "AxYv9Z9wPno",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Shuzo Fujimoto",
       "body": "<ul><li><a href=\"./AxYv9Z9wPno.html\">Cube by Shuzo Fujimoto</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/AxYv9Z9wPno/sddefault.jpg"
 }

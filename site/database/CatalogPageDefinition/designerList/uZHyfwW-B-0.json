@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 7, 2020",
+      "date": "2020-12-07",
+      "body": "<p>I've been teasing everyone with this origami model for a while. This is the origami Face by Steven Casey. I really like this model because it looks so good. I hope you like. Enjoy! \n \nThanks For Watching! \nWilson Lee @Heap Art  \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "uZHyfwW-B-0"
+        "videoId": "uZHyfwW-B-0",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Steven Casey",
       "body": "<ul><li><a href=\"./uZHyfwW-B-0.html\">Face by Steven Casey</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/uZHyfwW-B-0/sddefault.jpg"
 }

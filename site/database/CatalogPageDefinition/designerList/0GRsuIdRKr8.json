@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Aug 16, 2020",
+      "date": "2020-08-15",
+      "body": "<p>The Pinwheel Cube by Tomoko Fuse is a really easy modular origami model. Learn how to fold it with this tutorial. \n \nTo fold the Pinwheel Cube you will need 6 piece of square paper for each face of the cube. \n \n0:00 Model Name and Designer \n0:08 How to Fold the Module \n2:25 Completed Module \n2:40 Model Assembly \n4:27 Completed model \n \nHere at Heap Art, we are trying to inspire people to practice origami. If you like origami and paper airplanes -- Please subscribe to my channel for weekly tutorials. You could use the following link to subscribe to by channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \nSunday : Bonus Video, either a Vlog or a more Involved Origami Model. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "0GRsuIdRKr8"
+        "videoId": "0GRsuIdRKr8",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Tomoko Fuse",
       "body": "<ul><li><a href=\"./cFP_Kh9cBcM.html\">Octagonal Box (Lid and Base) by Tomoko Fuse</a></li><li><a href=\"./0GRsuIdRKr8.html\">Pinwheel Cube by Tomoko Fuse</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/0GRsuIdRKr8/sddefault.jpg"
 }

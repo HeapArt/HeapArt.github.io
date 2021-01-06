@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Aug 11, 2020",
+      "date": "2020-08-10",
+      "body": "<p>This is Paper plane 14 of our 100 Exotic Paper Airplane Challenge. It's a paper airplane with a really lonely name, the Space Wing by Stephen Weiss. This is an origami plane folded from a square sheet. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 013 : Sky Cruiser by Michael LaFosse\", you could watch it at  <a href=\"https://youtu.be/9XLr-suSMlY\">https://youtu.be/9XLr-suSMlY</a> \n \nHere at Heap Art, we are trying to inspire people to connect using origami. If you like origami and if you like paper airplanes, please remember to subscribe. I will be delivering something new to you every week. Use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA?sub_confirmation=1\">https://www.youtube.com/channel/UCwVrmDKZhN9C22O8lzHRFCA?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \nSunday : Bonus Video, either a Vlog or a more Involved Origami Model. \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "VhqDaGH9XhE"
+        "videoId": "VhqDaGH9XhE",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Stephen Weiss",
       "body": "<ul><li><a href=\"./A45Bd6ruHVE.html\">Astro Tube by Stephen Weiss</a></li><li><a href=\"./_67Ye9vuq40.html\">Dollar Bill Glider 1 by Stephen Weiss</a></li><li><a href=\"./wSDaGgTmqwY.html\">Dollar Bill Glider 2 by Stephen Weiss</a></li><li><a href=\"./jDw3TqJ2gqg.html\">Dollar Bill Glider 3 by Stephen Weiss</a></li><li><a href=\"./7piPdosiC5Q.html\">Flying Fish by Stephen Weiss</a></li><li><a href=\"./VhqDaGH9XhE.html\">Space Wing by Stephen Weiss</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/VhqDaGH9XhE/sddefault.jpg"
 }

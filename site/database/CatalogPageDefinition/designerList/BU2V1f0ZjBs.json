@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Jul 12, 2020",
+      "date": "2020-07-11",
+      "body": "<p>I did something different with my video today. Please let me know in the comments if you like it. \n \nHere at Heap Art, we are trying to inspire people to connect with each other through origami and paper folding. Subscribe to my channel to receive something new every week. \n \nToday we are learning how to fold an Icosahedral Skeleton by Miyuki Kawamura. This model is really pretty and I know you'll enjoy it. \n \nPlease find the time stamp of the tutorial below. It's to help you jump through the tutorial quickly. \n \n00:09 How to fold the Module \n02:21 Module folding Time-lapse \n02:40 Assembling the Base of the Model \n04:35 Assembling the Middle of the Model \n06:34 Assembling the Top of the Model \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "BU2V1f0ZjBs"
+        "videoId": "BU2V1f0ZjBs",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Miyuki Kawamura",
       "body": "<ul><li><a href=\"./BU2V1f0ZjBs.html\">Icosahedral Skeleton by Miyuki Kawamura</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/BU2V1f0ZjBs/sddefault.jpg"
 }

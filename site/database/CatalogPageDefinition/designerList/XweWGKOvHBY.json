@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Sep 16, 2020",
+      "date": "2020-09-16",
+      "body": "<p>Thanks for 300+ subscribers!! Learn how to fold an Origami Squirrel designed by John Montroll in this video. Less than a minute origami. Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "XweWGKOvHBY"
+        "videoId": "XweWGKOvHBY",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from John Montroll",
-      "body": "<ul><li><a href=\"./8N1fOwLXeK0.html\">Angelfish by John Montroll</a></li><li><a href=\"./XweWGKOvHBY.html\">Squirrel by John Montroll</a></li></ul>"
+      "body": "<ul><li><a href=\"./8N1fOwLXeK0.html\">Angelfish by John Montroll</a></li><li><a href=\"./3i6np8JLj-M.html\">Bull by John Montroll</a></li><li><a href=\"./XweWGKOvHBY.html\">Squirrel by John Montroll</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/XweWGKOvHBY/sddefault.jpg"
 }

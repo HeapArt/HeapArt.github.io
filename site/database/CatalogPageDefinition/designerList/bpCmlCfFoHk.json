@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Sep 9, 2020",
+      "date": "2020-09-09",
+      "body": "<p>Learn how to fold an origami Skunk designed by Nick Robinson in this video. This tutorial is longer than a minute due to the complex reverse fold for the tail. However, this model is really worth trying out. \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "bpCmlCfFoHk"
+        "videoId": "bpCmlCfFoHk",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Nick Robinson",
       "body": "<ul><li><a href=\"./1lp6L-6vpGs.html\">Giraffe by Nick Robinson</a></li><li><a href=\"./Gg6B-1MrH4A.html\">Little Nicky by Nick Robinson</a></li><li><a href=\"./bpCmlCfFoHk.html\">Skunk by Nick Robinson</a></li><li><a href=\"./u3TOQ2dqJaw.html\">Star By Nick Robinson</a></li><li><a href=\"./e9fm86pwLGo.html\">Tri Plane by Nick Robinson</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/bpCmlCfFoHk/sddefault.jpg"
 }

@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 19, 2020",
+      "date": "2020-10-18",
+      "body": "<p>Learn how to fold an Origami Skull Mask designed by Kunihiko Kasahara. This skull mask is also great as a Halloween decoration too. Perfect for Halloween. Less than a minute origami. As usual, Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "RNa-dUg0_po"
+        "videoId": "RNa-dUg0_po",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Kunihiko Kasahara",
       "body": "<ul><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./6ZeeZc4nCsA.html\">Concorde By Kunihiko Kasahara</a></li><li><a href=\"./sRW7lelU3EQ.html\">Flying Witch by Kunihiko Kasahara</a></li><li><a href=\"./KBk0ohOqNko.html\">Hunter by Kunihiko Kasahara</a></li><li><a href=\"./4kPN0WOz-OA.html\">Peacock By Kunihiko Kasahara</a></li><li><a href=\"./u9ao8IgOg-8.html\">Rabbit by Kunihiko Kasahara</a></li><li><a href=\"./RNa-dUg0_po.html\">Skull by Kunihiko Kasahara</a></li><li><a href=\"./gYDWYAR_gHU.html\">Snail by Kunihiko Kasahara</a></li><li><a href=\"./0uZDXBr2DbE.html\">Space Taxi by Kunihiko Kasahara</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/RNa-dUg0_po/sddefault.jpg"
 }

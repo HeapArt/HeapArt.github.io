@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 15, 2020",
+      "date": "2020-12-15",
+      "body": "<p>This is Paper Plane 32 of our 100 Exotic Paper Airplane Challenge. It is the \u201cWindblown\" designed by Didier Boursin. This origami airplane is relatively simple to fold and it could fly really far when the wings are properly calibrated. This is an origami plane folded from a square sheet. Enjoy!!! \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 31 : Shuttle Dart by Michael G. LaFosse\", you could watch it at  <a href=\"https://youtu.be/yIhrTK9_uRQ\">https://youtu.be/yIhrTK9_uRQ</a> \n \nThanks For Watching! \nWilson Lee @Heap Art   \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "eXFBMOt-c3s"
+        "videoId": "eXFBMOt-c3s",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Didier Boursin",
       "body": "<ul><li><a href=\"./gvoPPkv6roo.html\">Ready For Takeoff by Didier Boursin</a></li><li><a href=\"./8J-5kVEFqbY.html\">Ready To Land by Didier Boursin</a></li><li><a href=\"./eXFBMOt-c3s.html\">Windblown by Didier Boursin</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/eXFBMOt-c3s/sddefault.jpg"
 }

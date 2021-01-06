@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Jun 9, 2020",
+      "date": "2020-06-08",
+      "body": "<p>Here at Heap Art, we are trying to inspire people to connect using origami and paper folding. \n \nWelcome back to our 100 Exotic Paper Airplane Challenge. Today we are making the paper plane 005, the Astro Tube by Stephen Weiss. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 004 : Tumble Wing by K\u014dsho Uchiyama\", please find it at  <a href=\"https://youtu.be/EbXrPRykn88\">https://youtu.be/EbXrPRykn88</a> \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "A45Bd6ruHVE"
+        "videoId": "A45Bd6ruHVE",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Stephen Weiss",
       "body": "<ul><li><a href=\"./A45Bd6ruHVE.html\">Astro Tube by Stephen Weiss</a></li><li><a href=\"./_67Ye9vuq40.html\">Dollar Bill Glider 1 by Stephen Weiss</a></li><li><a href=\"./wSDaGgTmqwY.html\">Dollar Bill Glider 2 by Stephen Weiss</a></li><li><a href=\"./jDw3TqJ2gqg.html\">Dollar Bill Glider 3 by Stephen Weiss</a></li><li><a href=\"./7piPdosiC5Q.html\">Flying Fish by Stephen Weiss</a></li><li><a href=\"./VhqDaGH9XhE.html\">Space Wing by Stephen Weiss</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/A45Bd6ruHVE/sddefault.jpg"
 }

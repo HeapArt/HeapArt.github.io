@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 4, 2020",
+      "date": "2020-12-04",
+      "body": "<p>This origami butterfly is Yoshizawa's butterfly. This is a really elegant piece and could be folded within 3 minutes in real time. It is really simple and easy to fold. Give it a try and see if you like it. Learn it in less than a minute! Enjoy!!! \n \nThanks For Watching! \nWilson Lee  @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "AGooU03CWkI"
+        "videoId": "AGooU03CWkI",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Akira Yoshizawa",
       "body": "<ul><li><a href=\"./AGooU03CWkI.html\">Yoshizawa\u2019s Butterfly by Akira Yoshizawa</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/AGooU03CWkI/sddefault.jpg"
 }

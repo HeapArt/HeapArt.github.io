@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 29, 2020",
+      "date": "2020-12-28",
+      "body": "<p>This is Paper Plane 34 of our 100 Exotic Paper Airplane Challenge. It is the \"Spectre\" designed by Andrew Dewar. This amazing origami plane has a flat tail and is folded from a single sheet of square paper. It flies quite fast and will zoom across the room. Enjoy!!! \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 033 : Flying Fish by Stephen Weiss\", you could watch it at  <a href=\"https://youtu.be/7piPdosiC5Q\">https://youtu.be/7piPdosiC5Q</a> \n \nSpectre by Andrew Dewar Tutorial Timeline: \n0:00 Demonstration \n0:05 Flight Test \n0:27 Quick Tutorial Overview \n1:38 Start of Tutorial \n1:55 Start Folding! \n2:57 Folding the Left Leading Edge \n4:09 Folding the Right Leading Edge \n5:13 Folding the Aircraft's Fuselage \n6:53 Folding the Aircraft's Nose \n7:43 Folding the Aircraft's Wings \n8:46 Open the Aircraft \n9:00 Paper Airplane Grip \n \nThanks For Watching! \nWilson Lee  @Heap Art    \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "wYLFKA2WIyQ"
+        "videoId": "wYLFKA2WIyQ",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Andrew Dewar",
       "body": "<ul><li><a href=\"./1LrKfI3oVfs.html\">Jumping Jack by Andrew Dewar</a></li><li><a href=\"./wYLFKA2WIyQ.html\">Spectre by Andrew Dewar</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/wYLFKA2WIyQ/sddefault.jpg"
 }

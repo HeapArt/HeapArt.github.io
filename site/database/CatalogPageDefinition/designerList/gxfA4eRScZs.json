@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Aug 2, 2020",
+      "date": "2020-08-01",
+      "body": "<p>Today we are going to learn how to fold WXYZ by Tung Ken Lam. This is an amazing model. It is a kusudama star with 4 intersecting triangles. As I am an Engineer, therefore part of me is a mathematician, the mathematician is screaming with joy. This model is a physical model of 4 intersecting planes in 3 dimensional space. I hope you enjoy it as mush as I do. \n \nTo make this model you will need 12 pieces of paper to make 12 modules. Ideally 4 colors for the 4 different planes. Therefore 3 modules for each color.  \n \nHere at Heap Art, we are trying to inspire people to connect with each other through origami and paper folding. Subscribe to my channel to receive something new every week. If you like Paper Airplanes and you like Origami. Please subscribe to my channel using the link below: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nBelow is the time table of the Tutorial! \n0:00 Model Demo \n0:13 Folding The Module \n3:01 Module Time lapse \n3:17 Adding the First Corner \n4:07 Adding the Second Corner \n6:04 Adding the Last Corner \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "gxfA4eRScZs"
+        "videoId": "gxfA4eRScZs",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Tung Ken Lam",
       "body": "<ul><li><a href=\"./gxfA4eRScZs.html\">WXYZ by Tung Ken Lam</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/gxfA4eRScZs/sddefault.jpg"
 }

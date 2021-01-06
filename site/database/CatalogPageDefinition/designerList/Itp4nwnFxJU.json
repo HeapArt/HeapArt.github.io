@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 9, 2020",
+      "date": "2020-12-09",
+      "body": "<p>Something simple today! This easy origami bird is Jack's Bird by Jack Geist. Really easy to make and could be folded in less than 2 minutes real time. Enjoy!!! \n \nThanks For Watching! \nWilson Lee  @Heap Art   \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "Itp4nwnFxJU"
+        "videoId": "Itp4nwnFxJU",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Jack Geist",
       "body": "<ul><li><a href=\"./Itp4nwnFxJU.html\">Jack\u2019s Bird by Jack Geist</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/Itp4nwnFxJU/sddefault.jpg"
 }

@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Sep 23, 2020",
+      "date": "2020-09-21",
+      "body": "<p>Learn how to fold an Origami Peace Dove design by Alice Gray in this video. Less than a minute origami. Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "h1gMNYbjq0Y"
+        "videoId": "h1gMNYbjq0Y",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Alice Gray",
       "body": "<ul><li><a href=\"./h1gMNYbjq0Y.html\">Peace Dove by Alice Gray</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/h1gMNYbjq0Y/sddefault.jpg"
 }

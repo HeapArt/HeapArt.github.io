@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 4, 2020",
+      "date": "2020-11-04",
+      "body": "<p>This Spinning Star designed by Paolo Bascetta  could really spin! This is a modular origami model made out of 8 sheets of square paper. It is easy to fold. Try it out. Learn it in less than a minute! Enjoy!!! \n \nThanks For Watching! \nWilson Lee @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "Hz4S7GmUJ90"
+        "videoId": "Hz4S7GmUJ90",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Paolo Bascetta",
       "body": "<ul><li><a href=\"./Hz4S7GmUJ90.html\">Spinning Star by Paolo Bascetta</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/Hz4S7GmUJ90/sddefault.jpg"
 }

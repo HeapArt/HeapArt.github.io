@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Sep 29, 2020",
+      "date": "2020-09-29",
+      "body": "<p>This is Paper plane 21 of our 100 Exotic Paper Airplane Challenge. The Simple Dart by John Smith. This is an origami plane folded from a square sheet. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 020 : Ready For Takeoff by Didier Boursin \", you could watch it at  <a href=\"https://youtu.be/gvoPPkv6roo\">https://youtu.be/gvoPPkv6roo</a> \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "t3fGWVhPeQk"
+        "videoId": "t3fGWVhPeQk",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from John Smith",
       "body": "<ul><li><a href=\"./t3fGWVhPeQk.html\">Simple Dart by John Smith</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/t3fGWVhPeQk/sddefault.jpg"
 }

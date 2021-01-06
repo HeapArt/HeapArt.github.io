@@ -3,10 +3,12 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Jul 6, 2020",
+      "date": "2020-07-05",
+      "body": "<p>Are my videos too hard? Let me know in the comments. I could find simpler pieces to teach you. In the end, my goal is to get you to start folding. My videos are no good if you don't try. Just let me know in the comments. Please leave a comment on how I could improve my videos too. This way I could deliver more quality to you. \n  \nThanks, \n \nHere at Heap Art, we are trying to inspire people to connect with each other through origami and paper folding. Subscribe to my channel to receive something new every week. \n \nToday we are learning how to fold a Dodecahedron Using Square Paper. This dodecahedron is another polyhedron modular origami piece. I saw another dodecahedron 2-3 weeks ago and really want to make one. However, the instructions I received were based on an A4 piece of paper. Living in Canada, A4 paper is not readily available. This made the model in-accessible to anyone living in Canada or the USA. As such I spent the pass 2 weeks developing this model, the module is made using a square shape paper instead of A4, making the model more universal. You'll need 12 piece of square paper for this model. \n \nI hope you enjoy my Dodecahedron! This model is designed by me, Wilson Lee. \n \nPlease find the time stamp of the tutorial below. It's to help you jump through the tutorial quickly. \n \n00:15 How to fold the Module \n05:40 Making the Sub-Module \n07:07 Assembling the Sub-Modules \n \nThanks for watching. \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "96-NDuwD3f4"
+        "videoId": "96-NDuwD3f4",
+        "beforeBody": true
       }
     },
     {
@@ -19,7 +21,7 @@
     },
     {
       "title": "B",
-      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
+      "body": "<ul><li><a href=\"./qnEFdbOXGXs.html\">Backwards Plane by Carlos Gonzalez Garcia</a></li><li><a href=\"./zOHWWxZVxaY.html\">Bar Flyer by Paul Jackson</a></li><li><a href=\"./Bk6QuAPiedQ.html\">Barking Dog by Paul Jackson</a></li><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./KKJwi8OfKbo.html\">Bird from Money Heist</a></li><li><a href=\"./UiB2GsYIAFI.html\">Box</a></li><li><a href=\"./3i6np8JLj-M.html\">Bull by John Montroll</a></li><li><a href=\"./u21l107kR1k.html\">Butterfly by Dokuohtei Nakano</a></li>"
     },
     {
       "title": "C",
@@ -31,7 +33,7 @@
     },
     {
       "title": "E",
-      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li>"
+      "body": "<ul><li><a href=\"./OxjudNArzPY.html\">Easy Dino</a></li><li><a href=\"./-h0xrxkUZEs.html\">Easy Reindeer</a></li><li><a href=\"./C6ExvclyNdY.html\">Easy Santa</a></li><li><a href=\"./ooFBORI4YLw.html\">Eight-Point Star by Dr. James M. Sakoda</a></li><li><a href=\"./UV7qz0qyMQ0.html\">Elephant Plane by Ashley Wood</a></li>"
     },
     {
       "title": "F",
@@ -101,5 +103,6 @@
       "title": "Y",
       "body": "<ul><li><a href=\"./uB5-I4IfVeo.html\">Yacht by Toshie Takahama</a></li><li><a href=\"./AGooU03CWkI.html\">Yoshizawa\u2019s Butterfly by Akira Yoshizawa</a></li><li><a href=\"./UxlC9LS9jEo.html\">YouTube Play Button and Happy Face by Jeremy Shafer</a></li><li><a href=\"./O2Y5c8qphZw.html\">YouTube Play Button by Jo Nakashima</a></li>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/96-NDuwD3f4/sddefault.jpg"
 }

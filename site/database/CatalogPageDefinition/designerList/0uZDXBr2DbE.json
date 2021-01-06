@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Nov 17, 2020",
+      "date": "2020-11-17",
+      "body": "<p>This is Paper Plane 28 of our 100 Exotic Paper Airplane Challenge. The Space Taxi designed by Kunihiko Kasahara. This paper airplane looks as though it has a scalpel for a nose. This is an origami plane folded from a square sheet. Enjoy!!! \n \nThanks For Watching! \nWilson Lee  @Heap Art \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "0uZDXBr2DbE"
+        "videoId": "0uZDXBr2DbE",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Kunihiko Kasahara",
       "body": "<ul><li><a href=\"./4yl_Khk47W0.html\">Bear by Kunihiko Kasahara</a></li><li><a href=\"./6ZeeZc4nCsA.html\">Concorde By Kunihiko Kasahara</a></li><li><a href=\"./sRW7lelU3EQ.html\">Flying Witch by Kunihiko Kasahara</a></li><li><a href=\"./KBk0ohOqNko.html\">Hunter by Kunihiko Kasahara</a></li><li><a href=\"./4kPN0WOz-OA.html\">Peacock By Kunihiko Kasahara</a></li><li><a href=\"./u9ao8IgOg-8.html\">Rabbit by Kunihiko Kasahara</a></li><li><a href=\"./RNa-dUg0_po.html\">Skull by Kunihiko Kasahara</a></li><li><a href=\"./gYDWYAR_gHU.html\">Snail by Kunihiko Kasahara</a></li><li><a href=\"./0uZDXBr2DbE.html\">Space Taxi by Kunihiko Kasahara</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/0uZDXBr2DbE/sddefault.jpg"
 }

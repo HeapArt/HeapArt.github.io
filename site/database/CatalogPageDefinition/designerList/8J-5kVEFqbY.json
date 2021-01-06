@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Dec 1, 2020",
+      "date": "2020-11-30",
+      "body": "<p>This is Paper Plane 30 of our 100 Exotic Paper Airplane Challenge. It is \"Ready To Land\" designed by Didier Boursin. Even though this paper craft resembles a dart, it is a actually a very steady glider and will glide gently when you fly it. This is an origami plane folded from a square sheet. Enjoy!!! \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 29 : Space Dart by Paul Jackson\", you could watch it at  <a href=\"https://youtu.be/kD0rkZSGG78\">https://youtu.be/kD0rkZSGG78</a> \n \nThanks For Watching! \nWilson Lee  @Heap Art  \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "8J-5kVEFqbY"
+        "videoId": "8J-5kVEFqbY",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Didier Boursin",
       "body": "<ul><li><a href=\"./gvoPPkv6roo.html\">Ready For Takeoff by Didier Boursin</a></li><li><a href=\"./8J-5kVEFqbY.html\">Ready To Land by Didier Boursin</a></li><li><a href=\"./eXFBMOt-c3s.html\">Windblown by Didier Boursin</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/8J-5kVEFqbY/sddefault.jpg"
 }

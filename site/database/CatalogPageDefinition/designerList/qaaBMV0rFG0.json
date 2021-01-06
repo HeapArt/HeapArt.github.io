@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 20, 2020",
+      "date": "2020-10-19",
+      "body": "<p>This is Paper plane 24 of our 100 Exotic Paper Airplane Challenge. The Shuttlecock designed by Michael G. LaFosse. This one flies really straight. This is an origami plane folded from a square sheet. Enjoy!!! \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 023 : Chuck Finn by Michael G. LaFosse\", you could watch it at  <a href=\"https://youtu.be/_5ioFyaVjY4\">https://youtu.be/_5ioFyaVjY4</a> \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \nThanks for watching. \nWilson Lee \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "qaaBMV0rFG0"
+        "videoId": "qaaBMV0rFG0",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Michael G. LaFosse",
       "body": "<ul><li><a href=\"./_5ioFyaVjY4.html\">Chuck Finn by Michael G. LaFosse</a></li><li><a href=\"./yIhrTK9_uRQ.html\">Shuttle Dart by Michael G. LaFosse</a></li><li><a href=\"./qaaBMV0rFG0.html\">Shuttlecock by Michael G. LaFosse</a></li><li><a href=\"./9XLr-suSMlY.html\">Sky Cruiser by Michael LaFosse</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/qaaBMV0rFG0/sddefault.jpg"
 }

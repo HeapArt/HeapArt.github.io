@@ -3,15 +3,18 @@
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "Oct 7, 2020",
+      "date": "2020-10-07",
+      "body": "<p>Wow, 700+ subscribers already in 2 days! Thank-you for supporting my channel. I pick-up some Haters along the way. What should I do? Look up and smile!!! Learn how to fold an Origami Floral Corner Bookmark design by Jenny W. Chan. Less than a minute origami. As usual, Enjoy!!! \n \nHere at Heap Art, we are trying to help you practice origami on a regular bases. Every week I will select a minimum of 2 origami models and show you how to fold it. If you like origami and paper airplanes -- Please use the following link to subscribe to my channel: \n \n <a href=\"https://www.youtube.com/c/heapart?sub_confirmation=1\">https://www.youtube.com/c/heapart?sub_confirmation=1</a> \n \nMy Upload Schedule: \nTuesday : A new Paper Airplane, part of my 100 Exotic Paper Airplane Challenge \nFriday : A new Origami Model never seen before on my channel \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "GKIsOlx3-rk"
+        "videoId": "GKIsOlx3-rk",
+        "beforeBody": true
       }
     },
     {
       "title": "More Designs from Jenny W. Chan",
       "body": "<ul><li><a href=\"./GKIsOlx3-rk.html\">Floral Corner Bookmark by Jenny W. Chan</a></li><li><a href=\"./IhBgxN8NTlA.html\">Fox Envelope by Jenny W. Chan</a></li></ul>"
     }
-  ]
+  ],
+  "background_image": "https://i.ytimg.com/vi/GKIsOlx3-rk/sddefault.jpg"
 }
