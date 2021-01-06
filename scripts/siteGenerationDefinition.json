@@ -39,6 +39,10 @@
       "file" : "site/database/googleAdsenseTag.txt"
     },
     {
+      "tag":"google_Analytics",
+      "file" : "site/database/googleAnalyticsTag.txt"
+    },
+    {
       "tag" : "social_links_bar",
       "parameter" : "socialmedialinks",
       "method" : "social_links_bar"
