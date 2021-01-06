@@ -169,7 +169,7 @@ def generatePageDefinitions(iVideoDataFile):
             wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
 
         wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
-        wPaperPlanePage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock, wPaperAirplaneContentBlock], wVideoEntry["YTThumbnail"]["xlarge"])
+        wPaperPlanePage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock, wPaperAirplaneContentBlock], wVideoEntry["YTThumbnail"]["max"])
         save_file("paperairplanes/{0}.json".format(wKey), json.dumps(wPaperPlanePage, indent=2))
 
     # Tutorial catalog by A-Z
@@ -216,7 +216,7 @@ def generatePageDefinitions(iVideoDataFile):
             wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
 
         wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
-        wAZVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock] + wAZBlockList, wVideoEntry["YTThumbnail"]["xlarge"])
+        wAZVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock] + wAZBlockList, wVideoEntry["YTThumbnail"]["max"])
         save_file("azlist/{0}.json".format(wVideoEntry["Video"]), json.dumps(wAZVideoPage, indent=2))
 
 
@@ -252,7 +252,7 @@ def generatePageDefinitions(iVideoDataFile):
                 wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
 
             wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
-            wDesignerVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock,  wMoreFromDesignerBlock], wVideoEntry["YTThumbnail"]["xlarge"])
+            wDesignerVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock,  wMoreFromDesignerBlock], wVideoEntry["YTThumbnail"]["max"])
             save_file("designerList/{0}.json".format(wVideoEntry["Video"]), json.dumps(wDesignerVideoPage, indent=2))
 
 
