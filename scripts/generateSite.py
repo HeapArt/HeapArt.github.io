@@ -102,11 +102,18 @@ def generatePage(iPageDefinition, iSitePageDefinitionJSON, iSiteGenerationFile):
           wFileString = wFileString.replace("[%{0}%]".format(wReplaceTag), wModifiedParameter)
 
     if "text_link_map" in iSiteGenerationFile:
+        wFileStringPart = wFileString.split("<body>")
+        wNewFileStringHead = wFileStringPart[0]
+        wNewFileStringBody = ""
+        for i in range (1 , len(wFileStringPart)):
+            wNewFileStringBody = "<body>" + wFileStringPart[i]
+
         for wTextLink in iSiteGenerationFile["text_link_map"]:
             if "text" in wTextLink:
                 if "link" in wTextLink:
                     wTextReplacement = "<a href=\"{0}\" target=\"_blank\" rel=\"noopener noreferrer\">{1}</a>".format(wTextLink["link"], wTextLink["text"])
-                    wFileString = wFileString.replace( " " + "{0}".format(wTextLink["text"]), " " + wTextReplacement)
+                    wNewFileStringBody = wNewFileStringBody.replace( " " + "{0}".format(wTextLink["text"]), " " + wTextReplacement)
+        wFileString = wNewFileStringHead + wNewFileStringBody
 
     save_file(wPageDefinition["output_path"], wFileString)
     print("Generated File [{0}]".format(wPageDefinition["output_path"]))

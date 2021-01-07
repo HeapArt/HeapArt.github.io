@@ -5,23 +5,32 @@
   "socialmedialinks" : "site/database/socialmedialinks.json",
   "site_title_prefix" : "Heap Art - ",
   "background_image" : "/site/images/background/background_001.jpg",
+  "meta_authors" : "Wilson Lee @Heap Art",
+  "meta_keywords" : "Heap Art, origami tutorials, origami gallery, origami, origami diagrams, youtube channel, paper airplanes",
+  "meta_description" : "Heap Art Origami Tutorial Database and Project page created by of Wilson Lee @Heap Art",
   
   "pages" : [
     {
       "site_title_prefix" : "",
       "site_title" : "Heap Art",
+      "meta_keywords" : "Heap Art, origami tutorials, origami gallery, origami, origami diagrams, youtube channel",
+      "meta_description" : "Heap Art Origami Tutorial Database and Project page created by of Wilson Lee @Heap Art",
       "block_file" : "site/database/blocks/home.json",
       "output_path" : "index.html",
       "background_image" : "/site/images/background/background_001.jpg"
     },
     {
       "site_title" : "About Me",
+      "meta_keywords" : "Heap Art, origami tutorials, origami, youtube channel, about",
+      "meta_description" : "A little bit about Wilson Lee @Heap Art",
       "block_file" : "site/database/blocks/aboutme.json",
       "output_path" : "site/pages/aboutme/index.html",
       "background_image" : "/site/images/background/background_013.jpg"
     },
     {
       "site_title" : "News Feed",
+      "meta_keywords" : "Stay up to date on the Heap Art community by reading our News feed.",
+      "meta_description" : "A little bit about Wilson Lee @Heap Art",
       "block_file" : "site/database/blocks/newsfeed.json",
       "block_direction" : "reverse",
       "output_path" : "site/pages/newsfeed/index.html",
@@ -29,12 +38,16 @@
     },
     {
       "site_title" : "Supplies",
+      "meta_keywords" : "Heap Art, origami tutorials, origami, youtube channel, about",
+      "meta_description" : "Amazon products to help you start your origami journey that are used by Wilson Lee @Heap Art",
       "block_file" : "site/database/blocks/supplies-amazon_ca.json",
       "output_path" : "site/pages/supplies/index.html",
       "background_image" : "/site/images/background/background_004.jpg"
     },
     {
       "site_title" : "Origami Roulette",
+      "meta_keywords" : "Heap Art, origami tutorials, origami, youtube channel, about",
+      "meta_description" : "A random origami tutorial video selector from the YouTube Channel Heap Art",
       "block_file" : "site/database/blocks/origami_roulette.json",
       "output_path" : "site/pages/origamiroulette/index.html",
       "background_image" : "/site/images/background/background_009.jpg",
@@ -47,6 +60,8 @@
     },
     {
       "site_title" : "My Origami Designs",
+      "meta_keywords" : "Heap Art, origami tutorials, origami, origami diagrams, youtube channel",
+      "meta_description" : "A list of original designs created by Wilson Lee @Heap Art",
       "block_file" : "site/database/blocks/myorigamidesigns.json",
       "output_path" : "site/pages/myorigamidesigns/index.html",
       "background_image" : "/site/images/background/background_010.jpg",

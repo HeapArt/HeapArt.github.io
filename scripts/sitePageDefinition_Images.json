@@ -5,9 +5,13 @@
   "socialmedialinks" : "site/database/socialmedialinks.json",
   "site_title_prefix" : "Heap Art - ",
   "background_image" : "/site/images/background/background_001.jpg",
+  "meta_authors" : "Wilson Lee @Heap Art",
+  "meta_keywords" : "Heap Art, image viewer, gallery, origami, origami diagrams",
   
   "pages" : [
-    {
+    {  
+      "meta_keywords" : "Heap Art, image viewer, gallery, origami, origami diagrams, diy phone stand",
+      "meta_description" : "Origami Diagram for a Prism Shape Phone Stand designed by Wilson Lee @Heap Art",
       "site_title" : "Prism Phone Stand",
       "output_path" : "site/pages/diagrams/prismphonestand.html",
       "display_image" : "/site/images/origami_diagrams/Prism_Phone_Stand.jpg"

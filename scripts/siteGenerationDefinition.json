@@ -50,6 +50,18 @@
     {
       "tag" : "image_file",
       "parameter" : "display_image"
+    },
+    {
+      "tag" : "meta_description",
+      "parameter" : "meta_description"
+    },
+    {
+      "tag" : "meta_keywords",
+      "parameter" : "meta_keywords"
+    },
+    {
+      "tag" : "meta_authors",
+      "parameter" : "meta_authors"
     }
   ]
   
