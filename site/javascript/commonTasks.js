@@ -89,7 +89,7 @@ function fillRandomYTVideoPlayers(iVideoList)
     var wList = iVideoList;
     var wTags = wDom.getAttribute("videoTags");
     if (null != wTags) {
-      wList = getVideoWithTags(wTags.split(","),iVideoList[""]);
+      wList = getVideoWithTags(wTags.split(","),iVideoList);
     }
     var wSeed = wDom.getAttribute("randomSeed");
     var wRandom = Math.random()*wList.length;
