@@ -232,7 +232,7 @@ def genBlockString(iBlock):
             else:
                 wTemp+=wBodyString+wCaptionString    
         else:
-            wTemp+=wBodyString
+            wTemp+=wBodyString+wCaptionString
 
     else:
         wTemp+=wBodyString
