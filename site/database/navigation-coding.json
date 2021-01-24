@@ -4,6 +4,11 @@
   "icon": "/site/images/logo/logo-HeapArt-small.png",
   "entries" : [
     {
+      "siteName": "Home",
+      "link": "/",
+      "icon": "/site/images/logo/logo-home-white-small.png"
+    },
+    {
       "siteName": "Origami",
       "icon": "/site/images/logo/logo-simplebird-white.svg",
       "sub_entries" : [

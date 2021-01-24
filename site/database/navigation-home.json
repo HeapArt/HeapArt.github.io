@@ -1,0 +1,128 @@
+{
+  "siteName" : "Heap Art",
+  "link" : "/",
+  "icon": "/site/images/logo/logo-HeapArt-small.png",
+  "entries" : [
+    {
+      "siteName": "Home",
+      "link": "/",
+      "icon": "/site/images/logo/logo-home-white-small.png"
+    },
+    {
+      "siteName": "Origami",
+      "icon": "/site/images/logo/logo-simplebird-white.svg",
+      "sub_entries" : [
+        {
+          "siteName": "My Designs",
+          "link": "/site/pages/myorigamidesigns/index.html",
+          "icon": "/site/images/logo/logo-paperfold-black.svg"
+        },
+        {
+          "siteName": "Paper Airplanes",
+          "link": "/site/pages/catalogue/paperairplanes/index.html",
+          "icon": "/site/images/logo/logo-paperplane-black.svg"
+        },
+        {
+          "siteName_1": "Browse By Designer",
+          "link": "https://github.com/wlee0515",
+          "icon": "/site/images/logo/logo-rocket-black-small.png"
+        },
+        {
+          "siteName_1": "Browse By Category",
+          "link": "https://github.com/wlee0515",
+          "icon": "/site/images/logo/logo-rocket-black-small.png"
+        },
+        {
+          "siteName": "Tutorials by Designer",
+          "link": "/site/pages/catalogue/designerList/index.html",
+          "icon": "/site/images/logo/logo-designer-black.svg"
+        },
+        {
+          "siteName": "Tutorials from A to Z",
+          "link": "/site/pages/catalogue/azlist/index.html",
+          "icon": "/site/images/logo/logo-az-black.svg"
+        },
+        {
+          "siteName": "Origami Roulette",
+          "link": "/site/pages/origamiroulette/index.html",
+          "icon": "/site/images/logo/logo-ciccada-black.svg"
+        }
+      ]
+
+    },
+    {
+      "siteName": "Programming",
+      "icon": "/site/images/logo/logo-code-white-small.png",
+      "sub_entries" : [
+        {
+          "siteName": "Project Page",
+          "link": "https://wlee0515.github.io",
+          "icon": "/site/images/logo/logo-wlee0515-small.png"
+        },
+        {
+          "siteName": "Github",
+          "link": "https://github.com/wlee0515",
+          "icon": "/site/images/logo/logo-github-black-small.png"
+        }
+      ]
+    },
+    {
+      "siteName": "News Feed",
+      "link": "/site/pages/newsfeed/index.html",
+      "icon": "/site/images/logo/logo-rss-white-small.png"
+    },
+    {
+      "siteName": "Social Media",
+      "icon": "/site/images/logo/logo-network-white-small.png",
+      "sub_entries" : [
+        {
+          "siteName": "YouTube",
+          "link": "https://www.youtube.com/heapart",
+          "icon": "/site/images/logo/logo-youtube-small.png"
+        },  
+        {
+          "siteName": "Instagram",
+          "link": "https://www.instagram.com/wlee0515/",
+          "icon": "/site/images/logo/logo-instagram-small.png"
+        },  
+        {
+          "siteName": "Tik Tok",
+          "link": "https://www.tiktok.com/@heapart",
+          "icon": "/site/images/logo/logo-tiktok-small.png"
+        },  
+        {
+          "siteName": "小红书",
+          "link": "https://www.xiaohongshu.com/user/profile/5fa33be1000000000100a09d",
+          "icon": "/site/images/logo/logo-XiaoHongShu-small.png"
+        },  
+        {
+          "siteName": "Email List",
+          "link": "https://forms.gle/hZbP4jcR9LREVvvV7",
+          "icon": "/site/images/logo/logo-email-black-small.png"
+        }  
+      ]
+    },
+    {
+      "siteName": "Support",
+      "icon": "/site/images/logo/logo-shopping-white-small.png",
+      "sub_entries" : [
+        {
+          "siteName": "Merchandise",
+          "link": "https://teespring.com/stores/heapart",
+          "icon": "/site/images/logo/logo-merch-black-small.png"
+        },
+        {
+          "siteName": "Supplies",
+          "link": "/site/pages/supplies/index.html",
+          "icon": "/site/images/logo/logo-amazon-small.png"
+        }
+      ]
+    },
+    {
+      "siteName": "About Me",
+      "link": "/site/pages/aboutme/index.html",
+      "icon": "/site/images/logo/logo-eyeglasses-white-small.png"
+    }
+
+  ]
+}

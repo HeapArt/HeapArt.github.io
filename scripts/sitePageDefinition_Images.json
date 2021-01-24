@@ -1,7 +1,7 @@
 {
   "siteGenerationFile" : "scripts/siteGenerationDefinition.json",
   "template" : "scripts/templates/single_Image_template_1.html",
-  "navigation_bar_file" : "site/database/navigation.json",
+  "navigation_bar_file" : "site/database/navigation-home.json",
   "socialmedialinks" : "site/database/socialmedialinks.json",
   "site_title_prefix" : "Heap Art - ",
   "background_image" : "/site/images/background/background_001.jpg",
