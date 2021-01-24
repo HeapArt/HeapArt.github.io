@@ -64,6 +64,7 @@ body {
   padding: 0px;
   overflow: hidden;
   scrollbar-width: none;
+  z-index: 100000;
 }
 
 .class_navbar_icon_img {
