@@ -1,0 +1,245 @@
+body {
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Menu Icon */
+.class_navbar_MenuIcon {
+  display: inline-block;
+  cursor: pointer;
+  /*
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  */
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.class_navbar_MenuIcon_inner {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  visibility: visible;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+.class_navbar_MenuIcon_bar1, .class_navbar_MenuIcon_bar2, .class_navbar_MenuIcon_bar3 {
+  width: calc(100% - 10px);
+  height: 5px;
+  background-color: white;
+  margin: 4px auto;
+  transition: 1.4s;
+}
+
+.navBarExpand .class_navbar_MenuIcon_bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.navBarExpand .class_navbar_MenuIcon_bar2 {opacity: 0;}
+
+.navBarExpand .class_navbar_MenuIcon_bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -5px);
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
+/*Menu*/
+.class_navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 60px;
+  background-color: black;
+  text-align: left;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+}
+
+.class_navbar_icon_img {
+  height: 100%;
+  width: auto;
+}
+
+.class_navbar_icon_container {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.class_navbar_label {
+  display: inline-block;
+  width: calc(100% - 45px);
+  padding-left: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.class_navbar_label_wrapper {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+.class_navbar_entry {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.class_navbar_entry a{
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.class_navbar_subentry{
+  background-color: #dddddd;
+  color: black;
+}
+
+.class_navbar_subentry a{
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.class_navbar_HomePage {
+  display: inline-block;
+  height: 60px;
+  margin: 0;
+  vertical-align: top;
+}
+
+.class_navbar_HomePage a {
+  color: white;
+}
+
+.class_navbar_HomePage .class_navbar_label_wrapper  {
+  display: inline-block;
+  padding: 2.5px;
+  width: 250px;
+}
+
+.class_navbar_HomePage .class_navbar_label_wrapper .class_navbar_icon_container {
+  width: 50px;
+  height: 50px;
+  margin: 2.5px;
+}
+
+.class_navbar_HomePage .class_navbar_label_wrapper .class_navbar_label {
+  padding: 0px;
+  margin: 5px;
+  width: 150px;
+}
+
+.class_navbar_entries {
+  width: 250px;
+  display: block;
+  position: fixed;
+  top: 60px;
+  left: -350px;
+  transition: 1.4s;
+  background-color: black;
+  height: 100vh;
+}
+
+.navBarExpand  .class_navbar_entries {
+  left: 0px;
+  height: 100vh;
+}
+
+.class_navbar_entry .class_navbar_subentry{
+  visibility: hidden;
+  position: relative;
+  display: none;
+}
+
+.class_navbar_entry:hover {
+  background-color: darkcyan;
+}
+
+.class_navbar_subentry:hover {
+  background-color: lightblue;
+}
+
+.class_navbar_entry:hover .class_navbar_subentry , .class_navbar_subentry_expand .class_navbar_subentry {
+  visibility: visible;
+  display: block;
+}
+
+/*Content Body*/
+.class_content_body {
+  width: 100vw;
+  position: static;
+}
+
+@media (min-width: 700px) {
+
+  .class_navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+  
+  }
+  
+  .class_content_body {
+    width: calc(100vw - 250px);
+    position: relative;
+    left: 250px;
+  }
+
+
+  .class_navbar_MenuIcon {
+    display: none;
+  }
+
+  .class_navbar_HomePage {
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: 50px 0px 0px 0px;
+  }
+
+  .class_navbar_HomePage .class_navbar_label_wrapper .class_navbar_icon_container {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    display: block;
+  }
+
+  .class_navbar_HomePage .class_navbar_label_wrapper .class_navbar_label {
+    padding: 0px;
+    margin: 10px;
+    width: 150px;
+    height: auto;
+  }
+
+  .class_navbar_HomePage .class_navbar_label_wrapper  {
+    display: block;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  
+  .class_navbar_entries {
+    width: 100%;
+    display: block;
+    position: static;
+    transition: 0s;
+  }
+
+}

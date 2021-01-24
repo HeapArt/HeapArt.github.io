@@ -4,7 +4,8 @@
   ],
   "css_list" : [
     "/site/css/theme.css",
-    "/site/css/commonTask.css"
+    "/site/css/commonTask.css",
+    "/site/css/navigationBar.css"
   ],
   "tag_map" : [
     {

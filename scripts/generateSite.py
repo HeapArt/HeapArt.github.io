@@ -162,12 +162,14 @@ def parse_navbar(iParameter, iPageDefinition):
         wMenuIcon = ""
         if "" != wEntriesStr:
             wMenuIcon = '<div class="class_navbar_MenuIcon" onclick="navebarExpand(this)">'
+            wMenuIcon += '<div class="class_navbar_MenuIcon_inner">'
             wMenuIcon += '<div class="class_navbar_MenuIcon_bar1"></div>'
             wMenuIcon += '<div class="class_navbar_MenuIcon_bar2"></div>'
             wMenuIcon += '<div class="class_navbar_MenuIcon_bar3"></div>'
             wMenuIcon += '</div>'
+            wMenuIcon += '</div>'
 
-        wInnerHtml +="<div class='class_navbar_entries'>" +  wMenuIcon + wEntriesStr + "</div>"
+        wInnerHtml = wMenuIcon + wInnerHtml + "<div class='class_navbar_entries'>" + wEntriesStr + "</div>"
 
     if "" != wInnerHtml:
 
