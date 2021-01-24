@@ -15,7 +15,11 @@ body {
   background-color: black;
   
   background-repeat: no-repeat;
+  /*
   background-attachment: fixed;
+  */
+  background-attachment: scroll;
+  
   background-position: center;
   background-clip: border-box;  
   background-size: cover;
