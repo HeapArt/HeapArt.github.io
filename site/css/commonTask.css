@@ -16,9 +16,9 @@
 
 .class_site_block {
   width: calc(100% - 50px);
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 25px 5px 15px 5px;
   background: white;
@@ -46,4 +46,69 @@
   max-width: calc(100% - 10px);
   max-height: 400px;
   margin: auto;
+}
+
+.class_block_grid_link {
+  color: black;
+  text-decoration: none;
+}
+
+.class_block_grid_img {
+  width: 100%;
+}
+
+.class_block_grid_txt_wrapper_div h3{
+  line-height: 0px;
+}
+
+.class_block_grid_txt_div , .class_block_grid_img_div
+, .class_block_grid_txt_div_default , .class_block_grid_img_div_default
+, .class_block_grid_txt_div_small , .class_block_grid_img_div_small{
+
+  display: inline-block;
+  vertical-align: top;
+  
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+  
+}
+
+
+.class_block_grid_txt_div , .class_block_grid_img_div
+, .class_block_grid_txt_div_default , .class_block_grid_img_div_default {
+  width: 200px;
+  height: 200px;
+}
+
+.class_block_grid_txt_div
+,.class_block_grid_txt_div_default {
+  width: 200px;
+}
+
+
+.class_block_grid_txt_div_small , .class_block_grid_img_div_small{
+  width: 100px;
+  height: 100px;
+}
+
+.class_block_grid_txt_div_small {
+  width: 300px;
+}
+
+.class_block_grid_txt_wrapper_div {
+  padding: 10px;
+}
+
+.class_block_grid_item {
+
+  width: auto;
+  height: auto;
+  margin: 20px;
+  display: inline-block;
+}
+
+.class_block_grid {
+  width: 100%;
 }

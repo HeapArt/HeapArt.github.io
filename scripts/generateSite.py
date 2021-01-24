@@ -246,6 +246,43 @@ def genBlockString(iBlock):
     else:
         wTemp+=wBodyString
 
+    if "grid" in iBlock:
+        wGridBlocks = iBlock["grid"]
+        wGridElementString = ""
+        wTileSize = "default"
+        if "tile_size" in wGridBlocks:
+            if "" != wGridBlocks["tile_size"]:
+                wTileSize = wGridBlocks["tile_size"]
+
+        if "tile_list" in wGridBlocks:
+            for wElement in wGridBlocks["tile_list"]:
+                wElementString = ""
+                if "img" in wElement:
+                    wElementString +="<div class=\"class_block_grid_img_div_{0}\" ><img class=\"class_block_grid_img\" src=\"{1}\"/></div>".format(wTileSize, wElement["img"])
+                if "text" in wElement:
+                    wInnerText = ""
+                    if "title" in wElement["text"]:
+                        wInnerText += "<b>{0}</b></br>".format(wElement["text"]["title"])
+                    if "body" in wElement["text"]:
+                        wElementTextBody = ""
+                        for wLine in wElement["text"]["body"]:
+                            wElementTextBody += wLine
+                        if "" != wElementTextBody:
+                            wInnerText += "<div>{0}</div>".format(wElementTextBody)
+                    if "" != wInnerText:
+                        wInnerText= "<div class=\"class_block_grid_txt_wrapper_div\" >{0}</div>".format(wInnerText)
+                        wElementString += "<div class=\"class_block_grid_txt_div_{0}\" >{1}</div>".format(wTileSize,wInnerText)
+                
+                if "" != wElementString:
+                    wElementString = "<div class=\"class_block_grid_item\" >{0}</div>".format( wElementString)
+
+                    if "link" in wElement:
+                        wElementString = "<a href=\"{0}\" class=\"class_block_grid_link\" >{1}</a>".format(wElement["link"], wElementString)
+
+                    wGridElementString += wElementString
+
+        if "" != wGridElementString:
+            wTemp += "<div class=\"class_block_grid\" >{0}</div>".format( wGridElementString)
 
     if "" != wTemp:
         return "<div class='class_site_block'>{0}</div>".format(wTemp)
