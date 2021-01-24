@@ -1,5 +1,5 @@
 body {
-  min-width: 100vw;
+  min-width: 100%;
   padding: 0;
   margin: 0;
   min-height: 100vh;
@@ -55,13 +55,15 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100vw;
+  width: 100%;
   height: 60px;
   background-color: black;
   text-align: left;
   vertical-align: top;
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
+  scrollbar-width: none;
 }
 
 .class_navbar_icon_img {
@@ -156,7 +158,9 @@ body {
 
 .navBarExpand  .class_navbar_entries {
   left: 0px;
-  height: 100vh;
+  height: calc(100vh - 60px); 
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .class_navbar_entry .class_navbar_subentry{
@@ -180,7 +184,7 @@ body {
 
 /*Content Body*/
 .class_content_body {
-  width: 100vw;
+  width: 100%;
   position: static;
 }
 
@@ -194,10 +198,12 @@ body {
     height: 100vh;
     background-color: black;
   
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   
   .class_content_body {
-    width: calc(100vw - 250px);
+    width: calc(100% - 250px);
     position: relative;
     left: 250px;
   }
@@ -237,9 +243,11 @@ body {
   
   .class_navbar_entries {
     width: 100%;
+    height: auto;
     display: block;
     position: static;
     transition: 0s;
+    overflow: visible;
   }
 
 }
