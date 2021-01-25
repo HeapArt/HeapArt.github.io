@@ -9,7 +9,6 @@
       "<p>Wilson Lee @HeapArt</p>"
     ],
     "grid": {
-      "tile_size": "small",
       "tile_list": [
         {
           "img": "/site/images/logo/logo-simplebird-black.svg",
@@ -40,55 +39,5 @@
       "<p>Catch the latest news on Heap Art by reading our <a href='/site/pages/newsfeed/index.html'>News Feed</a>!</p>",
       "<p>Subscribe to my News Feed by Joining my Email List <a href='https://forms.gle/yXspjF29xMCx2F4R7'>here</a>!</p>"
     ]
-  },
-  {
-    "title": "Browse My Origami Database",
-    "body": [
-      "<p>Here on our site, you could browse our database of Origami tutorials several ways!</p>",
-      "<ul>",
-      "<li><a href='/site/pages/catalogue/azlist/index.html'>Origami Tutorials from A-Z</a> to have our tutorials sorted alphabetically.</li>",
-      "<li><a href='/site/pages/catalogue/designerList/index.html'>Origami Tutorials by Designer</a> to have the tutorials sorted by Designer Name.</li>",
-      "<li><a href='/site/pages/catalogue/paperairplanes/index.html'>100 Exotic Airplanes Project</a> to see only my Exotic Paper Airplane Series sorted chronologically.</li>",
-      "<li><a href='/site/pages/myorigamidesigns/index.html'>My own designes</a> to see a list of my origami designes.</li>",
-      "</ul>",
-      "<p>All links available under the Origami Tab</p>",
-      "<p>Wilson Lee @Heap Art</p>"
-    ]
-  },
-  {
-    "title": "Checkout My Latest Origami Tutorials",
-    "body": [
-      "<p>These origami tutorials are from my YouTube Channel <a href='https://www.youtube.com/c/heapart'>Heap Art</a>. Check it out when you have a chance</p>",
-      "<p>To Subscribe click <a href='https://www.youtube.com/c/heapart?sub_confirmation=1'>here</a></p>",
-      "<p>Thanks!</p>",
-      "<p>Wilson Lee @HeapArt</p>"
-    ],
-    "caption": {
-      "type": "video",
-      "playlistId": "3Ct47F8enQEby1s0hKI3QwVMQBSC20_r"
-    }
-  },
-  {
-    "title": "Random Origami of the Day",
-    "body": [
-      "<p>Pratice origami by folding whatever is in the video below. It changes Everyday!</p>"
-    ],
-    "caption": {
-      "type": "video",
-      "randomVideoId": "origami",
-      "randomSeed": "date"
-    }
-  },
-  {
-    "title": "Random Paper Airplane of the Day",
-    "body": [
-      "<p>This is today's Exotic Paper Airplane. It is randomly selected from our library. It's something different everyday. Have you seen this one before?</p>",
-      "<p>You could watch the up to date collection <a href='/site/pages/catalogue/paperairplanes/index.html'>here</a> on out official \"100 Exotic Paper Airplanes Challenge\" page.</p>"
-    ],
-    "caption": {
-      "type": "video",
-      "randomVideoId": "paperairplane",
-      "randomSeed": "date"
-    }
   }
 ]
