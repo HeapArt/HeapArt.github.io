@@ -9,6 +9,7 @@
       "<p>Wilson Lee @HeapArt</p>"
     ],
     "grid": {
+      "tile_size": "small",
       "tile_list": [
         {
           "img": "/site/images/logo/logo-simplebird-black.svg",
