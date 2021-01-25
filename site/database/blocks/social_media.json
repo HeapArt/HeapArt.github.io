@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Follow Me On social Media",
+    "body": [
+      "<p>Like what you see on my page? You could follow me on your favourite Social Media Too!</p>",
+      "<p>Use the links below to Subscribe or Follow.</p>",
+      "<p>Thanks!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ],    
+    "grid": {
+      "tile_size": "small",
+      "tile_list": [
+        {
+          "img": "/site/images/logo/logo-youtube-small.png",
+          "link": "https://www.youtube.com/heapart",
+          "text": {
+            "title": "YouTube Channel - Heap Art",
+            "body": [
+              "<p>This is my original channel! Visit my channel to access weekly Origami Tutorials</p>"
+            ]
+          }
+        },
+        {
+          "img": "/site/images/logo/logo-youtube-small.png",
+          "link": "https://www.youtube.com/channel/UCqhzrDyBdR8iqKTnjbqqHCw",
+          "text": {
+            "title": "YouTube Channel - Heap Art Coding",
+            "body": [
+              "<p>My video outlet for my Coding project demos!</p>"
+            ]
+          }
+        },
+        {
+          "img": "/site/images/logo/logo-instagram-small.png",
+          "link": "https://www.instagram.com/wlee0515/",
+          "text": {
+            "title": "Instagram - Wlee0515",
+            "body": [
+              "<p>Join me on Instagram to view Insta Pergfect Photos from my projects!</p>"
+            ]
+          }
+        },
+        {
+          "img": "/site/images/logo/logo-tiktok-small.png",
+          "link": "https://www.tiktok.com/@heapart",
+          "text": {
+            "title": "Tik Tok - Heap Art",
+            "body": [
+              "<p>Tik Tok, a place for busy people! Join me on Tik Tok to watch my short Origami tutorials (and other stuff)</p>"
+            ]
+          }
+        },
+        {
+          "img": "/site/images/logo/logo-XiaoHongShu-small.png",
+          "link": "https://www.xiaohongshu.com/user/profile/5fa33be1000000000100a09d",
+          "text": {
+            "title": "小红书 - Heap Art",
+            "body": [
+              "<p>I publish my short origami tutorials on 小红书 too!</p>"
+            ]
+          }
+        }
+     ]
+    }
+  }
+]

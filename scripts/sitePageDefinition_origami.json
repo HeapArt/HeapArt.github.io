@@ -1,0 +1,56 @@
+{
+  "siteGenerationFile" : "scripts/siteGenerationDefinition.json",
+  "template" : "scripts/templates/template_1.html",
+  "navigation_bar_file" : "site/database/navigation-origami.json",
+  "socialmedialinks" : "site/database/socialmedialinks.json",
+  "site_title_prefix" : "Heap Art - ",
+  "background_image" : "/site/images/background/background_001.jpg",
+  "meta_authors" : "Wilson Lee @Heap Art",
+  "meta_keywords" : "Heap Art, origami tutorials, origami gallery, origami, origami diagrams, youtube channel, paper airplanes",
+  "meta_description" : "Heap Art Origami Tutorial Database and Project page created by of Wilson Lee @Heap Art",
+  
+  "pages" : [
+    {
+      "site_title" : "Origami",
+      "meta_keywords" : "Heap Art, origami tutorials, origami gallery, origami, origami diagrams, youtube channel",
+      "meta_description" : "Heap Art Origami Tutorial Database and Project page created by of Wilson Lee @Heap Art",
+      "block_file" : "site/database/blocks/home_origami.json",
+      "output_path" : "site/pages/homeorigami/index.html",
+      "background_image" : "/site/images/background/background_001.jpg"
+    },
+    {
+      "site_title" : "Origami Roulette",
+      "meta_keywords" : "Heap Art, origami tutorials, origami, youtube channel, about",
+      "meta_description" : "A random origami tutorial video selector from the YouTube Channel Heap Art",
+      "block_file" : "site/database/blocks/origami_roulette.json",
+      "output_path" : "site/pages/origamiroulette/index.html",
+      "background_image" : "/site/images/background/background_009.jpg",
+      "js_list" : [
+        "/site/javascript/origamiRoulette.js"
+      ],
+      "css_list" : [
+        "/site/css/origamiRoulette.css"
+      ]
+    },
+    {
+      "site_title" : "My Origami Designs",
+      "meta_keywords" : "Heap Art, origami tutorials, origami, origami diagrams, youtube channel",
+      "meta_description" : "A list of original designs created by Wilson Lee @Heap Art",
+      "block_file" : "site/database/blocks/myorigamidesigns.json",
+      "output_path" : "site/pages/myorigamidesigns/index.html",
+      "background_image" : "/site/images/background/background_010.jpg",
+      "js_list" : [
+      ],
+      "css_list" : [
+      ]
+    }
+  ],
+
+  
+  "catalogue_Directory" : [
+    {
+      "path": "site/database/CatalogPageDefinition",
+      "output_path" : "site/pages/catalogue"
+    }
+  ]
+}

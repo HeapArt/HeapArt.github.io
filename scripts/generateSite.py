@@ -2,7 +2,7 @@ import os
 import json
 
 gWorkingDirectory = "../"
-gInputFile = ["scripts/sitePageDefinition.json", "scripts/sitePageDefinition_Images.json"]
+gInputFile = ["scripts/sitePageDefinition.json", "scripts/sitePageDefinition_origami.json", "scripts/sitePageDefinition_OrigamiImages.json"]
 
 def loadJson(iFilePath):
     with open(iFilePath, encoding="utf-8") as f:

@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Welcome To Heap Art Origami",
+    "body": [
+      "<p>Here you'll find a topics related to Origami on Heap Art.</p>",
+      "<p>Thing you could find here includes: </p>",
+      "<ul>",
+      "<li>My Origami Tutorial database</li>",
+      "<li>Our 100 Exotic paper Airplane Challenge</li>",
+      "<li>The Origami Roulette to help you find a Random Origami video</li>",
+      "<li>A Collection of My Own designes</li>",
+      "</ul>",
+      "<p>Thanks!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ]
+  },
+  {
+    "title": "How to Browse My Origami Database",
+    "body": [
+      "<p>Here on our site, you could browse our database of Origami tutorials several ways!</p>"
+    ],
+    
+    "grid": {
+      "tile_size": "small",
+      "tile_list": [
+        {
+          "img": "/site/images/logo/logo-az-black.svg",
+          "link": "/site/pages/catalogue/azlist/index.html",
+          "text": {
+            "title": "Origami Tutorials from A-Z",
+            "body": [
+              "<p>Click here to have our tutorials sorted alphabetically.</p>"
+            ]
+          }
+        },
+        {
+          "img": "/site/images/logo/logo-designer-black.svg",
+          "link": "/site/pages/catalogue/designerList/index.html",
+          "text": {
+            "title": "Origami Tutorials by Designer",
+            "body": [
+              "<p>Click here to have the tutorials sorted by Designer Name.</p>"
+            ]
+          }
+        },
+        {
+          "img": "/site/images/logo/logo-paperplane-black.svg",
+          "link": "100 Exotic Airplanes Project",
+          "text": {
+            "title": "Origami Tutorials by Designer",
+            "body": [
+              "<p>Click here to see only my Exotic Paper Airplane Series sorted chronologically.</p>"
+            ]
+          }
+        },
+        {
+          "img": "/site/images/logo/logo-paperfold-black.svg",
+          "link": "100 Exotic Airplanes Project",
+          "text": {
+            "title": "My own designes",
+            "body": [
+              "<p>Click here to see a list of my origami designes.</p>"
+            ]
+          }
+        }
+      ]
+    }
+
+  },
+  {
+    "title": "Checkout My Latest Origami Tutorials",
+    "body": [
+      "<p>These origami tutorials are from my YouTube Channel <a href='https://www.youtube.com/c/heapart'>Heap Art</a>. Check it out when you have a chance</p>",
+      "<p>To Subscribe click <a href='https://www.youtube.com/c/heapart?sub_confirmation=1'>here</a></p>",
+      "<p>Thanks!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ],
+    "caption": {
+      "type": "video",
+      "playlistId": "3Ct47F8enQEby1s0hKI3QwVMQBSC20_r"
+    }
+  },
+  {
+    "title": "Random Origami of the Day",
+    "body": [
+      "<p>Pratice origami by folding whatever is in the video below. It changes Everyday!</p>"
+    ],
+    "caption": {
+      "type": "video",
+      "randomVideoId": "origami",
+      "randomSeed": "date"
+    }
+  },
+  {
+    "title": "Random Paper Airplane of the Day",
+    "body": [
+      "<p>This is today's Exotic Paper Airplane. It is randomly selected from our library. It's something different everyday. Have you seen this one before?</p>",
+      "<p>You could watch the up to date collection <a href='/site/pages/catalogue/paperairplanes/index.html'>here</a> on out official \"100 Exotic Paper Airplanes Challenge\" page.</p>"
+    ],
+    "caption": {
+      "type": "video",
+      "randomVideoId": "paperairplane",
+      "randomSeed": "date"
+    }
+  }
+]
