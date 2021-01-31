@@ -6,7 +6,7 @@
       "<p>Use the links below to Subscribe or Follow.</p>",
       "<p>Thanks!</p>",
       "<p>Wilson Lee @HeapArt</p>"
-    ],    
+    ],
     "grid": {
       "tile_size": "small",
       "tile_list": [
@@ -60,7 +60,7 @@
             ]
           }
         }
-     ]
+      ]
     }
   }
 ]

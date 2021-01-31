@@ -12,14 +12,28 @@
       "</ul>",
       "<p>Thanks!</p>",
       "<p>Wilson Lee @HeapArt</p>"
-    ]
+    ],
+    "grid": {
+      "tile_size": "small",
+      "tile_list": [
+        {
+          "img": "/site/images/logo/logo-youtube-small.png",
+          "link": "https://www.youtube.com/heapart",
+          "text": {
+            "title": "YouTube Channel - Heap Art",
+            "body": [
+              "<p>All Tutorials on my web site are hosted on YouTube. Join me on YouTube to have my origami tutorials delivered to you.</p>"
+            ]
+          }
+        }
+      ]
+    }
   },
   {
     "title": "How to Browse My Origami Database",
     "body": [
       "<p>Here on our site, you could browse our database of Origami tutorials several ways!</p>"
     ],
-    
     "grid": {
       "tile_size": "small",
       "tile_list": [
@@ -45,9 +59,9 @@
         },
         {
           "img": "/site/images/logo/logo-paperplane-black.svg",
-          "link": "100 Exotic Airplanes Project",
+          "link": "/site/pages/catalogue/paperairplanes/index.html",
           "text": {
-            "title": "Origami Tutorials by Designer",
+            "title": "100 Exotic Airplanes Project",
             "body": [
               "<p>Click here to see only my Exotic Paper Airplane Series sorted chronologically.</p>"
             ]
@@ -55,7 +69,7 @@
         },
         {
           "img": "/site/images/logo/logo-paperfold-black.svg",
-          "link": "100 Exotic Airplanes Project",
+          "link": "/site/pages/myorigamidesigns/index.html",
           "text": {
             "title": "My own designes",
             "body": [
@@ -65,7 +79,6 @@
         }
       ]
     }
-
   },
   {
     "title": "Checkout My Latest Origami Tutorials",
@@ -95,7 +108,7 @@
     "title": "Random Paper Airplane of the Day",
     "body": [
       "<p>This is today's Exotic Paper Airplane. It is randomly selected from our library. It's something different everyday. Have you seen this one before?</p>",
-      "<p>You could watch the up to date collection <a href='/site/pages/catalogue/paperairplanes/index.html'>here</a> on out official \"100 Exotic Paper Airplanes Challenge\" page.</p>"
+      "<p>You could watch the up to date collection <a href='/site/pages/catalogue/paperairplanes/index.html'>here</a> on our official \"100 Exotic Paper Airplanes Challenge\" page.</p>"
     ],
     "caption": {
       "type": "video",
