@@ -14,8 +14,8 @@
       "icon": "/site/images/logo/logo-simplebird-black.svg"
     },
     {
-      "siteName": "Programming",
-      "link": "https://wlee0515.github.io",
+      "siteName": "Coding",
+      "link": "/site/pages/homecoding/index.html",
       "icon": "/site/images/logo/logo-code-black-small.png"
     },
     {
