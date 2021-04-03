@@ -1,13 +1,13 @@
 {
-  "site_title": "Jumping Jack by Andrew Dewar",
+  "site_title": "Star Clipper by Andrew Dewar",
   "block_list": [
     {
       "title": "Video Tutorial",
-      "date": "2020-09-01",
-      "body": "<p>This is Paper plane 17 of our 100 Exotic Paper Airplane Challenge. Jumping Jack designed by Andrew Dewar. This is an origami plane folded from a square sheet. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 016 : Hunter by Kunihiko Kasahara\", you could watch it at  <a href=\"https://youtu.be/e9fm86pwLGo\">https://youtu.be/e9fm86pwLGo</a> \n \nThanks for watching! \nWilson Lee @Heap Art \n \n<p>",
+      "date": "2021-02-23",
+      "body": "<p>This is the Star Clipper designed by Andrew Dewar, the 42th member of our 100 Exotic Paper Airplane challenge. This plane resembles a futuristic aircraft taking off into the sky. I will be the first to admit that this is a really difficult plane to fly. It requires a lot of tuning to fly nice and when it nose dive to the ground you will need to calibrate it again. Please enjoy this new Origami paper airplane. \n \nIf you missed my last Exotic Paper Airplane \"Paper Plane 041 : F-14 Tomcat by Michael G. LaFosse\", you could watch it at  <a href=\"https://youtu.be/J3XlJgYhDZY\">https://youtu.be/J3XlJgYhDZY</a> \n \nThanks For Watching! \nWilson Lee @Heap Art  \n \n<p>",
       "caption": {
         "type": "video",
-        "videoId": "1LrKfI3oVfs",
+        "videoId": "B1dOrqIqzkQ",
         "beforeBody": true
       }
     },
@@ -18,5 +18,5 @@
       ]
     }
   ],
-  "background_image": "https://i.ytimg.com/vi/1LrKfI3oVfs/maxresdefault.jpg"
+  "background_image": "https://i.ytimg.com/vi/B1dOrqIqzkQ/maxresdefault.jpg"
 }
