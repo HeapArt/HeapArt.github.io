@@ -26,10 +26,18 @@ def save_file(iPath, iText):
         wFile.close()
 
 
-def createPageDefinition(iTitle, iBlockList, iBackGroundImagelink):
+def createPageDefinition(iTitle, iBlockList, iBackGroundImagelink, iMetaData):
     wNewPage = {}
     wNewPage["site_title"] = iTitle
     wNewPage["block_list"] = iBlockList
+    
+    if None != iMetaData:
+        wNewPage["meta_description"] = iMetaData["meta_description"]
+        wNewKeyWords = "Heap Art Origami Tutorial"
+        for wWord in iMetaData["meta_keywords"]:
+            wNewKeyWords += ", " + wWord
+        wNewPage["meta_keywords"] = wNewKeyWords
+
     if None != iBackGroundImagelink:
         wNewPage["background_image"] = iBackGroundImagelink
     return wNewPage
@@ -60,6 +68,9 @@ def generatePageDefinitions(iVideoDataFile):
     for wVideoEntry in iVideoDataFile["Video List"]:
         isTutorial = False
         wTitle = wVideoEntry["Video title"].replace("  ", " ")
+        wVideoEntry["metadata"] = {}
+        wVideoEntry["metadata"]["meta_keywords"] = ["Heap Art", "origami", "tutorial", "video", "how to"]
+        wVideoEntry["metadata"]["meta_description"] = "Heap Art Origami tutorial"
 
         if "(100 Exotic Paper Airplanes" in wVideoEntry["Video title"]:
             wStrList = wVideoEntry["Video title"].split(" ")
@@ -69,6 +80,9 @@ def generatePageDefinitions(iVideoDataFile):
 
             PaperPlaneList[wStrList[2]] = wVideoEntry
             isTutorial = True
+            wVideoEntry["metadata"]["meta_keywords"].append("Paper airplane")
+            wVideoEntry["metadata"]["meta_keywords"].append("origami plane")
+            wVideoEntry["metadata"]["meta_keywords"].append("exotic paper airplane")
             
         if "Quickie Origami - " in wVideoEntry["Video title"]:
             wTitle = wTitle.replace("Quickie Origami - ", "")
@@ -76,6 +90,8 @@ def generatePageDefinitions(iVideoDataFile):
             wTitle = wTitle.replace(" Origami ", " ")
             QuickieOrigamiList.append(wVideoEntry)
             isTutorial = True
+            wVideoEntry["metadata"]["meta_keywords"].append("short video")
+            wVideoEntry["metadata"]["meta_keywords"].append("vertical video")
         
         if "Moderato Origami - " in wVideoEntry["Video title"]:
             wTitle = wTitle.replace("Moderato Origami - ", "")
@@ -83,6 +99,7 @@ def generatePageDefinitions(iVideoDataFile):
             wTitle = wTitle.replace(" Origami ", " ")
             ModeratoOrigamiList.append(wVideoEntry)
             isTutorial = True
+            wVideoEntry["metadata"]["meta_keywords"].append("full video")
 
         if True == isTutorial:
           
@@ -101,11 +118,15 @@ def generatePageDefinitions(iVideoDataFile):
             wVideoEntry["Search Title"] = wSearchTitle
             FullTutorialList.append(wVideoEntry)
 
+            wVideoEntry["metadata"]["meta_description"] = "Heap Art Origami tutorial, How to fold " + wTitle 
+            wVideoEntry["metadata"]["meta_keywords"].append(wSearchTitle)
+
             if "Designer" in wVideoEntry:
                 if wVideoEntry["Designer"] not in TutorialByDesignerList:
                     TutorialByDesignerList[wVideoEntry["Designer"]] = []
             
                 TutorialByDesignerList[wVideoEntry["Designer"]].append(wVideoEntry)
+                wVideoEntry["metadata"]["meta_keywords"].append(wVideoEntry["Designer"])
 
         if "Description" in wVideoEntry:
             wDescriptionMod = wVideoEntry["Description"]
@@ -153,7 +174,12 @@ def generatePageDefinitions(iVideoDataFile):
       "<p>Wilson Lee @HeapArt</p>"      
     ], None )
 
-    w100ExoticPaperAirplanesChallengePageDefintion = createPageDefinition("100 Exotic Paper Airplane Challenge", [wChallengeDefinition, wPaperAirplaneContentBlock], None)
+    w100ExoticPaperAirplanesMetaData = {}
+    w100ExoticPaperAirplanesMetaData["meta_keywords"] = ["Heap Art", "origami", "tutorial", "video", "how to", "paper airplanes"]
+    w100ExoticPaperAirplanesMetaData["meta_description"] = "100 Exotic Paper Airplanes Index Page, Heap Art Origami Tutorials"
+
+    w100ExoticPaperAirplanesChallengePageDefintion = createPageDefinition("100 Exotic Paper Airplane Challenge", [wChallengeDefinition, wPaperAirplaneContentBlock], None, w100ExoticPaperAirplanesMetaData)
+
     save_file("paperairplanes/index.json", json.dumps(w100ExoticPaperAirplanesChallengePageDefintion, indent=2))
 
     for wKey in sorted(PaperPlaneList.keys()):
@@ -169,7 +195,7 @@ def generatePageDefinitions(iVideoDataFile):
             wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
 
         wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
-        wPaperPlanePage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock, wPaperAirplaneContentBlock], wVideoEntry["YTThumbnail"]["max"])
+        wPaperPlanePage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock, wPaperAirplaneContentBlock], wVideoEntry["YTThumbnail"]["max"], wVideoEntry["metadata"] )
         save_file("paperairplanes/{0}.json".format(wKey), json.dumps(wPaperPlanePage, indent=2))
 
     # Tutorial catalog by A-Z
@@ -201,7 +227,11 @@ def generatePageDefinitions(iVideoDataFile):
         wVideoBlock = createBlockDefinition(wLinkListKey, None, wAZlinkList[wLinkListKey], None )
         wAZBlockList.append(wVideoBlock)
 
-    wAZList = createPageDefinition("Origami Tutorials from A to Z", wAZBlockList, None)
+    wAZListMetaData = {}
+    wAZListMetaData["meta_keywords"] = ["Heap Art", "origami", "tutorial", "video", "how to"]
+    wAZListMetaData["meta_description"] = "Origami Tutorials from A to Z, Heap Art Origami Tutorials"
+
+    wAZList = createPageDefinition("Origami Tutorials from A to Z", wAZBlockList, None, wAZListMetaData)
     save_file("azlist/index.json", json.dumps(wAZList, indent=2))
 
     for wVideoEntry in wSortedTutorialList:
@@ -216,7 +246,7 @@ def generatePageDefinitions(iVideoDataFile):
             wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
 
         wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
-        wAZVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock] + wAZBlockList, wVideoEntry["YTThumbnail"]["max"])
+        wAZVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock] + wAZBlockList, wVideoEntry["YTThumbnail"]["max"], wVideoEntry["metadata"] )
         save_file("azlist/{0}.json".format(wVideoEntry["Video"]), json.dumps(wAZVideoPage, indent=2))
 
 
@@ -252,12 +282,16 @@ def generatePageDefinitions(iVideoDataFile):
                 wDescription = "<p>" + wVideoEntry["Description"] + "<p>"
 
             wVideoBlock = createBlockDefinition("Video Tutorial", wVideoEntry["Video publish time"], wDescription, wCaptionDef )
-            wDesignerVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock,  wMoreFromDesignerBlock], wVideoEntry["YTThumbnail"]["max"])
+            wDesignerVideoPage = createPageDefinition(wVideoEntry["Clean Title"], [wVideoBlock,  wMoreFromDesignerBlock], wVideoEntry["YTThumbnail"]["max"], wVideoEntry["metadata"] )
             save_file("designerList/{0}.json".format(wVideoEntry["Video"]), json.dumps(wDesignerVideoPage, indent=2))
 
 
         
-    wDesignerList = createPageDefinition("Origami Tutorials by Designer", wDesignerBlockList,None)
+    wDesignerListMetaData = {}
+    wDesignerListMetaData["meta_keywords"] = ["Heap Art", "origami", "tutorial", "video", "how to"]
+    wDesignerListMetaData["meta_description"] = "Origami Tutorials by Designer, Heap Art Origami Tutorials"
+
+    wDesignerList = createPageDefinition("Origami Tutorials by Designer", wDesignerBlockList,None,wDesignerListMetaData)
     save_file("designerList/index.json", json.dumps(wDesignerList, indent=2))
 
     pass

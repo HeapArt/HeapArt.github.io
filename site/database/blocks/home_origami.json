@@ -1,35 +1,5 @@
 [
   {
-    "title": "Welcome To Heap Art Origami",
-    "body": [
-      "<p>Here you'll find a topics related to Origami on Heap Art.</p>",
-      "<p>Thing you could find here includes: </p>",
-      "<ul>",
-      "<li>My Origami Tutorial database</li>",
-      "<li>Our 100 Exotic paper Airplane Challenge</li>",
-      "<li>The Origami Roulette to help you find a Random Origami video</li>",
-      "<li>A Collection of My Own designes</li>",
-      "</ul>",
-      "<p>Thanks!</p>",
-      "<p>Wilson Lee @HeapArt</p>"
-    ],
-    "grid": {
-      "tile_size": "small",
-      "tile_list": [
-        {
-          "img": "/site/images/logo/logo-youtube-small.png",
-          "link": "https://www.youtube.com/heapart",
-          "text": {
-            "title": "YouTube Channel - Heap Art",
-            "body": [
-              "<p>All Tutorials on my web site are hosted on YouTube. Join me on YouTube to have my origami tutorials delivered to you.</p>"
-            ]
-          }
-        }
-      ]
-    }
-  },
-  {
     "title": "How to Browse My Origami Database",
     "body": [
       "<p>Here on our site, you could browse our database of Origami tutorials several ways!</p>"
@@ -114,6 +84,23 @@
       "type": "video",
       "randomVideoId": "paperairplane",
       "randomSeed": "date"
+    }
+  },
+  {
+    "grid": {
+      "tile_size": "small",
+      "tile_list": [
+        {
+          "img": "/site/images/logo/logo-youtube-small.png",
+          "link": "https://www.youtube.com/heapart",
+          "text": {
+            "title": "YouTube Channel - Heap Art",
+            "body": [
+              "<p>All Tutorials on my web site are hosted on YouTube. Join me on YouTube to have my origami tutorials delivered to you.</p>"
+            ]
+          }
+        }
+      ]
     }
   }
 ]

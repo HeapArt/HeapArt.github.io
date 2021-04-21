@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Welcome To Heap Art Coding Division",
+    "body": [
+      "<p>Here is a gallery of creations created through means of programming.</p>",
+      "<p>Thing you could find here includes: </p>",
+      "<ul>",
+      "<li>Tutorials from my YouTube Channel</li>",
+      "<li>Demonstrations of my created work</li>",
+      "<li>Access to my project Page</li>",
+      "</ul>",
+      "<p>Thanks!</p>",
+      "<p>Wilson Lee @HeapArt</p>"
+    ],
+    "grid": {
+      "tile_size": "small",
+      "tile_list": [
+        {
+          "img": "/site/images/logo/logo-youtube-small.png",
+          "link": "https://www.youtube.com/channel/UCqhzrDyBdR8iqKTnjbqqHCw",
+          "text": {
+            "title": "YouTube Channel - Heap Art Coding",
+            "body": [
+              "<p>Most of my work will be hosted on YouTube. Join me on YouTube to have them deliver to you when I post them.</p>"
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

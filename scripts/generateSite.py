@@ -2,7 +2,9 @@ import os
 import json
 
 gWorkingDirectory = "../"
-gInputFile = ["scripts/sitePageDefinition.json", "scripts/sitePageDefinition_origami.json", "scripts/sitePageDefinition_OrigamiImages.json"]
+gInputFile = ["scripts/sitePageDefinition.json",
+              "scripts/sitePageDefinition_origami.json", "scripts/sitePageDefinition_OrigamiImages.json",
+              "scripts/sitePageDefinition_coding.json"]
 
 def loadJson(iFilePath):
     with open(iFilePath, encoding="utf-8") as f:
@@ -123,7 +125,12 @@ def generateNavBarEntryString(iEntry):
     wTemp = ""
     if "siteName" in iEntry:
         if "icon" in iEntry:
-            wTemp += "<img src='{0}' class='class_navbar_icon_img'></img>".format(iEntry["icon"])
+            iconClass = "class_navbar_icon_img"
+            if "iconFilterOff" in iEntry:
+                if True == iEntry["iconFilterOff"] :
+                    iconClass += " " + "class_iconFilterOff"
+
+            wTemp += "<img src='{0}' class='{1}'></img>".format(iEntry["icon"], iconClass)
 
         wTemp = "<div class='class_navbar_icon_container'>{0}</div>".format(wTemp)
         wTemp += "<div class='class_navbar_label'>{0}</div>".format(iEntry["siteName"])
