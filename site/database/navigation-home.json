@@ -29,16 +29,6 @@
       "icon": "/site/images/logo/logo-network-black-small.png"
     },
     {
-      "siteName": "Supplies",
-      "link": "/site/pages/supplies/index.html",
-      "icon": "/site/images/logo/logo-shopping-black-small.png"
-    },
-    {
-      "siteName": "Merchandise",
-      "link": "https://teespring.com/stores/heapart",
-      "icon": "/site/images/logo/logo-merch-black-small.png"
-    },
-    {
       "siteName": "About Me",
       "link": "/site/pages/aboutme/index.html",
       "icon": "/site/images/logo/logo-eyeglasses-black-small.png"
